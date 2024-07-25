@@ -35,6 +35,7 @@ b{ font-weight: bold; }
 
 .wrap{ margin: 0 auto; width: 100%; }
 .container{ width: 100%; height: 100vh; background: var(--maincolor); overflow-y: scroll; }
+.dn{ display: none !important; }
 
 .title_con h2{font-size: 22px; margin: 0; line-height: 1.25em; color: #fff; }
 .title_con h3{font-size: 14px; color: #f00;}
@@ -67,7 +68,8 @@ b{ font-weight: bold; }
 
 .section_1{}
 .section_1 .invest_box{ background: #fff; border-radius: 15px; padding: var(--margin); }
-.section_1 .invest_box .result_con{ display: flex; align-items: center; gap: 10px; padding-bottom: var(--margin); margin-bottom: var(--margin); border-bottom: 1px solid #ededed; }
+/* result_con */
+.section_1 .invest_box .result_con{ display: flex; align-items: center; gap: 10px; }
 .section_1 .invest_box .result_con .result_left{ max-width: 65%; }
 .section_1 .invest_box .result_con .result_left p.result_title{ margin-bottom: var(--margin-half); font-size: 13px; color: #454545; }
 .section_1 .invest_box .result_con .result_left .money_con{ margin-bottom: var(--margin-half); }
@@ -83,8 +85,10 @@ b{ font-weight: bold; }
 .section_1 .invest_box .result_con .result_right .btn_con{}
 .section_1 .invest_box .result_con .result_right .btn_con a.btn_link{ padding: 8px 13px; background: #e9e9e9; }
 .section_1 .invest_box .result_con .result_right .btn_con a.btn_link span.btn_text{ font-size: 14px; color: #565656; }
-.section_1 .invest_box .goods_con{}
-.section_1 .invest_box .goods_con p.goods_title{ margin-bottom: var(--margin-half); font-size: 13px; color: #454545; }
+/* goods_con */
+.section_1 .invest_box .goods_con{ opacity: 1; height: auto; transition: opacity 250ms, height 250ms; overflow: hidden; padding-top: var(--margin); }
+.section_1 .invest_box .goods_con.no{ opacity: 0; height: 0; padding: 0; }
+.section_1 .invest_box .goods_con p.goods_title{ margin-bottom: var(--margin-half); font-size: 13px; color: #454545; padding-top: var(--margin); border-top: 1px solid #cdcdcd; }
 .section_1 .invest_box .goods_con .goods_box{}
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con{}
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list{ display: flex; align-items: center; gap: 5px; margin-bottom: var(--margin-half); }
@@ -100,3 +104,6 @@ b{ font-weight: bold; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_number b.goods_list_num{}
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_money{ margin-left: auto; width: 70%; text-align: right; word-wrap: break-word; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_money b.goods_money_num{}
+.section_1 .invest_box .arrow_btn{ margin-top: var(--margin-half); }
+.section_1 .invest_box .arrow_btn img.arrow_img{ display: block; margin: 0 auto; width: 20px; transition: transform 200ms ease-out; }
+.section_1 .invest_box .arrow_btn img.arrow_img.rotate{ transform: rotate(180deg); transform: center; }
