@@ -46,8 +46,8 @@ b{ font-weight: bold; }
 .btn_con a.btn_link span{}
 
 
-.main_header{ background: var(--maincolor); }
-.main_header .main_header_inner{ display: flex; justify-content: space-between; align-items: center; height: 40px; padding: var(--margin-half); }
+.main_header{ position: fixed; width: 100%; z-index: 99999; background: var(--maincolor); }
+.main_header .main_header_inner{ display: flex; justify-content: space-between; align-items: center; height: 30px; padding: 15px var(--margin-half); }
 .main_header .main_header_inner .logo{}
 .main_header .main_header_inner .logo img.logo_img{ width: 160px; }
 .main_header .main_header_inner .my_profile{}
@@ -56,7 +56,7 @@ b{ font-weight: bold; }
 
 .section{ padding: var(--margin) 0; }
 .section .main_inner{ padding: 0 var(--margin-half); }
-.section.visual{}
+.section.visual{ margin-top: 60px; }
 .section.visual .title_con{ margin-bottom: var(--margin); }
 .section.visual .title_con h2.main_title{}
 .section.visual .visual_img{ margin-bottom: var(--margin); }
@@ -93,10 +93,10 @@ b{ font-weight: bold; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods_logo img.goods_img{ width: 38px; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods{ display: flex; flex-direction: column; gap: 5px; width: calc(100% - 45px); }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods p.goods_list_title{ font-size: 11px; color: #999; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no{ display: flex; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no{ display: flex; gap: 5px; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span{ font-size: 14px; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span b{ font-weight: lighter; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_number{}
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_number{ width: 30%; word-wrap: break-word; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_number b.goods_list_num{}
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_money{ margin-left: auto; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_money{ margin-left: auto; width: 70%; text-align: right; word-wrap: break-word; }
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_money b.goods_money_num{}
