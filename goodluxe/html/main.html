@@ -15,6 +15,10 @@
 		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css" />
         <script type="text/javascript">
             $(function(){
+				$('.section_1 .invest_box .arrow_btn img.arrow_img').on('click', function() {
+					$(this).toggleClass('rotate');
+					$('.section_1 .invest_box .goods_con').toggleClass('no');
+				});
             });
         </script>
     </head>
@@ -112,6 +116,9 @@
 										</li>
 									</ul>
 								</div>
+							</div>
+							<div class="arrow_btn">
+								<img class="arrow_img" src="../img/up_arrow.png">
 							</div>
 						</div>
 					</div>
