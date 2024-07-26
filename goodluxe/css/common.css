@@ -113,7 +113,7 @@ a{ text-decoration-line: none; color: #111; }
 .section_2 .main_inner{}
 .section_2 .notice_box{ padding-bottom: var(--margin); }
 .section_2 .notice_box h5.notice_title{ font-size: 14px; color: #fff; margin-bottom: var(--margin-half); }
-.section_2 .notice_box .notice_con{ overflow: visible; }
+.section_2 .notice_box .notice_con{}
 .section_2 .notice_box .notice_con ul.notice_list_box{}
 .section_2 .notice_box .notice_con ul.notice_list_box li.notice_list{}
 .section_2 .notice_box .notice_con ul.notice_list_box li.notice_list a.notice_link{ display: flex; gap: 5px; align-items: center; background: #ffd1d1; border-radius: 15px; padding: var(--margin-half) var(--margin); }
