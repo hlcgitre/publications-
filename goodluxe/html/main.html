@@ -163,7 +163,7 @@
 										</a>
 									</li>
 								</ul>
-								<div class="swiper-pagination"></div>
+								<div class="swiper-pagination swiper-pagination_1"></div>
 							</div>
 						</div>
 					</div>
@@ -171,8 +171,43 @@
 				<script type="text/javascript">
 					var swiper = new Swiper(".notice_con.swiper",{
 						pagination: {
-							el: ".swiper-pagination",
-						  },
+							el: ".swiper-pagination_1",
+						},
+						loop: true,
+						loopAdditionalSlides : 1,
+						spaceBetween: 20,
+						slidesPerView: 1,
+					});
+				</script>
+				<div class="section section_3">
+					<div class="main_inner">
+						<div class="promotion_con swiper">
+							<ul class="promotion_list_box swiper-wrapper">
+								<li class="promotion_list swiper-slide">
+									<a class="promotion_link" href="#">
+										<img class="promotion_bg_img" src="../img/010.png">
+									</a>
+								</li>
+								<li class="promotion_list swiper-slide">
+									<a class="promotion_link" href="#">
+										<img class="promotion_bg_img" src="../img/011.png">
+									</a>
+								</li>
+								<li class="promotion_list swiper-slide">
+									<a class="promotion_link" href="#">
+										<img class="promotion_bg_img" src="../img/012.png">
+									</a>
+								</li>
+							</ul>
+							<div class="swiper-pagination swiper-pagination_2"></div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var swiper2 = new Swiper(".promotion_con.swiper",{
+						pagination: {
+							el: ".swiper-pagination_2",
+						},
 						loop: true,
 						loopAdditionalSlides : 1,
 						spaceBetween: 20,
