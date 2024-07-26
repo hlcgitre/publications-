@@ -11,8 +11,8 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 		<!-- swiper -->
-		<script type="text/javascript" src="/jscript/jquery/swiper-bundle.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css" />
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
         <script type="text/javascript">
             $(function(){
 				$('.section_1 .invest_box .arrow_btn img.arrow_img').on('click', function() {
@@ -123,6 +123,62 @@
 						</div>
 					</div>
 				</div>
+				<div class="section section_2">
+					<div class="main_inner">
+						<div class="notice_box">
+							<h5 class="notice_title">공지사항</h5>
+							<div class="notice_con swiper">
+								<ul class="notice_list_box swiper-wrapper">
+									<li class="notice_list swiper-slide">
+										<a class="notice_link" href="#">
+											<div class="notice_title_con">
+												<span class="notice_sub">공지분류 (소제목)</span>
+												<span class="notice_main">공지 제목</span>
+											</div>
+											<div class="notice_img_con">
+												<img class="notice_img" src="../img/005.png">
+											</div>
+										</a>
+									</li>
+									<li class="notice_list swiper-slide">
+										<a class="notice_link" href="#">
+											<div class="notice_title_con">
+												<span class="notice_sub">약관 변경</span>
+												<span class="notice_main">투자자보호기금 운영정책 업데이트 알림</span>
+											</div>
+											<div class="notice_img_con">
+												<img class="notice_img" src="../img/001.png">
+											</div>
+										</a>
+									</li>
+									<li class="notice_list swiper-slide">
+										<a class="notice_link" href="#">
+											<div class="notice_title_con">
+												<span class="notice_sub">앱 업데이트 점검 안내</span>
+												<span class="notice_main">v3.5 패치노트를 확인해보세요</span>
+											</div>
+											<div class="notice_img_con">
+												<img class="notice_img" src="../img/002.png">
+											</div>
+										</a>
+									</li>
+								</ul>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var swiper = new Swiper(".notice_con.swiper",{
+						pagination: {
+							el: ".swiper-pagination",
+						  },
+						loop: true,
+						loopAdditionalSlides : 1,
+						spaceBetween: 20,
+						slidesPerView: 1,
+					});
+				</script>
             </div>
         </div>
     </body>
