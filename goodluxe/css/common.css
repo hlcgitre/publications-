@@ -47,7 +47,7 @@ b{ font-weight: bold; }
 .btn_con a.btn_link span{}
 
 
-.main_header{ position: fixed; width: 100%; z-index: 99999; background: var(--maincolor); }
+.main_header{ position: fixed; width: 100%; max-width: 600px; z-index: 99999; background: var(--maincolor); }
 .main_header .main_header_inner{ display: flex; justify-content: space-between; align-items: center; height: 30px; padding: 15px var(--margin-half); }
 .main_header .main_header_inner .logo{}
 .main_header .main_header_inner .logo img.logo_img{ width: 160px; }
