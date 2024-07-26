@@ -129,11 +129,15 @@ a{ text-decoration-line: none; color: #111; }
 
 .section_3{}
 .section_3 .main_inner{}
-.section_3 .main_inner .promotion_con{}
-.section_3 .main_inner .promotion_con ul.promotion_list_box{}
-.section_3 .main_inner .promotion_con ul.promotion_list_box li.promotion_list{}
-.section_3 .main_inner .promotion_con ul.promotion_list_box li.promotion_list a.promotion_link{}
-.section_3 .main_inner .promotion_con ul.promotion_list_box li.promotion_list a.promotion_link img.promotion_bg_img{ width: 100%; border-radius: 15px; }
-.section_3 .main_inner .promotion_con .swiper-pagination{ width: auto; left: var(--margin); bottom: var(--margin); }
-.section_3 .main_inner .promotion_con .swiper-pagination-bullet {background: #acacac;}
-.section_3 .main_inner .promotion_con .swiper-pagination-bullet-active {background: #fff;}
+.section_3 .promotion_con{}
+.section_3 .promotion_con ul.promotion_list_box{}
+.section_3 .promotion_con ul.promotion_list_box li.promotion_list{}
+.section_3 .promotion_con ul.promotion_list_box li.promotion_list a.promotion_link{}
+.section_3 .promotion_con ul.promotion_list_box li.promotion_list a.promotion_link img.promotion_bg_img{ width: 100%; border-radius: 15px; }
+.section_3 .promotion_con .swiper-pagination{ width: auto; left: var(--margin); bottom: var(--margin); }
+.section_3 .promotion_con .swiper-pagination-bullet {background: #acacac;}
+.section_3 .promotion_con .swiper-pagination-bullet-active {background: #fff;}
+
+.section_4{}
+.section_4 .main_inner{}
+.section_4 .goodluxe_goods_box{}
