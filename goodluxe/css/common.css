@@ -157,7 +157,7 @@ a{ text-decoration-line: none; color: #111; }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data{ display: flex; margin-bottom: var(--margin-half); }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data{ display: flex; flex-direction: column; gap: 7px; }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data span.data_title{ font-size: 11px; color: #777; }
-.section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data span.data_main{ font-size: 16px; }
+.section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data span.data_main{ font-size: 16px; font-weight: bold; }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_money{ padding: 5px var(--margin) 5px 0; border-right: 1.5px solid #dfdfdf; margin-right: var(--margin); }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_money span.data_money_title{}
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_money span.data_money{}
