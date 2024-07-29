@@ -39,7 +39,7 @@ a{ text-decoration-line: none; color: #111; }
 .dn{ display: none !important; }
 
 .title_con h2{font-size: 24px; margin: 0; line-height: 1.25em; color: #fff; }
-.title_con h3{font-size: 20px; color: #fff;}
+.title_con h3{font-size: 22px; color: #fff;}
 .title_con h4{font-size: 12px; margin-bottom: var(--margin-half); color: #acacac; }
 .title_con h5{font-size: 10px; }
 
@@ -145,28 +145,31 @@ a{ text-decoration-line: none; color: #111; }
 .section_4 .goodluxe_goods_box .title_con h4.sub_title{}
 .section_4 .goodluxe_goods_box .title_con h3.main_title{ font-weight: bold; }
 .section_4 .goodluxe_goods_box .box{ border-radius: 15px; padding: var(--margin-half); }
-.section_4 .goodluxe_goods_box .box_1{ background: #3a4152; }
+.section_4 .goodluxe_goods_box .box_1{ background: #3a4152; margin-bottom: var(--margin-half); }
+.section_4 .goodluxe_goods_box .box_2{ background: #32415d; }
 .section_4 .goodluxe_goods_box .box .box_title{ position: relative; margin-bottom: var(--margin-half); }
 .section_4 .goodluxe_goods_box .box .box_title img.box_bg{ display: block; margin: 0 auto; width: 130px; opacity: .3; filter: blur(3px); }
 .section_4 .goodluxe_goods_box .box .box_title span.box_subject{ position: absolute; top: 50%; left: 50%; transform: translateX(-50%); font-weight: bold; color: #fff; font-size: 22px; }
 .section_4 .goodluxe_goods_box .box .box_main{ background: #fff; border-radius: 10px; padding: var(--margin); }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_title{ margin-bottom: var(--margin-half); }
-.section_4 .goodluxe_goods_box .box .box_main .box_main_title span.box_main_subject{ display: block; font-size: 20px; font-weight: bold; margin-bottom: 5px; }
-.section_4 .goodluxe_goods_box .box .box_main .box_main_title p.box_main_sub{ display: inline-block; font-size: 11px; padding: 5px; background: #eaeaea; border-radius: 5px; color: #565656; }
+.section_4 .goodluxe_goods_box .box .box_main .box_main_title span.box_main_subject{ display: block; font-size: 18px; font-weight: bold; margin-bottom: 5px; }
+.section_4 .goodluxe_goods_box .box .box_main .box_main_title p.box_main_sub{ display: inline-block; font-size: 9px; padding: 5px; background: #eaeaea; border-radius: 5px; color: #565656; }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data{ display: flex; margin-bottom: var(--margin-half); }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data{ display: flex; flex-direction: column; gap: 7px; }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data span.data_title{ font-size: 11px; color: #777; }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data span.data_main{ font-size: 16px; }
-.section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_money{ padding: 5px var(--margin) 5px 0; border-right: 2px solid #dfdfdf; margin-right: var(--margin); }
+.section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_money{ padding: 5px var(--margin) 5px 0; border-right: 1.5px solid #dfdfdf; margin-right: var(--margin); }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_money span.data_money_title{}
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_money span.data_money{}
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_deadline{ padding: 5px 0; }
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_deadline span.data_deadline_title{}
 .section_4 .goodluxe_goods_box .box .box_main .box_main_data .box_data_deadline span.data_deadline{}
 .section_4 .goodluxe_goods_box .box .box_main .gage_bar{}
-.section_4 .goodluxe_goods_box .box .box_main .gage_bar progress{ width: 100%; }
-.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage{}
-.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage .gage_data{}
-.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage .gage_data span.now_gage_data{}
-.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage .gage_data span.total_gage_data{}
-.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage span.status{}
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar progress{ width: 100%; appearance: none; height: 10px; }
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar progress::-webkit-progress-bar { background: #f0f0f0; border: 1px solid #eeeeee; border-radius: 12px; overflow: hidden; height: 10px; }
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar progress::-webkit-progress-value { background: #545454; border-radius: 0px; height: 10px; }
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage{ display: flex; justify-content: space-between; margin-top: 5px; }
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage .gage_data{ font-size: 0; }
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage .gage_data span.now_gage_data{ font-size: 14px; color: #676767; }
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage .gage_data span.total_gage_data{ font-size: 14px; color: #acacac; }
+.section_4 .goodluxe_goods_box .box .box_main .gage_bar .gage span.status{ font-size: 14px; color: #676767; }
