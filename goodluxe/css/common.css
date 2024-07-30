@@ -182,14 +182,17 @@ a{ text-decoration-line: none; color: #111; }
 .section_5 .news_box .title_con h3.main_title{}
 .section_5 .news_box .news_con{}
 .section_5 .news_box .news_con ul.news_list_con{}
-.section_5 .news_box .news_con ul.news_list_con li.news_list{ display: flex; justify-content: space-between; align-items: center; gap: 5%; padding: var(--margin); border-radius: 15px;  }
+.section_5 .news_box .news_con ul.news_list_con li.news_list{ position: relative; display: flex; justify-content: space-between; align-items: center; gap: 5%; padding: var(--margin); margin-bottom: 15px; border-radius: 15px; }
+.section_5 .news_box .news_con ul.news_list_con li.news_list:after{ position: absolute; content: ""; bottom: -14px; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 0px solid transparent; }
 .section_5 .news_box .news_con ul.news_list_con li.news_list .list_title_con{ width: 60%; }
-.section_5 .news_box .news_con ul.news_list_con li.news_list .list_title_con h3.news_sub_title{ color: #fff; font-size: 15px; margin-bottom: var(--margin-half); }
+.section_5 .news_box .news_con ul.news_list_con li.news_list .list_title_con h3.news_sub_title{ color: #fff; font-size: 15px; font-weight: bold; word-break: keep-all; margin-bottom: var(--margin-half); }
 .section_5 .news_box .news_con ul.news_list_con li.news_list .list_title_con h2.news_main_title{ color: #fff; font-size: 22px; word-break: keep-all; font-weight: bold; line-height: 1.25em; }
 .section_5 .news_box .news_con ul.news_list_con li.news_list .list_img_con{ width: 35%; }
 .section_5 .news_box .news_con ul.news_list_con li.news_list .list_img_con img.list_img{ display: block; margin: 0 auto; width: 80px; }
 .section_5 .news_box .news_con ul.news_list_con li.news_list.list_1{ background: #ff7549; }
-.section_5 .news_box .news_con ul.news_list_con li.news_list.list_2{}
+.section_5 .news_box .news_con ul.news_list_con li.news_list.list_1:after{ left: var(--margin-x2); border-top: 15px solid #ff7549; }
+.section_5 .news_box .news_con ul.news_list_con li.news_list.list_2{ background: #ef9556; }
+.section_5 .news_box .news_con ul.news_list_con li.news_list.list_2:after{ right: var(--margin-x2); border-top: 15px solid #ef9556; }
 .section_5 .news_box .news_con ul.news_list_con li.news_list.list_3{}
 .section_5 .news_box .news_con ul.news_list_con li.news_list.list_4{}
 .section_5 .news_box .news_con ul.news_list_con li.news_list.list_5{}
