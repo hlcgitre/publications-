@@ -207,3 +207,9 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_header .mypage_header_inner span.page_title{ font-size: 18px; }
 .mypage_header .mypage_header_inner a.setting_btn{}
 .mypage_header .mypage_header_inner a.setting_btn img.setting_img{ width: 30px; }
+
+.mypage_content{ margin-top: 60px; }
+.mypage_content .mypage_inner{ padding: 0 var(--margin-half); }
+.mypage_content a.name_box{ display: flex; justify-content: space-between; align-items: center; padding: var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; }
+.mypage_content a.name_box span.mypage_name{ font-size: 15px; }
+.mypage_content a.name_box img.right_arrow{ width: 15px; }
