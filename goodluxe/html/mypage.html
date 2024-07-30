@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			 document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+                    event.preventDefault();
+                    history.back();
+                }
+
+                var backLink = document.querySelector('.mypage_header a.back_btn');
+                if (backLink) {
+                    backLink.addEventListener('click', goBack);
+                    backLink.addEventListener('touchstart', goBack);
+                }
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+				<div class="mypage_header">
+					<div class="mypage_header_inner">
+						<a class="back_btn" href="#">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">마이페이지</span>
+						<a class="setting_btn" href="#">
+							<img src="../img/setting.png" class="setting_img">
+						</a>
+					</div>
+				</div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
