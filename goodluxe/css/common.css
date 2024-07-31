@@ -247,6 +247,6 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .lux_content a.lux_link .lux_box{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin-half); }
 .mypage_content .lux_content a.lux_link .lux_box span.my_lux{ font-size: 16px; font-weight: bold; color: #745243; }
 .mypage_content .lux_content a.lux_link .lux_box img.right_arrow{ width: 15px; filter: invert(46%) sepia(77%) saturate(500%) hue-rotate(348deg) brightness(97%) contrast(86%); }
-.mypage_content .lux_content a.lux_link .lux_num_con{ display: flex; align-items: center; gap: var(--margin-half); margin-bottom: var(--margin-half); }
+.mypage_content .lux_content a.lux_link .lux_num_con{ display: flex; align-items: center; gap: var(--margin-half); }
 .mypage_content .lux_content a.lux_link .lux_num_con span.lux{ color: #745243; font-size: 16px; }
 .mypage_content .lux_content a.lux_link .lux_num_con span.lux b.lux_num{ font-size: 30px; margin-right: 3px; }
