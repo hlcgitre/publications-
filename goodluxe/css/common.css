@@ -242,7 +242,7 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .point_content a.point_link .point_btn_con{ display: flex; gap: 5px; justify-content: end; }
 .mypage_content .point_content a.point_link .point_btn_con .point_btn{ background: #13736f; padding: 12px 15px; border-radius: 10px; color: #fff; font-size: 13px; }
 
-.mypage_content .lux_content{ padding: var(--margin); background: #fae9d9; border-radius: 15px; margin-bottom: var(--margin); }
+.mypage_content .lux_content{ padding: var(--margin); background: #fae9d9; border-radius: 15px; margin-bottom: var(--margin-x2); }
 .mypage_content .lux_content a.lux_link{}
 .mypage_content .lux_content a.lux_link .lux_box{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin-half); }
 .mypage_content .lux_content a.lux_link .lux_box span.my_lux{ font-size: 16px; font-weight: bold; color: #745243; }
