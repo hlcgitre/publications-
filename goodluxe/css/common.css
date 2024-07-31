@@ -254,7 +254,7 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .menu_box{}
 .mypage_content .menu_box.invest_box{ margin-bottom: var(--margin); padding-bottom: var(--margin); border-bottom: 1.5px solid #efefef; }
 .mypage_content .menu_box.service_box{}
-.mypage_content .menu_box span.menu_title{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin); }
+.mypage_content .menu_box span.menu_title{ display: block; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); }
 .mypage_content .menu_box ul.menu_con{}
 .mypage_content .menu_box ul.menu_con li.menu_list{ margin-bottom: var(--margin); }
 .mypage_content .menu_box ul.menu_con li.menu_list:last-child{ margin-bottom: 0; }
