@@ -73,7 +73,7 @@ a{ text-decoration-line: none; color: #111; }
 /* result_con */
 .section_1 .invest_box .result_con{ display: flex; align-items: center; gap: 10px; }
 .section_1 .invest_box .result_con .result_left{ max-width: 65%; }
-.section_1 .invest_box .result_con .result_left p.result_title{ margin-bottom: var(--margin-half); font-size: 13px; color: #454545; }
+.section_1 .invest_box .result_con .result_left p.result_title{ margin-bottom: var(--margin-half); font-size: 15px; color: #454545; }
 .section_1 .invest_box .result_con .result_left .money_con{ margin-bottom: var(--margin-half); }
 .section_1 .invest_box .result_con .result_left .money_con span.money{ font-size: 14px; word-wrap: break-word; }
 .section_1 .invest_box .result_con .result_left .money_con span.money b.num{ font-size: 30px; margin-right: 3px; }
@@ -90,7 +90,7 @@ a{ text-decoration-line: none; color: #111; }
 /* goods_con */
 .section_1 .invest_box .goods_con{ opacity: 1; height: auto; transition: opacity 250ms, height 250ms; overflow: hidden; padding-top: var(--margin); }
 .section_1 .invest_box .goods_con.no{ opacity: 0; height: 0; padding: 0; }
-.section_1 .invest_box .goods_con p.goods_title{ margin-bottom: var(--margin-half); font-size: 13px; color: #454545; padding-top: var(--margin); border-top: 1px solid #cdcdcd; }
+.section_1 .invest_box .goods_con p.goods_title{ margin-bottom: var(--margin-half); font-size: 15px; color: #454545; padding-top: var(--margin); border-top: 1px solid #cdcdcd; }
 .section_1 .invest_box .goods_con .goods_box{}
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con{}
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list{ display: flex; align-items: center; gap: 5px; margin-bottom: var(--margin-half); }
