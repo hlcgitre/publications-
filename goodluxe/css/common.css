@@ -208,7 +208,7 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_header .mypage_header_inner a.setting_btn{}
 .mypage_header .mypage_header_inner a.setting_btn img.setting_img{ width: 25px; }
 
-.mypage_content{ margin-top: 60px; padding-top: var(--margin-half); }
+.mypage_content{ margin-top: 60px; padding-top: var(--margin-half); padding-bottom: var(--margin); }
 .mypage_content .mypage_inner{ padding: 0 var(--margin-half); }
 .mypage_content a.name_box{ display: flex; justify-content: space-between; align-items: center; padding: var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin-half); }
 .mypage_content a.name_box span.mypage_name{ font-size: 16px; font-weight: bold; }
@@ -242,7 +242,7 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .point_content a.point_link .point_btn_con{ display: flex; gap: 5px; justify-content: end; }
 .mypage_content .point_content a.point_link .point_btn_con .point_btn{ background: #13736f; padding: 12px 15px; border-radius: 10px; color: #fff; font-size: 13px; }
 
-.mypage_content .lux_content{ padding: var(--margin); background: #fae9d9; border-radius: 15px; }
+.mypage_content .lux_content{ padding: var(--margin); background: #fae9d9; border-radius: 15px; margin-bottom: var(--margin); }
 .mypage_content .lux_content a.lux_link{}
 .mypage_content .lux_content a.lux_link .lux_box{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin-half); }
 .mypage_content .lux_content a.lux_link .lux_box span.my_lux{ font-size: 16px; font-weight: bold; color: #745243; }
@@ -250,3 +250,12 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .lux_content a.lux_link .lux_num_con{ display: flex; align-items: center; gap: var(--margin-half); }
 .mypage_content .lux_content a.lux_link .lux_num_con span.lux{ color: #745243; font-size: 16px; }
 .mypage_content .lux_content a.lux_link .lux_num_con span.lux b.lux_num{ font-size: 30px; margin-right: 3px; }
+
+.mypage_content .menu_box{}
+.mypage_content .menu_box.invest_box{ margin-bottom: var(--margin); padding-bottom: var(--margin); border-bottom: 1.5px solid #efefef; }
+.mypage_content .menu_box.service_box{}
+.mypage_content .menu_box span.menu_title{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin); }
+.mypage_content .menu_box ul.menu_con{}
+.mypage_content .menu_box ul.menu_con li.menu_list{ margin-bottom: var(--margin); }
+.mypage_content .menu_box ul.menu_con li.menu_list:last-child{ margin-bottom: 0; }
+.mypage_content .menu_box ul.menu_con li.menu_list a.menu_link{ font-size: 15px; }
