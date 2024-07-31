@@ -211,9 +211,10 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content{ margin-top: 60px; padding-top: var(--margin-half); }
 .mypage_content .mypage_inner{ padding: 0 var(--margin-half); }
 .mypage_content a.name_box{ display: flex; justify-content: space-between; align-items: center; padding: var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin-half); }
-.mypage_content a.name_box span.mypage_name{ font-size: 15px; font-weight: bold; }
+.mypage_content a.name_box span.mypage_name{ font-size: 16px; font-weight: bold; }
 .mypage_content a.name_box img.right_arrow{ width: 15px; }
-.mypage_content .account_content{ padding: var(--margin); background: #3579f2; border-radius: 15px; }
+
+.mypage_content .account_content{ padding: var(--margin); background: #3579f2; border-radius: 15px; margin-bottom: var(--margin-half); }
 .mypage_content .account_content a.account_link{}
 .mypage_content .account_content a.account_link .account_box{ display: flex; align-items: center; gap: 10px; margin-bottom: var(--margin-half); }
 .mypage_content .account_content a.account_link .account_box img.bank_img{ width: 15px; }
@@ -228,3 +229,24 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .account_content a.account_link .account_btn_con .account_btn{ background: #1752b8; padding: 12px 15px; border-radius: 10px; color: #fff; font-size: 13px; }
 .mypage_content .account_content a.account_link .account_btn_con .deposit_btn{}
 .mypage_content .account_content a.account_link .account_btn_con .withdraw_btn{}
+
+.mypage_content .point_content{ padding: var(--margin); background: #2baa8c; border-radius: 15px; margin-bottom: var(--margin-half); }
+.mypage_content .point_content a.point_link{}
+.mypage_content .point_content a.point_link .point_box{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin-half); }
+.mypage_content .point_content a.point_link .point_box span.use_point{ font-size: 16px; font-weight: bold; color: #fff; }
+.mypage_content .point_content a.point_link .point_box img.right_arrow{ width: 15px; }
+.mypage_content .point_content a.point_link .point_money_con{ display: flex; align-items: center; gap: var(--margin-half); margin-bottom: var(--margin-half); }
+.mypage_content .point_content a.point_link .point_money_con img.point_img{ width: 22px; }
+.mypage_content .point_content a.point_link .point_money_con span.point{ color: #fff; font-size: 18px; }
+.mypage_content .point_content a.point_link .point_money_con span.point b.point_money{ font-size: 25px; margin-right: 3px; }
+.mypage_content .point_content a.point_link .point_btn_con{ display: flex; gap: 5px; justify-content: end; }
+.mypage_content .point_content a.point_link .point_btn_con .point_btn{ background: #13736f; padding: 12px 15px; border-radius: 10px; color: #fff; font-size: 13px; }
+
+.mypage_content .lux_content{ padding: var(--margin); background: #fae9d9; border-radius: 15px; }
+.mypage_content .lux_content a.lux_link{}
+.mypage_content .lux_content a.lux_link .lux_box{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin-half); }
+.mypage_content .lux_content a.lux_link .lux_box span.my_lux{ font-size: 16px; font-weight: bold; color: #745243; }
+.mypage_content .lux_content a.lux_link .lux_box img.right_arrow{ width: 15px; filter: invert(46%) sepia(77%) saturate(500%) hue-rotate(348deg) brightness(97%) contrast(86%); }
+.mypage_content .lux_content a.lux_link .lux_num_con{ display: flex; align-items: center; gap: var(--margin-half); margin-bottom: var(--margin-half); }
+.mypage_content .lux_content a.lux_link .lux_num_con span.lux{ color: #745243; font-size: 18px; }
+.mypage_content .lux_content a.lux_link .lux_num_con span.lux b.lux_num{ font-size: 30px; margin-right: 3px; }
