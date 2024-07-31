@@ -253,7 +253,7 @@ a{ text-decoration-line: none; color: #111; }
 
 .mypage_content .menu_box{ padding: 0 var(--margin-half) var(--margin); }
 .mypage_content .menu_box.invest_box{ margin-bottom: var(--margin); border-bottom: 1px solid #efefef; }
-.mypage_content .menu_box.service_box{}
+.mypage_content .menu_box.service_box{ padding-bottom: var(--margin-x2); }
 .mypage_content .menu_box span.menu_title{ display: block; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); }
 .mypage_content .menu_box ul.menu_con{}
 .mypage_content .menu_box ul.menu_con li.menu_list{ margin-bottom: var(--margin); }
