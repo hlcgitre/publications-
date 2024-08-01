@@ -28,6 +28,9 @@
 				$(".my_point_content .point_ctg_box ul.point_ctg li.point_ctg_list").click(function(){
 					$(".my_point_content .point_ctg_box ul.point_ctg li.point_ctg_list").removeClass("active");
 					$(this).addClass("active");
+					var rel = $(this).attr('rel');
+					$(".tab_content").removeClass("active");
+					$(".tab_content." + rel).addClass("active");
 				});
             });
 		</script>
@@ -47,13 +50,29 @@
 					<div class="point_ctg_box">
 						<div class="point_inner">
 							<ul class="point_ctg">
-								<li class="point_ctg_list active">
+								<li class="point_ctg_list active" rel="tab_1">
 									<span class="point_ctg_title">받은 내역</span>
 								</li>
-								<li class="point_ctg_list">
+								<li class="point_ctg_list" rel="tab_2">
 									<span class="point_ctg_title">사용 내역</span>
 								</li>
 							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_1 active">
+						<a class="goodluxe_point" href="#">
+							<span class="point_ment">굿럭스 포인트란?</span>
+							<img src="../img/right_arrow.png" class="right_arrows">
+						</a>
+						<div class="no_history">
+							<img src="../img/013.png" class="tab_img">
+							<span class="ment">불러올 내역이 없어요</span>
+						</div>
+					</div>
+					<div class="tab_content tab_2">
+						<div class="no_history">
+							<img src="../img/013.png" class="tab_img">
+							<span class="ment">불러올 내역이 없어요</span>
 						</div>
 					</div>
 				</div>
