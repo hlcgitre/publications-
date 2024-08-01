@@ -250,7 +250,7 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .menu_box ul.menu_con{}
 .mypage_content .menu_box ul.menu_con li.menu_list{ margin-bottom: var(--margin); }
 .mypage_content .menu_box ul.menu_con li.menu_list:last-child{ margin-bottom: 0; }
-.mypage_content .menu_box ul.menu_con li.menu_list a.menu_link{ font-size: 15px; }
+.mypage_content .menu_box ul.menu_con li.menu_list a.menu_link{ display: block; width: 100%; font-size: 15px; }
 
 /* point */
 .point_header{}
