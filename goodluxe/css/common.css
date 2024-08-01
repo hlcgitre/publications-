@@ -270,3 +270,11 @@ a{ text-decoration-line: none; color: #111; }
 .my_point_content .point_ctg_box ul.point_ctg li.point_ctg_list.active{ border-bottom: 2px solid #111; }
 .my_point_content .point_ctg_box ul.point_ctg li.point_ctg_list span.point_ctg_title{ color: #bdbdbd; font-weight: bold; }
 .my_point_content .point_ctg_box ul.point_ctg li.point_ctg_list.active span.point_ctg_title{ color: #111; }
+.my_point_content .tab_content{ display: none; padding: var(--margin); }
+.my_point_content .tab_content.active{ display: block; }
+.my_point_content .tab_content .no_history{ position: absolute; top: 50%; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; }
+.my_point_content .tab_content .no_history img.tab_img{ width: 110px; }
+.my_point_content .tab_content .no_history span.ment{ font-size: 16px; font-weight: bold; }
+.my_point_content .tab_content a.goodluxe_point{ display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid #dfdfdf; border-radius: 10px; }
+.my_point_content .tab_content a.goodluxe_point span.point_ment{ font-size: 16px; font-weight: bold; }
+.my_point_content .tab_content a.goodluxe_point img.right_arrows{ width: 15px; }
