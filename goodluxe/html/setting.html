@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+                    event.preventDefault();
+                    history.back();
+                }
+
+                var backLink = document.querySelector('.setting_header a.back_btn');
+                if (backLink) {
+                    backLink.addEventListener('click', goBack);
+                    backLink.addEventListener('touchstart', goBack);
+                }
+				$(".toggles").change(function(){
+					if($(this).is(":checked")){
+						
+					} else {
+						
+					}
+				});
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="setting_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">설정</span>
+					</div>
+				</div>
+				<div class="setting_content">
+					<div class="setting_inner">
+						<div class="menu_box security_menu">
+							<span class="menu_title">보안</span>
+							<ul class="menu_con">
+								<li class="menu_list">
+									<a class="menu_link" href="#">간편 비밀번호 변경</a>
+								</li>
+								<li class="menu_list">
+									<div class="menu_btn">
+										<span class="btn_title">생체 인증 등록 / 해제</span>
+										<div class="toggle_btn">
+											<input type="checkbox" class="toggles" id="toggles2">
+											<label for="toggles2"></label>
+											<div class="switch">
+												<div class="button"></div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu_list">
+									<div class="menu_btn">
+										<span class="btn_title">마케팅 수신 동의</span>
+										<div class="toggle_btn">
+											<input type="checkbox" class="toggles" id="toggles3">
+											<label for="toggles3"></label>
+											<div class="switch">
+												<div class="button"></div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu_list">
+									<div class="menu_btn">
+										<span class="btn_title">버전 정보</span>
+										<div class="version">3.5.0</div>
+									</div>
+								</li>
+								<li class="menu_list">
+									<a class="menu_link" href="#">오픈소스 라이센스</a>
+								</li>
+							</ul>	 
+						</div>
+						<div class="menu_box logout_box">
+							<ul class="menu_con">
+								<li class="menu_list logout_menu">
+									<div class="logout">로그아웃</div>
+								</li>
+								<li class="menu_list">
+									<a class="secession" href="#">탈퇴하기</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
