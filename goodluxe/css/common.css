@@ -194,21 +194,21 @@ a{ text-decoration-line: none; color: #111; }
 .section_5 .news_box .news_con ul.news_list_con li.news_list.list_3{ background: #e48a00; }
 .section_5 .news_box .news_con ul.news_list_con li.news_list.list_4{ background: #00246e; }
 
-/* mypage */
-.mypage_header{ position: fixed; width: 100%; max-width: 500px; z-index: 99999; background: #fff; }
-.mypage_header .mypage_header_inner{ display: flex; justify-content: space-between; align-items: center; height: 30px; padding: 15px var(--margin-half); }
-.mypage_header .mypage_header_inner a.back_btn{}
-.mypage_header .mypage_header_inner a.back_btn img.back_img{ width: 25px; }
-.mypage_header .mypage_header_inner span.page_title{ font-size: 16px; font-weight: bold; }
-.mypage_header .mypage_header_inner a.setting_btn{}
-.mypage_header .mypage_header_inner a.setting_btn img.setting_img{ width: 25px; }
+/* 페이지 header */
+.page_header{ position: fixed; width: 100%; max-width: 500px; z-index: 99999; background: #fff; }
+.page_header .header_inner{ display: flex; justify-content: space-between; align-items: center; height: 30px; padding: 15px var(--margin-half); }
+.page_header .header_inner a.back_btn{ cursor: pointer; }
+.page_header .header_inner a.back_btn img.back_img{ width: 25px; }
+.page_header .header_inner span.page_title{ position: absolute; left: 50%; transform: translateX(-50%); font-size: 16px; font-weight: bold; }
 
+/* mypage */
+.mypage_header{}
+.mypage_header .header_inner a.setting_btn img.setting_img{ width: 25px; }
 .mypage_content{ margin-top: 60px; padding-top: var(--margin-half); }
 .mypage_content .mypage_inner{ padding: 0 var(--margin-half); }
 .mypage_content a.name_box{ display: flex; justify-content: space-between; align-items: center; padding: var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin-half); }
 .mypage_content a.name_box span.mypage_name{ font-size: 16px; font-weight: bold; }
 .mypage_content a.name_box img.right_arrow{ width: 15px; }
-
 .mypage_content .account_content{ padding: var(--margin); background: #3579f2; border-radius: 15px; margin-bottom: var(--margin-half); }
 .mypage_content .account_content a.account_link{}
 .mypage_content .account_content a.account_link .account_box{ display: flex; align-items: center; gap: 10px; margin-bottom: var(--margin-half); }
@@ -224,7 +224,6 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .account_content a.account_link .account_btn_con .account_btn{ background: #1752b8; padding: 12px 15px; border-radius: 10px; color: #fff; font-size: 13px; }
 .mypage_content .account_content a.account_link .account_btn_con .deposit_btn{}
 .mypage_content .account_content a.account_link .account_btn_con .withdraw_btn{}
-
 .mypage_content .point_content{ padding: var(--margin); background: #2baa8c; border-radius: 15px; margin-bottom: var(--margin-half); }
 .mypage_content .point_content a.point_link{}
 .mypage_content .point_content a.point_link .point_box{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin-half); }
@@ -236,7 +235,6 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .point_content a.point_link .point_money_con span.point b.point_money{ font-size: 25px; margin-right: 3px; }
 .mypage_content .point_content a.point_link .point_btn_con{ display: flex; gap: 5px; justify-content: end; }
 .mypage_content .point_content a.point_link .point_btn_con .point_btn{ background: #13736f; padding: 12px 15px; border-radius: 10px; color: #fff; font-size: 13px; }
-
 .mypage_content .lux_content{ padding: var(--margin); background: #fae9d9; border-radius: 15px; margin-bottom: var(--margin-x2); }
 .mypage_content .lux_content a.lux_link{}
 .mypage_content .lux_content a.lux_link .lux_box{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin-half); }
@@ -245,7 +243,6 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .lux_content a.lux_link .lux_num_con{ display: flex; align-items: center; gap: var(--margin-half); }
 .mypage_content .lux_content a.lux_link .lux_num_con span.lux{ color: #745243; font-size: 16px; }
 .mypage_content .lux_content a.lux_link .lux_num_con span.lux b.lux_num{ font-size: 30px; margin-right: 3px; }
-
 .mypage_content .menu_box{ padding: 0 var(--margin-half) var(--margin); }
 .mypage_content .menu_box.invest_box{ margin-bottom: var(--margin); border-bottom: 1.5px solid #efefef; }
 .mypage_content .menu_box.service_box{ padding-bottom: var(--margin-x2); }
@@ -256,11 +253,7 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .menu_box ul.menu_con li.menu_list a.menu_link{ font-size: 15px; }
 
 /* point */
-.point_header{ position: fixed; width: 100%; max-width: 500px; z-index: 99999; background: #fff; }
-.point_header .point_header_inner{ display: flex; justify-content: space-between; align-items: center; height: 30px; padding: 15px var(--margin-half); }
-.point_header .point_header_inner a.back_btn{}
-.point_header .point_header_inner a.back_btn img.back_img{ width: 25px; }
-.point_header .point_header_inner span.page_title{ position: absolute; left: 50%; transform: translateX(-50%); font-size: 16px; font-weight: bold; }
+.point_header{}
 .my_point_content{ margin-top: 60px; }
 .my_point_content .point_ctg_box{ border-bottom: 1px solid #eaeaea; }
 .my_point_content .point_inner{ padding: 0 var(--margin); }
@@ -278,3 +271,32 @@ a{ text-decoration-line: none; color: #111; }
 .my_point_content .tab_content a.goodluxe_point{ display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid #dfdfdf; border-radius: 10px; }
 .my_point_content .tab_content a.goodluxe_point span.point_ment{ font-size: 14px; font-weight: bold; }
 .my_point_content .tab_content a.goodluxe_point img.right_arrows{ width: 15px; }
+
+/* setting */
+.setting_header{}
+.setting_content{ margin-top: 60px; }
+.setting_content .setting_inner{ padding: var(--margin); }
+.setting_content .security_menu{ padding-bottom: var(--margin); border-bottom: 1px solid #efefef; margin-bottom: var(--margin); }
+.setting_content .security_menu span.menu_title{ display: block; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); color: #a6a6a6; }
+.setting_content .security_menu ul.menu_con{}
+.setting_content .security_menu ul.menu_con li.menu_list{ margin-bottom: var(--margin); }
+.setting_content .security_menu ul.menu_con li.menu_list:last-child{ margin-bottom: 0; }
+.setting_content .security_menu ul.menu_con li.menu_list a.menu_link{ font-size: 15px; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn{ display: flex; justify-content: space-between; align-items: center; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn span.btn_title{}
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .menu_button{}
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .version{ color: #0054FF; }
+.setting_content .logout_box{}
+.setting_content .logout_box ul.menu_con{}
+.setting_content .logout_box ul.menu_con li.menu_list{}
+.setting_content .logout_box ul.menu_con li.menu_list.logout_menu{ margin-bottom: var(--margin); }
+.setting_content .logout_box ul.menu_con li.menu_list .logout{ cursor: pointer; color: #ff3636; }
+.setting_content .logout_box ul.menu_con li.menu_list a.secession{}
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn{ position: relative; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn input[type=checkbox]{ position: absolute; visibility: hidden; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn input.toggles[type=checkbox]{ display: none; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn label{ position: absolute; height: 20px; width: 35px; display: block; top: 0; bottom: 0; left: 0; right: 0; z-index: 9999; cursor: pointer; margin: 0 auto; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn .switch{ position: relative; display: inline-block; width: 32px; height: 17px; background-color: hsl(0, 0%, 85%); border-radius: 25px; cursor: pointer; transition: background-color 250ms ease-in; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn input[type=checkbox]:checked ~ .switch{ background: #0054FF; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn .switch .button{ display: block; position: absolute; top: 3px; left: 2px; width: 11px; height: 11px; background: #fff; border-radius: 50%; transition: all 250ms ease-out; }
+.setting_content .security_menu ul.menu_con li.menu_list .menu_btn .toggle_btn input[type=checkbox]:checked ~ .switch .button{ left: 19px; }
