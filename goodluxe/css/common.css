@@ -315,3 +315,9 @@ a{ text-decoration-line: none; color: #111; }
 .tax_content .tax_box a.tax_con_box img.exclamation_img{ width: 15px; }
 .tax_content .tax_box a.tax_con_box span.tax_text{ font-size: 15px; }
 .tax_content .tax_box a.tax_con_box img.arrow_img{ width: 15px; margin-left: auto; }
+
+/* inquiry */
+.inquiry_header{}
+.inquiry_content{ margin-top: 60px; }
+.inquiry_content .inquiry_inner{ padding: var(--margin); }
+.inquiry_content a.inquiry_btn{ display: block; text-align: center; padding: var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; font-size: 15px; }
