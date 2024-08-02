@@ -307,7 +307,7 @@ a{ text-decoration-line: none; color: #111; }
 .tax_content .tax_inner{ padding: var(--margin); }
 .tax_content .tax_box{ padding-bottom: var(--margin); }
 .tax_content .tax_box .tax_title_box{ margin-bottom: var(--margin-half); }
-.tax_content .tax_box .tax_title_box h2.tax_title{ font-size: 20px; font-weight: bold; margin-bottom: 5px; }
+.tax_content .tax_box .tax_title_box h2.tax_title{ font-size: 18px; font-weight: bold; margin-bottom: 5px; }
 .tax_content .tax_box .tax_title_box .info_title{ display: flex; align-items: center; gap: 3px; }
 .tax_content .tax_box .tax_title_box .info_title h4.tax_sub{ font-size: 14px; color: #797979; }
 .tax_content .tax_box .tax_title_box .info_title img.info_img{ width: 17px; }
