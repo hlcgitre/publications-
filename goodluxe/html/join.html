@@ -20,11 +20,46 @@
                     history.back();
                 }
 
-                var backLink = document.querySelector('.terms_header a.back_btn');
+                var backLink = document.querySelector('.join_header a.back_btn');
                 if (backLink) {
                     backLink.addEventListener('click', goBack);
                     backLink.addEventListener('touchstart', goBack);
                 }
+
+                var allCheckBox = document.getElementById('all-check');
+                allCheckBox.addEventListener('change', function() {
+                    var checkboxes = document.querySelectorAll('.agree_box input[type="checkbox"]');
+                    for (var checkbox of checkboxes) {
+                        checkbox.checked = this.checked;
+                    }
+                    updateAgreeButtonState();
+                });
+
+                var individualCheckBoxes = document.querySelectorAll('.agree_box input[type="checkbox"]');
+                for (var checkbox of individualCheckBoxes) {
+                    checkbox.addEventListener('change', function() {
+                        allCheckBox.checked = Array.from(individualCheckBoxes).every(function(checkbox) {
+                            return checkbox.checked;
+                        });
+                        updateAgreeButtonState();
+                    });
+                }
+
+                function updateAgreeButtonState() {
+                    var essentialCheckBoxes = document.querySelectorAll('.agree_box input.eseential');
+                    var allEssentialChecked = Array.from(essentialCheckBoxes).every(function(checkbox) {
+                        return checkbox.checked;
+                    });
+
+                    var agreeButton = document.querySelector('.agree_btn');
+                    if (allEssentialChecked) {
+                        agreeButton.classList.add('check');
+                    } else {
+                        agreeButton.classList.remove('check');
+                    }
+                }
+
+                updateAgreeButtonState();
             });
 		</script>
     </head>
@@ -52,37 +87,37 @@
 							</div>
 							<div class="agree_box">
 								<div class="agree_con">
-									<input type="checkbox" id="check1">
+									<input type="checkbox" id="check1" class="eseential">
 									<label for="check1">(필수) 서비스 이용약관</label>
 									<a class="agree_link">
 										<img src="../img/right_arrow.png" class="right_arrow">
 									</a>
 								</div>
 								<div class="agree_con">
-									<input type="checkbox" id="check2">
+									<input type="checkbox" id="check2" class="eseential">
 									<label for="check2">(필수) 개인정보 처리방침 및 수집·이용 동의</label>
 									<a class="agree_link">
 										<img src="../img/right_arrow.png" class="right_arrow">
 									</a>
 								</div>
 								<div class="agree_con">
-									<input type="checkbox" id="check3">
+									<input type="checkbox" id="check3" class="eseential">
 									<label for="check3">(필수) 추심이체 거래 약관</label>
 									<a class="agree_link">
 										<img src="../img/right_arrow.png" class="right_arrow">
 									</a>
 								</div>
 								<div class="agree_con">
-									<input type="checkbox" id="check4">
+									<input type="checkbox" id="check4" class="select">
 									<label for="check4">(선택) 마케팅 수신동의</label>
 									<a class="agree_link">
 										<img src="../img/right_arrow.png" class="right_arrow">
 									</a>
 								</div>
 							</div>
-							<div class="agree_btn">
+							<a class="agree_btn" href="#">
 								<span class="agree_button">동의하고 계속하기</span>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
