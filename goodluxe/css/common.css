@@ -349,7 +349,7 @@ a{ text-decoration-line: none; color: #111; }
 .join_content .join_title_con h2.join_main{ word-break: keep-all; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.25em; }
 .join_content .join_title_con h3.join_sub{ font-size: 15px; color: #797979; line-height: 1.25em; word-break: keep-all; }
 .join_content .join_agree_box{}
-.join_content .join_agree_box .join_all_agree_con{ padding: 15px; border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin); }
+.join_content .join_agree_box .join_all_agree_con{ padding: 20px; border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin); }
 .join_content .join_agree_box .agree_box{}
 .join_content .join_agree_box .agree_box .agree_con{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin); }
 .join_content .join_agree_box .agree_box .agree_con a.agree_link{}
@@ -358,8 +358,8 @@ input[type="checkbox"] { display: none; }
 input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 14px; }
 input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 14px;  height: 14px; background: url('../img/none_check.png') no-repeat center center / contain;  }
 input[type="checkbox"]:checked + label:before { background: url('../img/check.png') no-repeat center center / contain; }
-#all-check + label{ padding-left: 35px; font-size: 18px; font-weight: bold; }
+#all-check + label{ padding-left: 35px; font-size: 16px; font-weight: bold; }
 #all-check + label:before { background: url('../img/all_none.png') no-repeat center center / contain; width: 20px; height: 20px; }
 #all-check:checked + label:before { background: url('../img/all_check.png') no-repeat center center / contain; }
-.join_content .join_agree_box .agree_btn{ background: #f5f6fa; padding: 15px; border-radius: 15px; }
+.join_content .join_agree_box .agree_btn{ background: #f5f6fa; padding: 20px; border-radius: 15px; }
 .join_content .join_agree_box .agree_btn span.agree_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #cdcfdb; }
