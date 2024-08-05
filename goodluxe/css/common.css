@@ -361,5 +361,7 @@ input[type="checkbox"]:checked + label:before { background: url('../img/check.pn
 #all-check + label{ padding-left: 35px; font-size: 16px; font-weight: bold; }
 #all-check + label:before { background: url('../img/all_none.png') no-repeat center center / contain; width: 20px; height: 20px; }
 #all-check:checked + label:before { background: url('../img/all_check.png') no-repeat center center / contain; }
-.join_content .join_agree_box .agree_btn{ background: #f5f6fa; padding: 20px; border-radius: 15px; }
-.join_content .join_agree_box .agree_btn span.agree_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #cdcfdb; }
+.join_content .join_agree_box a.agree_btn{ display: block;  background: #f5f6fa; padding: 20px; border-radius: 15px; pointer-events: none; }
+.join_content .join_agree_box a.agree_btn span.agree_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #cdcfdb; }
+.join_content .join_agree_box a.agree_btn.check{ pointer-events: auto !important; background: #2196f3; }
+.join_content .join_agree_box a.agree_btn.check span.agree_button{ color: #fff; }
