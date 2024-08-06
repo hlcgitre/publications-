@@ -10,61 +10,53 @@
         </style>
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function() {
-                var input = document.querySelector('input[type="text"]');
-                var errorMessage = document.querySelector('.error_message');
-                var phoneBtn = document.querySelector('a.phone_btn');
-                var clearButton = document.querySelector('.clear_button');
+            var input = document.querySelector('input[type="text"]');
+            var errorMessage = document.querySelector('.error_message');
+            var phoneBtn = document.querySelector('a.phone_btn');
+            var clearButton = document.querySelector('.clear_button');
 
-                function setVhVariable() {
-                    let vh = window.innerHeight * 0.01;
-                    document.documentElement.style.setProperty('--vh', `${vh}px`);
+            input.addEventListener('input', function() {
+                var phoneNumber = input.value.replace(/[^0-9]/g, ''); 
+
+                if (phoneNumber.length > 0) {
+                    clearButton.style.display = 'block';
+                } else {
+                    clearButton.style.display = 'none';
                 }
 
-                setVhVariable();
-                window.addEventListener('resize', setVhVariable);
+                if (phoneNumber.length > 11) {
+                    phoneNumber = phoneNumber.slice(0, 11);
+                }
 
-                input.addEventListener('input', function() {
-                    var phoneNumber = input.value.replace(/[^0-9]/g, '');
+                input.value = phoneNumber;
 
-                    if (phoneNumber.length > 0) {
-                        clearButton.style.display = 'block';
-                    } else {
-                        clearButton.style.display = 'none';
-                    }
+                if (phoneNumber.length === 10 || phoneNumber.length === 11) {
+                    var phonePattern = /^(01[016789])(\d{3,4})(\d{4})$/;
 
-                    if (phoneNumber.length > 11) {
-                        phoneNumber = phoneNumber.slice(0, 11);
-                    }
-
-                    input.value = phoneNumber;
-
-                    if (phoneNumber.length === 10 || phoneNumber.length === 11) {
-                        var phonePattern = /^(01[016789])(\d{3,4})(\d{4})$/;
-
-                        if (!phonePattern.test(phoneNumber)) {
-                            errorMessage.style.display = 'block';
-                            input.classList.add('error_border');
-                            phoneBtn.classList.remove('check');
-                        } else {
-                            errorMessage.style.display = 'none';
-                            input.classList.remove('error_border');
-                            phoneBtn.classList.add('check');
-                        }
+                    if (!phonePattern.test(phoneNumber)) {
+                        errorMessage.style.display = 'block';
+                        input.classList.add('error_border');
+                        phoneBtn.classList.remove('check');
                     } else {
                         errorMessage.style.display = 'none';
                         input.classList.remove('error_border');
-                        phoneBtn.classList.remove('check');
+                        phoneBtn.classList.add('check');
                     }
-                });
-
-                clearButton.addEventListener('click', function() {
-                    input.value = '';
-                    clearButton.style.display = 'none';
+                } else {
                     errorMessage.style.display = 'none';
                     input.classList.remove('error_border');
                     phoneBtn.classList.remove('check');
-                });
+                }
             });
+
+            clearButton.addEventListener('click', function() {
+                input.value = '';
+                clearButton.style.display = 'none';
+                errorMessage.style.display = 'none';
+                input.classList.remove('error_border');
+                phoneBtn.classList.remove('check');
+            });
+        });
         </script>
     </head>
     <body>
