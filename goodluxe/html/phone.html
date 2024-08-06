@@ -14,9 +14,10 @@
                 var errorMessage = document.querySelector('.error_message');
                 var phoneBtn = document.querySelector('a.phone_btn');
                 var clearButton = document.querySelector('.clear_button');
+                var phoneContent = document.querySelector('.phone_content');
 
                 input.addEventListener('input', function() {
-                    var phoneNumber = input.value.replace(/[^0-9]/g, ''); // 숫자만 남기기
+                    var phoneNumber = input.value.replace(/[^0-9]/g, '');
 
                     if (phoneNumber.length > 0) {
                         clearButton.style.display = 'block';
@@ -56,20 +57,25 @@
                     input.classList.remove('error_border');
                     phoneBtn.classList.remove('check');
                 });
-				window.addEventListener('resize', function() {
-					var viewportHeight = window.innerHeight;
-					var phoneInnerHeight = phoneInner.offsetHeight;
-					var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--margin'));
-					var btnHeight = phoneBtn.offsetHeight;
 
-					if (viewportHeight < phoneInnerHeight + btnHeight + margin * 2) {
-						phoneBtn.style.position = 'relative';
-						phoneBtn.style.bottom = 'initial';
-					} else {
-						phoneBtn.style.position = 'absolute';
-						phoneBtn.style.bottom = margin + 'px';
-					}
-				});
+                function adjustButtonPosition() {
+                    var viewportHeight = window.innerHeight;
+                    var phoneContentHeight = phoneContent.offsetHeight;
+                    var btnHeight = phoneBtn.offsetHeight;
+                    var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--margin'));
+
+                    if (viewportHeight < phoneContentHeight + btnHeight + margin * 2) {
+                        phoneBtn.style.position = 'relative';
+                        phoneBtn.style.bottom = 'initial';
+                    } else {
+                        phoneBtn.style.position = 'fixed';
+                        phoneBtn.style.bottom = margin + 'px';
+                    }
+                }
+
+                window.addEventListener('resize', adjustButtonPosition);
+                window.addEventListener('orientationchange', adjustButtonPosition);
+                adjustButtonPosition();
             });
         </script>
     </head>
