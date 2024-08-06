@@ -346,8 +346,8 @@ a{ text-decoration-line: none; color: #111; }
 .join_content{ margin-top: 60px; }
 .join_content .join_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - 112px); }
 .join_content .join_title_con{}
-.join_content .join_title_con h2.join_main{ word-break: keep-all; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.25em; }
-.join_content .join_title_con h3.join_sub{ font-size: 14px; color: #797979; line-height: 1.25em; word-break: keep-all; font-weight: bold; }
+.join_content .join_title_con h2.join_main{ word-break: keep-all; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.5em; }
+.join_content .join_title_con h3.join_sub{ font-size: 14px; color: #797979; line-height: 1.5em; word-break: keep-all; font-weight: bold; }
 .join_content .join_agree_box{}
 .join_content .join_agree_box .join_all_agree_con{ padding: 20px; border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin); }
 .join_content .join_agree_box .agree_box{}
