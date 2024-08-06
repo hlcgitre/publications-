@@ -378,5 +378,5 @@ a{ text-decoration-line: none; color: #111; }
 .phone_content .phone_inner .phone .phone_input_box input.error_border{ border: 1px solid #f00 !important; }
 .phone_content .phone_inner .phone .phone_input_box button.clear_button{ position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: url('../img/clear.png') no-repeat center center; background-size: contain; border: none; width: 18px; height: 18px; cursor: pointer; display: none; }
 .phone_content .phone_inner .phone .error_message{ display: none; color: #f00; margin-top: var(--margin-half); font-size: 14px; }
-.phone_content .phone_inner .phone a.phone_btn{ position: fixed; left: var(--margin); bottom: calc(var(--vh, 1vh) * 2); transition: bottom 0.3s; width:  calc(100% - var(--margin-x2)); box-sizing: border-box; background: #f5f6fa; padding: 20px; border-radius: 15px; color: #cdcfdb; font-size: 16px; pointer-events: none; text-align: center; }
+.phone_content .phone_inner .phone a.phone_btn{ position: fixed; left: var(--margin); bottom: var(--margin); width:  calc(100% - var(--margin-x2)); box-sizing: border-box; background: #f5f6fa; padding: 20px; border-radius: 15px; color: #cdcfdb; font-size: 16px; pointer-events: none; text-align: center; }
 .phone_content .phone_inner .phone a.phone_btn.check{ pointer-events: auto !important; background: #2196f3; color: #fff; }
