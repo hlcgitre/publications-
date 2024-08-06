@@ -73,9 +73,18 @@
                     }
                 }
 
+                function handleKeyboard() {
+                    window.visualViewport.addEventListener('resize', function () {
+                        var viewportHeight = window.visualViewport.height;
+                        var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--margin'));
+                        phoneBtn.style.bottom = (viewportHeight < window.innerHeight ? viewportHeight - margin - phoneBtn.offsetHeight : margin) + 'px';
+                    });
+                }
+
                 window.addEventListener('resize', adjustButtonPosition);
                 window.addEventListener('orientationchange', adjustButtonPosition);
                 adjustButtonPosition();
+                handleKeyboard();
             });
         </script>
     </head>
