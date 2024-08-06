@@ -14,7 +14,14 @@
                 var errorMessage = document.querySelector('.error_message');
                 var phoneBtn = document.querySelector('a.phone_btn');
                 var clearButton = document.querySelector('.clear_button');
-                var phoneContent = document.querySelector('.phone_content');
+
+                function setVhVariable() {
+                    let vh = window.innerHeight * 0.01;
+                    document.documentElement.style.setProperty('--vh', `${vh}px`);
+                }
+
+                setVhVariable();
+                window.addEventListener('resize', setVhVariable);
 
                 input.addEventListener('input', function() {
                     var phoneNumber = input.value.replace(/[^0-9]/g, '');
@@ -57,34 +64,6 @@
                     input.classList.remove('error_border');
                     phoneBtn.classList.remove('check');
                 });
-
-                function adjustButtonPosition() {
-                    var viewportHeight = window.innerHeight;
-                    var phoneContentHeight = phoneContent.offsetHeight;
-                    var btnHeight = phoneBtn.offsetHeight;
-                    var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--margin'));
-
-                    if (viewportHeight < phoneContentHeight + btnHeight + margin * 2) {
-                        phoneBtn.style.position = 'relative';
-                        phoneBtn.style.bottom = 'initial';
-                    } else {
-                        phoneBtn.style.position = 'fixed';
-                        phoneBtn.style.bottom = margin + 'px';
-                    }
-                }
-
-                function handleKeyboard() {
-                    window.visualViewport.addEventListener('resize', function () {
-                        var viewportHeight = window.visualViewport.height;
-                        var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--margin'));
-                        phoneBtn.style.bottom = (viewportHeight < window.innerHeight ? viewportHeight - margin - phoneBtn.offsetHeight : margin) + 'px';
-                    });
-                }
-
-                window.addEventListener('resize', adjustButtonPosition);
-                window.addEventListener('orientationchange', adjustButtonPosition);
-                adjustButtonPosition();
-                handleKeyboard();
             });
         </script>
     </head>
