@@ -15,7 +15,6 @@
     --margin-x6: calc(var(--margin-half) * 12);/*156*/
     --margin-x7: calc(var(--margin-half) * 14);/*182*/
 	--maincolor: #0F2500;
-	--vh: 1vh;
 }
 
 *{ scroll-behavior: smooth;}
