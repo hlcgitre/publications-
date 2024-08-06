@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+           
+        </style>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                var input = document.querySelector('input[type="text"]');
+                var errorMessage = document.querySelector('.error_message');
+                var phoneBtn = document.querySelector('a.phone_btn');
+                var clearButton = document.querySelector('.clear_button');
+
+                input.addEventListener('input', function() {
+                    var phoneNumber = input.value.replace(/[^0-9]/g, ''); // 숫자만 남기기
+
+                    if (phoneNumber.length > 0) {
+                        clearButton.style.display = 'block';
+                    } else {
+                        clearButton.style.display = 'none';
+                    }
+
+                    if (phoneNumber.length > 11) {
+                        phoneNumber = phoneNumber.slice(0, 11);
+                    }
+
+                    input.value = phoneNumber;
+
+                    if (phoneNumber.length === 10 || phoneNumber.length === 11) {
+                        var phonePattern = /^(01[016789])(\d{3,4})(\d{4})$/;
+
+                        if (!phonePattern.test(phoneNumber)) {
+                            errorMessage.style.display = 'block';
+                            input.classList.add('error_border');
+                            phoneBtn.classList.remove('check');
+                        } else {
+                            errorMessage.style.display = 'none';
+                            input.classList.remove('error_border');
+                            phoneBtn.classList.add('check');
+                        }
+                    } else {
+                        errorMessage.style.display = 'none';
+                        input.classList.remove('error_border');
+                        phoneBtn.classList.remove('check');
+                    }
+                });
+
+                clearButton.addEventListener('click', function() {
+                    input.value = '';
+                    clearButton.style.display = 'none';
+                    errorMessage.style.display = 'none';
+                    input.classList.remove('error_border');
+                    phoneBtn.classList.remove('check');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <div class="phone_content">
+                    <div class="phone_inner">
+                        <div class="phone">
+                            <h2 class="phone_title">휴대폰 번호를 입력해 주세요</h2>
+                            <div class="phone_input_box input-container">
+                                <input type="text" placeholder="- 제외하고 입력해 주세요.">
+                                <button type="button" class="clear_button"></button>
+                            </div>
+                            <p class="error_message">휴대폰 번호를 확인해 주세요.</p>
+                            <a href="../html/join.html" class="phone_btn">확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
