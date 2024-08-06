@@ -354,10 +354,10 @@ a{ text-decoration-line: none; color: #111; }
 .join_content .join_agree_box .agree_box .agree_con{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin); }
 .join_content .join_agree_box .agree_box .agree_con a.agree_link{}
 .join_content .join_agree_box .agree_box .agree_con a.agree_link img.right_arrow{ width: 15px; }
-input[type="checkbox"] { display: none; }
-input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 14px; }
-input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 14px;  height: 14px; background: url('../img/none_check.png') no-repeat center center / contain;  }
-input[type="checkbox"]:checked + label:before { background: url('../img/check.png') no-repeat center center / contain; }
+.join_content input[type="checkbox"] { display: none; }
+.join_content input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 14px; }
+.join_content input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 14px;  height: 14px; background: url('../img/none_check.png') no-repeat center center / contain;  }
+.join_content input[type="checkbox"]:checked + label:before { background: url('../img/check.png') no-repeat center center / contain; }
 #all-check + label{ padding-left: 35px; font-size: 16px; font-weight: bold; }
 #all-check + label:before { background: url('../img/all_none.png') no-repeat center center / contain; width: 20px; height: 20px; }
 #all-check:checked + label:before { background: url('../img/all_check.png') no-repeat center center / contain; }
@@ -365,3 +365,5 @@ input[type="checkbox"]:checked + label:before { background: url('../img/check.pn
 .join_content .join_agree_box a.agree_btn span.agree_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #cdcfdb; }
 .join_content .join_agree_box a.agree_btn.check{ pointer-events: auto !important; background: #2196f3; }
 .join_content .join_agree_box a.agree_btn.check span.agree_button{ color: #fff; }
+
+.error_message{ display: none; color: #f00; }
