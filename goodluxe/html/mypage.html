@@ -22,15 +22,18 @@
 
 				var backLink = document.querySelector('.mypage_header a.back_btn');
 				if (backLink) {
-					backLink.addEventListener('touchstart', function(event) {
-						event.preventDefault();
-						goBack(event);
-					});
-					backLink.addEventListener('click', function(event) {
-						event.preventDefault();
-						if (event.detail === 0) return;
-						goBack(event);
-					});
+					backLink.style.pointerEvents = 'none';
+					setTimeout(function() {
+						backLink.style.pointerEvents = 'auto';
+						backLink.addEventListener('touchstart', function(event) {
+							event.preventDefault();
+							goBack(event);
+						});
+						backLink.addEventListener('click', function(event) {
+							event.preventDefault();
+							goBack(event);
+						});
+					}, 500);
 				}
 				function copyToClipboard(event) {
                     event.preventDefault();
