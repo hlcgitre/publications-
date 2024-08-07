@@ -386,8 +386,8 @@ a{ text-decoration-line: none; color: #111; }
 .secession_content .secession_inner{ padding: var(--margin); }
 .secession_content .secession_title_con{}
 .secession_content .secession_title_con h2.secession_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.5em; }
-.secession_content .secession_title_con h4.secession_sub{ font-size: 16px; color: #797979; line-height: 1.5em; font-weight: bold; word-break: keep-all; }
+.secession_content .secession_title_con h4.secession_sub{ font-size: 14px; color: #797979; line-height: 1.5em; font-weight: bold; word-break: keep-all; }
 .secession_content .secession_img{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .secession_content .secession_img img.secession_image{ display: block; width: 100px; margin-bottom: var(--margin-half); }
-.secession_content .secession_img span.secession_img_ment{ font-size: 16px; }
+.secession_content .secession_img span.secession_img_ment{ font-size: 14px; }
 .secession_content a.secession_btn{ position: absolute; left: var(--margin); bottom: var(--margin); width: calc(100% - var(--margin-x2)); box-sizing: border-box; background: #2196f3; border-radius: 15px; padding: 20px; color: #fff; font-size: 16px; font-weight: bold; text-align: center; }
