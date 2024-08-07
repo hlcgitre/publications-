@@ -15,16 +15,23 @@
 		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
         <script type="text/javascript">
 			 document.addEventListener('DOMContentLoaded', function() {
-                function goBack(event) {
-                    event.preventDefault();
-                    history.back();
-                }
+				function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
 
-                var backLink = document.querySelector('.mypage_header a.back_btn');
-                if (backLink) {
-                    backLink.addEventListener('click', goBack);
-                    backLink.addEventListener('touchstart', goBack);
-                }
+				var backLink = document.querySelector('.mypage_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
 				function copyToClipboard(event) {
                     event.preventDefault();
                     var bankAccount = document.querySelector('.bank_account').textContent;
