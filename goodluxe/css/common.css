@@ -35,7 +35,7 @@ b{ font-weight: bold; }
 a{ text-decoration-line: none; color: #111; }
 
 .wrap{ margin: 0 auto; width: 100%; }
-.container{ width: 100%; height: 100vh; overflow-y: scroll; }
+.container{ position: relative; width: 100%; height: 100vh; overflow-y: scroll; }
 .container.main_container{ background: var(--maincolor); }
 .dn{ display: none !important; }
 
@@ -265,7 +265,7 @@ a{ text-decoration-line: none; color: #111; }
 .my_point_content .point_ctg_box ul.point_ctg li.point_ctg_list.active span.point_ctg_title{ color: #111; }
 .my_point_content .tab_content{ display: none; padding: var(--margin); }
 .my_point_content .tab_content.active{ display: block; }
-.my_point_content .tab_content .no_history{ position: absolute; top: 50%; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; }
+.my_point_content .tab_content .no_history{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; }
 .my_point_content .tab_content .no_history img.tab_img{ width: 100px; }
 .my_point_content .tab_content .no_history span.ment{ font-size: 14px; font-weight: bold; }
 .my_point_content .tab_content a.goodluxe_point{ display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid #dfdfdf; border-radius: 10px; }
@@ -379,3 +379,15 @@ a{ text-decoration-line: none; color: #111; }
 .phone_content .phone_inner .phone .error_message{ display: none; color: #f00; margin-top: var(--margin-half); font-size: 14px; }
 .phone_content .phone_inner .phone a.phone_btn{ width: 100%; box-sizing: border-box; background: #f5f6fa; padding: 20px; border-radius: 15px; color: #cdcfdb; font-size: 16px; pointer-events: none; text-align: center; }
 .phone_content .phone_inner .phone a.phone_btn.check{ pointer-events: auto !important; background: #2196f3; color: #fff; }
+
+/* secession */
+.secession_header{}
+.secession_content{ margin-top: 60px; }
+.secession_content .secession_inner{ padding: var(--margin); }
+.secession_content .secession_title_con{}
+.secession_content .secession_title_con h2.secession_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.5em; }
+.secession_content .secession_title_con h4.secession_sub{ font-size: 16px; color: #797979; line-height: 1.5em; font-weight: bold; word-break: keep-all; }
+.secession_content .secession_img{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.secession_content .secession_img img.secession_image{ display: block; width: 100px; margin-bottom: var(--margin-half); }
+.secession_content .secession_img span.secession_img_ment{ font-size: 16px; }
+.secession_content a.secession_btn{ position: absolute; left: var(--margin); bottom: var(--margin); width: calc(100% - var(--margin-x2)); box-sizing: border-box; background: #2196f3; border-radius: 15px; padding: 20px; color: #fff; font-size: 16px; font-weight: bold; text-align: center; }
