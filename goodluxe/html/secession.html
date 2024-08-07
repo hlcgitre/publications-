@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+                    event.preventDefault();
+                    history.back();
+                }
+
+                var backLink = document.querySelector('.secession_header a.back_btn');
+                if (backLink) {
+                    backLink.addEventListener('click', goBack);
+                    backLink.addEventListener('touchstart', goBack);
+                }
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="secession_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">탈퇴하기</span>
+					</div>
+				</div>
+				<div class="secession_content">
+					<div class="secession_inner">
+						<div class="secession_title_con">
+							<h2 class="secession_title">이규림님, 굿럭스를 떠나시나요?<br>너무 아쉬워요</h2>
+							<h4 class="secession_sub">굿럭스 계좌에 1원 이상 잔액이 있거나 아직 정산되지 않은 상품이 있는 경우 회원 탈퇴가 불가능합니다.</h4>
+						</div>
+						<div class="secession_img">
+							<img src="../img/013.png" class="secession_image">
+							<span class="secession_img_ment">너무 아쉬워요...</span>
+						</div>
+						<a class="secession_btn" href="#">탈퇴하기</a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
