@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+                    event.preventDefault();
+                    history.back();
+                }
+
+                var backLink = document.querySelector('.terms_header a.back_btn');
+                if (backLink) {
+                    backLink.addEventListener('click', goBack);
+                    backLink.addEventListener('touchstart', goBack);
+                }
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="terms_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">이용약관</span>
+					</div>
+				</div>
+				<div class="terms_content">
+					<div class="terms_inner">
+						<div class="menu_box invest_agree_menu">
+							<span class="menu_title">투자 정산 서비스 이용 동의</span>
+							<div class="menu_agree">
+								<span class="id_agree">주민등록번호 수집 동의</span>
+								<span class="agree_text">미동의</span>
+							</div>
+						</div>
+						<div class="menu_box agree_menu">
+							<span class="menu_title">필수 동의</span>
+							<ul class="menu_con">
+								<li class="menu_list">
+									<a class="menu_link" href="#">
+										<span class="menu_sub">서비스 이용약관</span>
+										<img src="../img/right_arrow.png" class="right_arrow">
+									</a>
+								</li>
+								<li class="menu_list">
+									<a class="menu_link" href="#">
+										<span class="menu_sub">개인정보 처리방침 및 수집·이용 동의</span>
+										<img src="../img/right_arrow.png" class="right_arrow">
+									</a>
+								</li>
+								<li class="menu_list">
+									<a class="menu_link" href="#">
+										<span class="menu_sub">추심이체 거래 약관</span>
+										<img src="../img/right_arrow.png" class="right_arrow">
+									</a>
+								</li>
+							</ul>	 
+						</div>
+						<div class="menu_box select_box">
+							<span class="menu_title">선택 동의</span>
+							<a class="select_agree menu_link" href="#">
+								<span class="marketing menu_sub">마케팅 수신 동의</span>
+								<img src="../img/right_arrow.png" class="right_arrow">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
