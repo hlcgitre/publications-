@@ -422,3 +422,11 @@ a{ text-decoration-line: none; color: #111; }
 .goods_content .goods_main_con a.goods_main_btn span.goods_main_button_3{ display: none; font-size: 14px; }
 .goods_content .goods_main_con.deadline a.goods_main_btn span.goods_main_button_2,
 .goods_content .goods_main_con.deadline a.goods_main_btn span.goods_main_button_3{ display: block; color: #fff; }
+.goods_content .goods_main_header{ border-bottom: 1px solid #eaeaea; }
+.goods_content .goods_main_header ul.goods_main_ctg_con{ padding: 0 var(--margin); }
+.goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list{ display: inline-block; margin-right: var(--margin); }
+.goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list:last-child{ margin-right: 0; }
+.goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list a.goods_main_ctg_link{ display: block; padding: var(--margin-half) 0; }
+.goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list.active a.goods_main_ctg_link{ border-bottom: 2px solid #111; }
+.goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list span.goods_ctg_title{ color: #bdbdbd; font-size: 14px; font-weight: bold; }
+.goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list.active span.goods_ctg_title{ color: #111; }
