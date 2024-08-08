@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.goods_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="goods_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+					</div>
+				</div>
+				<div class="goods_content">
+					<div class="goods_main_con"><!--투자 마감됐을 시 deadline 클래스명  추가하면 됨-->
+						<div class="goods_main_inner">
+							<div class="goods_title_con">
+								<h3 class="goods_sub">계림농장과 함께 키우는 마지막 기회</h3>
+								<h2 class="goods_main">유전능력 높은 50마리</h2>
+							</div>
+							<img src="../img/home.png" class="goods_main_img">
+							<ul class="goods_main_text_con">
+								<li class="goods_main_text_list">
+									<img src="../img/thunder.png" class="goods_main_text_img">
+									<span class="goods_main_text">성장 잠재력이 높은 송아지 묶음</span>
+								</li>
+								<li class="goods_main_text_list">
+									<img src="../img/down.png" class="goods_main_text_img">
+									<span class="goods_main_text">1마리 평균 867만원으로 키웁니다</span>
+								</li>
+								<li class="goods_main_text_list">
+									<img src="../img/won_2.png" class="goods_main_text_img">
+									<span class="goods_main_text">목표 판매 947 ~ 1,090만원</span>
+								</li>
+							</ul>
+							<a class="goods_main_btn" href="#">
+								<span class="goods_main_button_1">투자 신청</span>
+								<span class="goods_main_button_2">222% 투자 달성</span>
+								<span class="goods_main_button_3">투자 신청 마감</span>
+							</a>
+						</div>
+					</div>
+					<div class="goods_inner"></div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
