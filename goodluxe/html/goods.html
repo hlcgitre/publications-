@@ -32,6 +32,18 @@
 						goBack(event);
 					});
 				}
+				$(".goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list").click(function(){
+					$(".goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list").removeClass("active");
+					$(this).addClass("active");
+				});
+				var max_h=0;
+				$(".goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list").each(function(){
+				var h = parseInt($(this).css("height"));
+					if(max_h<h){ max_h = h; }
+				});
+				$(".goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list").each(function(){
+					$(this).css({height:max_h});
+				});
             });
 		</script>
     </head>
@@ -93,7 +105,63 @@
 							</li>
 						</ul>
 					</div>
-					<div class="goods_inner"></div>
+					<div class="goods_inner">
+						<div class="invest_tip_con" id="invest">
+							<div class="invest_tip_box swiper">
+								<ul class="invest_tip_content swiper-wrapper">
+									<li class="invest_tip_list swiper-slide">
+										<div class="invest_title">
+											<div class="invest_main_title">
+												<img src="../img/all_check.png" class="check_img">
+												<span class="invest_main_ttl">송아지 한 마리의 기대 수익은?</span>
+												<img src="../img/right_arrow.png" class="right_arrow">
+											</div>
+											<span class="invest_sub_ttl">1++ 등급 / 467kg으로 키운 송아지 수익은?</span>
+										</div>
+										<img src="../img/banner_1.jpg" class="invest_banner_img">
+									</li>
+									<li class="invest_tip_list swiper-slide">
+										<div class="invest_title">
+											<div class="invest_main_title">
+												<img src="../img/all_check.png" class="check_img">
+												<span class="invest_main_ttl">목표 수익률은 얼마인가요?</span>
+												<img src="../img/right_arrow.png" class="right_arrow">
+											</div>
+											<span class="invest_sub_ttl">뱅카우는 17.2% 이익을 목표로 송아지를 키웁니다</span>
+										</div>
+										<img src="../img/banner_2.jpg" class="invest_banner_img">
+									</li>
+									<li class="invest_tip_list swiper-slide">
+										<div class="invest_title">
+											<div class="invest_main_title">
+												<img src="../img/all_check.png" class="check_img">
+												<span class="invest_main_ttl">수익성은 어떻게 높였나요?</span>
+												<img src="../img/right_arrow.png" class="right_arrow">
+											</div>
+											<span class="invest_sub_ttl">사육 비용을 22% 낮췄습니다</span>
+										</div>
+										<img src="../img/banner_3.jpg" class="invest_banner_img">
+									</li>
+								</ul>
+								<div class="swiper-pagination swiper-pagination_3"></div>
+							</div>
+							<div class="ranking_con">
+								<span class="ranking_title">굿럭스 역대 수익률<br>Top 10 보기</span>
+								<img src="../img/ranking.png" class="ranking_img">
+							</div>
+						</div>
+						<script type="text/javascript">
+							var swiper3 = new Swiper(".invest_tip_box.swiper",{
+								pagination: {
+									el: ".swiper-pagination_3",
+								},
+								loop: true,
+								loopAdditionalSlides : 1,
+								spaceBetween: 20,
+								slidesPerView: 1,
+							});
+						</script>
+					</div>
 				</div>
 			</div>
         </div>
