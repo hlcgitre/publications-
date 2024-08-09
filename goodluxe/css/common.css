@@ -430,7 +430,8 @@ a{ text-decoration-line: none; color: #111; }
 .goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list.active a.goods_main_ctg_link{ border-bottom: 2px solid #111; }
 .goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list span.goods_ctg_title{ color: #bdbdbd; font-size: 16px; font-weight: bold; }
 .goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list.active span.goods_ctg_title{ color: #111; }
-.goods_content .invest_tip_con{}
+
+.goods_content .invest_tip_con{ padding-bottom: var(--margin); border-bottom: 1.5px solid #eaeaea; }
 .goods_content .invest_tip_con .invest_tip_box{}
 .goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content{}
 .goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list{ border-radius: 15px; border: 1px solid #eaeaea; overflow: hidden; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; }
@@ -445,3 +446,11 @@ a{ text-decoration-line: none; color: #111; }
 .goods_content .invest_tip_con a.ranking_con{ display: flex; align-items: center; padding: var(--margin); background: #1b3570; border-radius: 15px; }
 .goods_content .invest_tip_con a.ranking_con span.ranking_title{ font-size: 19px; line-height: 1.5em; font-weight: bold; color: #fff; }
 .goods_content .invest_tip_con a.ranking_con img.ranking_img{ width: 60px; margin-left: auto; }
+
+.goods_content .goods_info_con{ padding-top: var(--margin); }
+.goods_content .goods_info_con span.goods_info_title{ display: block; font-size: 16px; font-weight: bold; margin-bottom: var(--margin-half); }
+.goods_content .goods_info_con ul.goods_info_content{}
+.goods_content .goods_info_con ul.goods_info_content li.goods_info_list{ display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #eaeaea; }
+.goods_content .goods_info_con ul.goods_info_content li.goods_info_list:last-child{ border-bottom: none; }
+.goods_content .goods_info_con ul.goods_info_content li.goods_info_list span.goods_info_ttl{ font-size: 15px; color: #6e727d; }
+.goods_content .goods_info_con ul.goods_info_content li.goods_info_list span.goods_info{ font-size: 15px; font-weight: bold; }
