@@ -442,6 +442,6 @@ a{ text-decoration-line: none; color: #111; }
 .goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list .invest_title span.invest_sub_ttl{ display: block; font-size: 16px; line-height: 1.25em; }
 .goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list img.invest_banner_img{ display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .goods_content .invest_tip_con .invest_tip_box .swiper-pagination_3{ position: static; margin: var(--margin-half) 0; }
-.goods_content .invest_tip_con .ranking_con{ display: flex; align-items: center; padding: var(--margin); background: #1b3570; border-radius: 15px; }
-.goods_content .invest_tip_con .ranking_con span.ranking_title{ font-size: 19px; line-height: 1.5em; font-weight: bold; color: #fff; }
-.goods_content .invest_tip_con .ranking_con img.ranking_img{ width: 60px; margin-left: auto; }
+.goods_content .invest_tip_con a.ranking_con{ display: flex; align-items: center; padding: var(--margin); background: #1b3570; border-radius: 15px; }
+.goods_content .invest_tip_con a.ranking_con span.ranking_title{ font-size: 19px; line-height: 1.5em; font-weight: bold; color: #fff; }
+.goods_content .invest_tip_con a.ranking_con img.ranking_img{ width: 60px; margin-left: auto; }
