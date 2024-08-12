@@ -35,7 +35,7 @@ b{ font-weight: bold; }
 a{ text-decoration-line: none; color: #111; }
 
 .wrap{ margin: 0 auto; width: 100%; }
-.container{ position: relative; width: 100%; height: 100vh; overflow-y: scroll; }
+.container{ position: relative; width: 100%; min-height: 100vh; overflow-y: scroll; }
 .container.main_container{ background: var(--maincolor); }
 .dn{ display: none !important; }
 
@@ -400,7 +400,10 @@ a{ text-decoration-line: none; color: #111; }
 .secession_content a.secession_btn{ position: absolute; left: var(--margin); bottom: var(--margin); width: calc(100% - var(--margin-x2)); box-sizing: border-box; background: #2196f3; border-radius: 15px; padding: 20px; color: #fff; font-size: 16px; font-weight: bold; text-align: center; }
 
 /* goods 상세페이지 */
-.goods_header{ background: #f1e2c5; }
+.goods_header{ background: #f1e2c5; transition: background 250ms ease-out;  }
+.goods_header span.page_title{ opacity: 0; transition: opacity 250ms ease-out;  }
+.goods_header.white{ background: #fff; }
+.goods_header.white span.page_title{ opacity: 1; }
 .goods_content{}
 .goods_content .goods_inner{ padding: var(--margin); }
 .goods_content .goods_main_con{ background: #f1e2c5; padding-top: 60px; }
