@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.application_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="application_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">유전능력 높은 상품</span>
+					</div>
+				</div>
+				<div class="application_content">
+					<div class="application_inner">
+						<div class="application_top">
+							<span class="application_number"><b class="application_num">15</b>c</span>
+							<span class="application_money">300,000원</span>
+						</div>
+						<div class="application_middle">
+							<div class="application_middle_con">
+								<span class="application_middle_title">구매가능금액</span>
+								<span class="application_middle_money">300,001원</span>
+							</div>
+							<div class="application_middle_con">
+								<span class="application_middle_title">이용료</span>
+								<div class="application_middle_right">
+									<span class="application_charge">수수료 굿럭스 지원</span>
+									<span class="application_middle_money">0원</span>
+								</div>
+							</div>
+							<div class="application_bottom_con">
+								<div class="application_btn_con">
+									<button class="application_btn">1C</button>
+									<button class="application_btn">10C</button>
+									<button class="application_btn">100C</button>
+									<button class="application_btn">최대</button>
+								</div>
+								<div class="application_pinpad">
+									<button class="number">1</button>
+									<button class="number">2</button>
+									<button class="number">3</button>
+									<button class="number">4</button>
+									<button class="number">5</button>
+									<button class="number">6</button>
+									<button class="number">7</button>
+									<button class="number">8</button>
+									<button class="number">9</button>
+									<button class="number touch_none">&nbsp;</button>
+									<button class="number">0</button>
+									<button class="number delete"><img src="../img/backspace.png" class="backspace"></button>
+								</div>
+								<a class="invest_application_btn" href="#">
+									<span class="invest_application_button">투자하기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
