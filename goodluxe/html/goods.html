@@ -44,6 +44,18 @@
 				$(".goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list").each(function(){
 					$(this).css({height:max_h});
 				});
+				$(window).scroll(function(){
+					var nowScrollTop = $(window).scrollTop();
+					var headerHeight = $(".goods_header").innerHeight();
+					var detailHeight = $(".goods_main_con").innerHeight();
+					if(detailHeight <= nowScrollTop){
+						$(".goods_main_header").addClass("fixed");
+						$(".goods_header").addClass("white");
+					}else{
+						$(".goods_main_header").removeClass("fixed");
+						$(".goods_header").removeClass("white");
+					}
+				});
             });
 		</script>
     </head>
@@ -55,6 +67,7 @@
 						<a class="back_btn">
 							<img src="../img/back_arrow.png" class="back_img">
 						</a>
+						<span class="page_title">유전능력 높은 50마리</span>
 					</div>
 				</div>
 				<div class="goods_content">
