@@ -434,13 +434,7 @@ a{ text-decoration-line: none; color: #111; }
 .goods_content .invest_tip_con .invest_tip_box{}
 .goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content{}
 .goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list{ border-radius: 15px; border: 1px solid #eaeaea; overflow: hidden; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; }
-.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list .invest_title{ padding: var(--margin); }
-.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list .invest_title .invest_main_title{ display: flex; gap: 10px; margin-bottom: var(--margin); }
-.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list .invest_title .invest_main_title img.check_img{ width: 16px; height: 16px; }
-.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list .invest_title .invest_main_title span.invest_main_ttl{ font-size: 16px; font-weight: bold; }
-.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list .invest_title .invest_main_title img.right_arrow{ width: 16px; height: 16px; margin-left: auto; }
-.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list .invest_title span.invest_sub_ttl{ display: block; font-size: 16px; line-height: 1.25em; }
-.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list img.invest_banner_img{ display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.goods_content .invest_tip_con .invest_tip_box ul.invest_tip_content li.invest_tip_list img{ width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .goods_content .invest_tip_con .invest_tip_box .swiper-pagination_3{ position: static; margin: var(--margin-half) 0; }
 .goods_content .invest_tip_con a.ranking_con{ display: flex; align-items: center; padding: var(--margin); background: #1b3570; border-radius: 15px; }
 .goods_content .invest_tip_con a.ranking_con span.ranking_title{ font-size: 19px; line-height: 1.5em; font-weight: bold; color: #fff; }
