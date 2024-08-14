@@ -535,7 +535,7 @@ a{ text-decoration-line: none; color: #111; }
 .agreement_content .agreement_box .agreement_con{ display: flex; align-items: flex-start; margin-bottom: 10px; }
 .agreement_content .agreement_box .agreement_con input.checkbox{}
 .agreement_con input[type="checkbox"] { display: none; }
-.agreement_con input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 14px; line-height: 1.25em; }
+.agreement_con input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 14px; line-height: 1.5em; }
 .agreement_con input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0; top: 0; width: 14px;  height: 14px; background: url('../img/none_check.png') no-repeat center center / contain;  }
 .agreement_con input[type="checkbox"]:checked + label:before { background: url('../img/check.png') no-repeat center center / contain; }
 .agreement_con label:after{ content: ''; display: inline-block; width: 14px; height: 14px; margin-right: 10px; }
