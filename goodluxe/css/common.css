@@ -525,3 +525,23 @@ a{ text-decoration-line: none; color: #111; }
 .confirm_content .confirm_bottom .confirm_btn{ display: flex; gap: 10px; }
 .confirm_content .confirm_bottom .confirm_btn a.confirm_cancle{ background: #ecedf2; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; width: 10%; min-width: 30px; text-align: center; }
 .confirm_content .confirm_bottom .confirm_btn a.confirm_check{ background: #2196f3; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; color: #fff; width: 90%; text-align: center; }
+
+.agreement_header{}
+.agreement_content{ margin-top: 60px; }
+.agreement_content .agreement_inner{ display: flex; flex-direction: column; height: calc(100vh - 112px); padding: var(--margin); }
+.agreement_content .agreement_title_con{ margin-bottom: var(--margin); }
+.agreement_content .agreement_title_con h2.agreement_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
+.agreement_content .agreement_title_con h3.agreement_sub{ font-size: 16px; font-weight: bold; color: #a9a9a9; }
+.agreement_content .agreement_box{}
+.agreement_content .agreement_box .agreement_con{ display: flex; align-items: flex-start; margin-bottom: 10px; }
+.agreement_content .agreement_box .agreement_con input.checkbox{}
+.agreement_con input[type="checkbox"] { display: none; }
+.agreement_con input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 14px; line-height: 1.25em; }
+.agreement_con input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0; top: 0; width: 14px;  height: 14px; background: url('../img/none_check.png') no-repeat center center / contain;  }
+.agreement_con input[type="checkbox"]:checked + label:before { background: url('../img/check.png') no-repeat center center / contain; }
+.agreement_con label:after{ content: ''; display: inline-block; width: 14px; height: 14px; margin-right: 10px; }
+.agreement_content .agreement_box .agreement_con label{}
+.agreement_content a.agreement_btn{ display: block;  background: #f5f6fa; padding: 20px; border-radius: 15px; pointer-events: none; margin-top: auto; }
+.agreement_content a.agreement_btn span.agreement_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #cdcfdb; }
+.agreement_content a.agreement_btn.check{ pointer-events: auto !important; background: #2196f3; }
+.agreement_content a.agreement_btn.check span.agreement_button{ color: #fff; }
