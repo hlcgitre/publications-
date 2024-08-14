@@ -404,7 +404,7 @@ a{ text-decoration-line: none; color: #111; }
 .goods_content .goods_main_con .goods_title_con{ display: flex; flex-direction: column; align-items: center; gap: var(--margin-half); margin-bottom: var(--margin); }
 .goods_content .goods_main_con .goods_title_con h3.goods_sub{ padding: 5px 10px; background: #fff; color: #ed9d34; border-radius: 50px; font-size: 14px; }
 .goods_content .goods_main_con .goods_title_con h2.goods_main{ font-size: 30px; font-weight: bold; }
-.goods_content .goods_main_con img.goods_main_img{ display: block; margin: 0 auto; width: 150px; margin-bottom: var(--margin); }
+.goods_content .goods_main_con img.goods_main_img{ display: block; margin: 0 auto; width: 250px; margin-bottom: var(--margin); }
 .goods_content .goods_main_con ul.goods_main_text_con{ margin-bottom: var(--margin); }
 .goods_content .goods_main_con ul.goods_main_text_con li.goods_main_text_list{ display: flex; align-items: center; gap: 10px; margin-bottom: var(--margin); }
 .goods_content .goods_main_con ul.goods_main_text_con li.goods_main_text_list:last-child{ margin-bottom: 0; }
