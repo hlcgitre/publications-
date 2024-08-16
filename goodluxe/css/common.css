@@ -563,16 +563,16 @@ a{ text-decoration-line: none; color: #111; }
 .application_history_content .application_history_con span.ment{ font-size: 14px; font-weight: bold; }
 .application_history_content .application_history_con{}
 .application_history_content .application_history_con ul.application_history{}
-.application_history_content .application_history_con ul.application_history li.application_history_list{ display: flex; align-items: center; gap: 10px; padding: var(--margin-half) 0; }
+.application_history_content .application_history_con ul.application_history li.application_history_list{ display: flex; align-items: center; gap: 5px; padding: var(--margin-half) 0; }
 .application_history_content .application_history_con ul.application_history li.application_history_list:first-child{ padding-top: var(--margin); }
-.application_history_content .application_history_con ul.application_history li.application_history_list img.application_history_img{ width: 55px; }
+.application_history_content .application_history_con ul.application_history li.application_history_list img.application_history_img{ width: 50px; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle{ display: flex; flex-direction: column; gap: 5px; }
-.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle span.application_history_name{ font-size: 16px; }
-.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle span.application_history_date{ font-size: 14px; color: #999; }
+.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle span.application_history_name{ font-size: 15px; }
+.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle span.application_history_date{ font-size: 13px; color: #999; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end{ display: flex; flex-direction: column; gap: 5px; margin-left: auto; text-align: right; }
-.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end span.application_history_money{ font-size: 16px; font-weight: bold; }
+.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end span.application_history_money{ font-size: 15px; font-weight: bold; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con{}
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con img.rate_img{ width: 10px; }
-.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con span.application_history_rate{ font-size: 14px; }
+.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con span.application_history_rate{ font-size: 13px; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con.up span.application_history_rate{ color: #ed1c24; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con.down span.application_history_rate{ color: #3b82f6; }
