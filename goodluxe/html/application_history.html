@@ -44,12 +44,65 @@
 						rateImg.src = '../img/rate_down.png';
 					}
 				});
+				$(".application_history_con ul.application_history li.application_history_list").click(function(){
+					$(".modal_bg").addClass("on");
+					$(".modal_con").addClass("on");
+				});
+				$(".modal_bg, .modal_con .back").click(function(){
+					$(".modal_bg").removeClass("on");
+					$(".modal_con").removeClass("on");
+				});
             });
 		</script>
     </head>
     <body>
         <div class="wrap">
 			<div class="container">
+				<div class="modal_bg"></div>
+				<div class="modal_con">
+					<div class="modal_content">
+						<div class="modal_inner">
+							<div class="modal_top">
+								<img src="../img/profile_1.png" class="modal_img">
+								<div class="modal_profile_con">
+									<span class="modal_profile">새빛농장 1호</span>
+									<span class="modal_money">12,200,000원</span>
+								</div>
+							</div>
+							<div class="modal_middle up">
+								<div class="modal_middle_rate">
+									<span class="modal_rate_title">송아지 수익률</span>
+									<div class="modal_rate_box">
+										<img src="../img/rate_up.png" class="modal_rate_img">
+										<span class="modal_rate_money">5,536,922원</span>
+									</div>
+								</div>
+								<span class="modal_rate"><b class="modal_num">52.73</b>%</span>
+							</div>
+							<div class="modal_bottom">
+								<ul class="modal_bottom_con">
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">육질·육량등급</span>
+										<span class="modal_bottom_main">1++ / B</span>
+									</li>
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">도체중·생체중</span>
+										<span class="modal_bottom_main">546 / -kg</span>
+									</li>
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">A등급 유전능력</span>
+										<span class="modal_bottom_main">근단면적</span>
+									</li>
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">대표 유전능력</span>
+										<span class="modal_bottom_main">등심면적 우등생</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="back"></div>
+				</div>
 				<div class="application_history_header page_header">
 					<div class="header_inner">
 						<a class="back_btn">
