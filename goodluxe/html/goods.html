@@ -199,58 +199,29 @@
 							</ul>
 						</div>
 						<span id="profile" class="header_height"></span>
-						<div class="goods_profile_con">
+						<div class="goods_profile_con swiper">
 							<span class="goods_profile_title">계림농장과 함께<br>송아지 <b class="title_color">50마리</b> 키워요!</span>
-							<ul class="goods_profile_content">
-								<li class="goods_profile_list">
-									<img src="../img/profile_img.png" class="profile_img_1">
-									<div class="goods_profile_info">
-										<span class="goods_profile_main_1">계림농장</span>
-										<span class="goods_profile_sub_1">강원특별자치도 평창군 진부면 상월오개리 241-9</span>
-									</div>
+							<ul class="goods_profile_content swiper-wrapper">
+								<li class="goods_profile_list swiper-slide">
+									<img src="../img/ex1.png">
 								</li>
-								<li class="goods_profile_list">
-									<img src="../img/profile_1.png" class="profile_img">
-									<div class="goods_profile_info">
-										<span class="goods_profile_main">계림농장 51호</span>
-										<span class="goods_profile_sub">16개월째 성장중</span>
-									</div>
-									<img src="../img/down_arrow.png" class="down_arrow">
-								</li>
-								<li class="goods_profile_list">
-									<img src="../img/profile_1.png" class="profile_img">
-									<div class="goods_profile_info">
-										<span class="goods_profile_main">계림농장 52호</span>
-										<span class="goods_profile_sub">16개월째 성장중</span>
-									</div>
-									<img src="../img/down_arrow.png" class="down_arrow">
-								</li>
-								<li class="goods_profile_list">
-									<img src="../img/profile_2.png" class="profile_img">
-									<div class="goods_profile_info">
-										<span class="goods_profile_main">계림농장 53호</span>
-										<span class="goods_profile_sub">17개월째 성장중</span>
-									</div>
-									<img src="../img/down_arrow.png" class="down_arrow">
-								</li>
-								<li class="goods_profile_list">
-									<img src="../img/profile_1.png" class="profile_img">
-									<div class="goods_profile_info">
-										<span class="goods_profile_main">계림농장 54호</span>
-										<span class="goods_profile_sub">15개월째 성장중</span>
-									</div>
-									<img src="../img/down_arrow.png" class="down_arrow">
-								</li>
-								<li class="goods_profile_list">
-									<img src="../img/profile_2.png" class="profile_img">
-									<div class="goods_profile_info">
-										<span class="goods_profile_main">계림농장 55호</span>
-										<span class="goods_profile_sub">16개월째 성장중</span>
-									</div>
-									<img src="../img/down_arrow.png" class="down_arrow">
+								<li class="goods_profile_list swiper-slide">
+									<img src="../img/ex2.png">
 								</li>
 							</ul>
+							<div class="swiper-pagination swiper-pagination_4"></div>
 						</div>
+						<script type="text/javascript">
+							var swiper4 = new Swiper(".goods_profile_con.swiper",{
+								pagination: {
+									el: ".swiper-pagination_4",
+								},
+								loop: true,
+								loopAdditionalSlides : 1,
+								spaceBetween: 20,
+								slidesPerView: 1,
+							});
+						</script>
 						<div class="goods_invest_process_box">
 							<div class="goods_invest_process_con">
 								<span class="invest_process">뱅카우의 한우 투자 과정이<br>궁금하세요?</span>
