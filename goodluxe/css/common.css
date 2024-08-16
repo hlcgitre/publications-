@@ -576,3 +576,42 @@ a{ text-decoration-line: none; color: #111; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con span.application_history_rate{ font-size: 13px; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con.up span.application_history_rate{ color: #ed1c24; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con.down span.application_history_rate{ color: #3b82f6; }
+
+/* modal */
+.modal_bg,
+.modal_con{ opacity: 0; visibility: hidden; z-index: 1; }
+.modal_bg{ position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0, 0, 0, .3); pointer-events: none; }
+.modal_bg.on{ pointer-events: auto; }
+.modal_con{ position: fixed; width: 100%; height: auto; background: #fff; bottom: 0; left: 0; border-top-left-radius: 25px; border-top-right-radius: 25px; max-height: 0; transition: max-height 300ms ease-in-out; }
+.modal_con.on{ max-height: 1000px; }
+.modal_bg.on,
+.modal_con.on{ opacity: 1; visibility: visible; z-index: 999999; }
+.modal_con .modal_content{}
+.modal_con .modal_content .modal_inner{ padding: calc(var(--margin) + var(--margin-half)) var(--margin); }
+.modal_con .modal_content .modal_top{ display: flex; gap: 5px; align-items: center; margin-bottom: var(--margin); }
+.modal_con .modal_content .modal_top img.modal_img{ width: 50px; }
+.modal_con .modal_content .modal_top .modal_profile_con{ display: flex; flex-direction: column; gap: 5px; }
+.modal_con .modal_content .modal_top .modal_profile_con span.modal_profile{ font-size: 15px; font-weight: bold; }
+.modal_con .modal_content .modal_top .modal_profile_con span.modal_money{ font-size: 13px; color: #676767; }
+.modal_con .modal_content .modal_middle{ display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--margin); }
+.modal_con .modal_content .modal_middle .modal_middle_rate{ display: flex; flex-direction: column; gap: 5px; }
+.modal_con .modal_content .modal_middle .modal_middle_rate span.modal_rate_title{ font-size: 14px; }
+.modal_con .modal_content .modal_middle .modal_middle_rate .modal_rate_box{}
+.modal_con .modal_content .modal_middle .modal_middle_rate .modal_rate_box img.modal_rate_img{ width: 10px; }
+.modal_con .modal_content .modal_middle .modal_middle_rate .modal_rate_box span.modal_rate_money{ font-size: 14px; }
+.modal_con .modal_content .modal_middle.up .modal_middle_rate .modal_rate_box span.modal_rate_money{ color: #ed1c24; }
+.modal_con .modal_content .modal_middle.down .modal_middle_rate .modal_rate_box span.modal_rate_money{ color: #3b82f6; }
+.modal_con .modal_content .modal_middle span.modal_rate{ font-size: 15px; }
+.modal_con .modal_content .modal_middle.up span.modal_rate{ color: #ed1c24; }
+.modal_con .modal_content .modal_middle.down span.modal_rate{ color: #3b82f6; }
+.modal_con .modal_content .modal_middle span.modal_rate b.modal_num{ font-size: 20px; }
+.modal_con .modal_content .modal_bottom{}
+.modal_con .modal_content .modal_bottom ul.modal_bottom_con{ display: flex; flex-wrap: wrap; gap: 4px; border-radius: 15px; overflow: hidden; }
+.modal_con .modal_content .modal_bottom ul.modal_bottom_con li.modal_bottom_list{ display: flex; flex-direction: column; align-items: center; gap: 7px; padding: var(--margin-half) 0; width: calc(50% - 2px); background: #f6f6f6; }
+.modal_con .modal_content .modal_bottom ul.modal_bottom_con li.modal_bottom_list span.modal_bottom_sub{ font-size: 12px; color: #343434; }
+.modal_con .modal_content .modal_bottom ul.modal_bottom_con li.modal_bottom_list span.modal_bottom_main{ font-size: 15px; font-weight: bold; }
+.modal_con .back{ position: absolute; top: 30px; right: 25px; width: 20px; height: 20px; }
+.modal_con .back:before,
+.modal_con .back:after{ position: absolute; content: ''; width: 20px; height: 2px; background: #111; border-radius: 10px; }
+.modal_con .back:before{ transform: rotate(45deg); }
+.modal_con .back:after{ transform: rotate(135deg); }
