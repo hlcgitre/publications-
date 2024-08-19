@@ -34,7 +34,7 @@ h1, h2, h3{ text-transform: uppercase; }
 b{ font-weight: bold; }
 a{ text-decoration-line: none; color: #111; }
 
-.wrap{ margin: 0 auto; width: 100%; }
+.wrap{ margin: 0 auto; width: 100%; touch-action: pan-y; }
 .container{ position: relative; width: 100%; min-height: 100vh; overflow-y: scroll; }
 .container.main_container{ background: var(--maincolor); }
 .dn{ display: none !important; }
