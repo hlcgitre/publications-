@@ -52,6 +52,9 @@
                 if (clipboardButton) {
                     clipboardButton.addEventListener('click', copyToClipboard);
                 }
+				document.addEventListener('gesturestart', function(event) {
+					event.preventDefault();
+				});
             });
 		</script>
     </head>
