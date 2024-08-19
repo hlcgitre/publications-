@@ -19,6 +19,9 @@
 					$(this).toggleClass('rotate');
 					$('.section_1 .invest_box .goods_con').toggleClass('no');
 				});
+				document.addEventListener('gesturestart', function(event) {
+					event.preventDefault();
+				});
             });
         </script>
     </head>
