@@ -93,19 +93,20 @@ a{ text-decoration-line: none; color: #111; }
 .section_1 .invest_box .goods_con p.goods_title{ margin-bottom: var(--margin-half); font-size: 15px; color: #454545; padding-top: var(--margin); border-top: 1px solid #cdcdcd; }
 .section_1 .invest_box .goods_con .goods_box{}
 .section_1 .invest_box .goods_con .goods_box ul.my_goods_con{}
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list{ display: flex; align-items: center; gap: 5px; margin-bottom: var(--margin-half); }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list:last-child{ margin-bottom: 0; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods_logo{ width: 40px; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods_logo img.goods_img{ width: 38px; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods{ display: flex; flex-direction: column; gap: 5px; width: calc(100% - 45px); }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods p.goods_list_title{ font-size: 11px; color: #999; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no{ display: flex; gap: 5px; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span{ font-size: 14px; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span b{ font-weight: lighter; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_number{ width: 30%; word-wrap: break-word; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_number b.goods_list_num{}
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_money{ margin-left: auto; width: 70%; text-align: right; word-wrap: break-word; }
-.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list .goods .goods_list_no span.goods_list_money b.goods_money_num{}
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list{}
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link{ display: flex; align-items: center; gap: 5px; margin-bottom: var(--margin-half); }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list:last-child a.my_goods_link{ margin-bottom: 0; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods_logo{ width: 40px; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods_logo img.goods_img{ width: 38px; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods{ display: flex; flex-direction: column; gap: 5px; width: calc(100% - 45px); }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods p.goods_list_title{ font-size: 11px; color: #999; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods .goods_list_no{ display: flex; gap: 5px; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods .goods_list_no span{ font-size: 14px; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods .goods_list_no span b{ font-weight: lighter; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods .goods_list_no span.goods_list_number{ width: 30%; word-wrap: break-word; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods .goods_list_no span.goods_list_number b.goods_list_num{}
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods .goods_list_no span.goods_list_money{ margin-left: auto; width: 70%; text-align: right; word-wrap: break-word; }
+.section_1 .invest_box .goods_con .goods_box ul.my_goods_con li.my_goods_list a.my_goods_link .goods .goods_list_no span.goods_list_money b.goods_money_num{}
 .section_1 .invest_box .arrow_btn{ margin-top: var(--margin-half); }
 .section_1 .invest_box .arrow_btn img.arrow_img{ display: block; margin: 0 auto; width: 20px; transition: transform 250ms ease-out; }
 .section_1 .invest_box .arrow_btn img.arrow_img.rotate{ transform: rotate(180deg); transform: center; }
