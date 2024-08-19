@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.settlement_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+				$(".my_settlement_content .settlement_ctg_box ul.settlement_ctg li.settlement_ctg_list").click(function(){
+					$(".my_settlement_content .settlement_ctg_box ul.settlement_ctg li.settlement_ctg_list").removeClass("active");
+					$(this).addClass("active");
+					var rel = $(this).attr('rel');
+					$(".tab_content").removeClass("active");
+					$(".tab_content." + rel).addClass("active");
+				});
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="settlement_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">투자 정산 결과</span>
+					</div>
+				</div>
+				<div class="my_settlement_content">
+					<div class="my_settlement_box up"><!--수익 합계가 +일 경우 up, -일 경우 down 클래스 추가-->
+						<p class="total">총 합계</p>
+						<span class="my_settlement_total"><b class="money">2,490,000</b>원</span>
+						<ul class="my_settlement_con">
+							<li class="my_settlement_list">
+								<span class="my_settlement_title">투자 원금</span>
+								<span class="my_settlement_money">2,290,680원</span>
+							</li>
+							<li class="my_settlement_list">
+								<span class="my_settlement_title">수익 합계</span>
+								<span class="my_settlement_money settlement">+199,320원</span>
+							</li>
+							<li class="my_settlement_list">
+								<span class="my_settlement_title">수익률</span>
+								<span class="my_settlement_money settlement">+8.00%</span>
+							</li>
+						</ul>
+					</div>
+					<div class="settlement_ctg_box">
+						<div class="settlement_inner">
+							<ul class="settlement_ctg">
+								<li class="settlement_ctg_list active" rel="tab_1">
+									<span class="settlement_ctg_title">전체</span>
+								</li>
+								<li class="settlement_ctg_list" rel="tab_2">
+									<span class="settlement_ctg_title">수익</span>
+								</li>
+								<li class="settlement_ctg_list" rel="tab_3">
+									<span class="settlement_ctg_title">손실</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="tab_content tab_1 active">
+						<div class="settlement_top_box">
+							<div class="settlement_top">
+								<span class="settlement_total">총 5 건</span>
+								<select class="sequence">
+									<option selected>최근 거래순</option>
+									<option>예시 1</option>
+									<option>예시 2</option>
+								</select>
+							</div>
+							<span class="date">2022.01.01 ~ 2022.12.31</span>
+						</div>
+						<div class="settlement_content">
+							<ul class="settlement">
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_1.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">새빛농장 1호</span>
+										<span class="settlement_date">2023.10.20</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">1,200,000원</span>
+										<div class="settlement_rate_con up"><!--수익률이 올랐을 경우 up, 떨어졌을 경우 down 클래스 명 추가하면 이미지와 글씨 색상이 변경됨-->
+											<img src="../img/rate_up.png" class="rate_img">
+											<span class="settlement_rate">120,000 (+10.00%)</span>
+										</div>
+									</div>
+								</li>
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_2.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">오성농장 1호</span>
+										<span class="settlement_date">2023.05.20</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">800,000원</span>
+										<div class="settlement_rate_con up">
+											<img src="../img/rate_up.png" class="rate_img">
+											<span class="settlement_rate">41,600 (+5.20%)</span>
+										</div>
+									</div>
+								</li>
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_1.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">오뭇산목장 1호</span>
+										<span class="settlement_date">2023.03.20</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">1,350,000원</span>
+										<div class="settlement_rate_con down">
+											<img src="../img/rate_down.png" class="rate_img">
+											<span class="settlement_rate">311,850 (-23.10%)</span>
+										</div>
+									</div>
+								</li>
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_1.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">새빛농장 2호</span>
+										<span class="settlement_date">2023.11.06</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">1,300,000원</span>
+										<div class="settlement_rate_con up">
+											<img src="../img/rate_up.png" class="rate_img">
+											<span class="settlement_rate">41,600 (+5.20%)</span>
+										</div>
+									</div>
+								</li>
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_2.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">오뭇산목장 2호</span>
+										<span class="settlement_date">2023.12.22</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">900,000원</span>
+										<div class="settlement_rate_con down">
+											<img src="../img/rate_down.png" class="rate_img">
+											<span class="settlement_rate">100,000 (-9.00%)</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_2">
+						<div class="settlement_top_box">
+							<div class="settlement_top">
+								<span class="settlement_total">총 3 건</span>
+								<select class="sequence">
+									<option selected>최근 거래순</option>
+									<option>예시 1</option>
+									<option>예시 2</option>
+								</select>
+							</div>
+							<span class="date">2022.01.01 ~ 2022.12.31</span>
+						</div>
+						<div class="settlement_content">
+							<ul class="settlement">
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_1.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">새빛농장 1호</span>
+										<span class="settlement_date">2023.10.20</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">1,200,000원</span>
+										<div class="settlement_rate_con up"><!--수익률이 올랐을 경우 up, 떨어졌을 경우 down 클래스 명 추가하면 이미지와 글씨 색상이 변경됨-->
+											<img src="../img/rate_up.png" class="rate_img">
+											<span class="settlement_rate">120,000 (+10.00%)</span>
+										</div>
+									</div>
+								</li>
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_2.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">오성농장 1호</span>
+										<span class="settlement_date">2023.05.20</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">800,000원</span>
+										<div class="settlement_rate_con up">
+											<img src="../img/rate_up.png" class="rate_img">
+											<span class="settlement_rate">41,600 (+5.20%)</span>
+										</div>
+									</div>
+								</li>
+								<li class="settlement_list">
+									<img class="settlement_img" src="../img/profile_1.png">
+									<div class="settlement_middle">
+										<span class="settlement_name">새빛농장 2호</span>
+										<span class="settlement_date">2023.11.06</span>
+									</div>
+									<div class="settlement_end">
+										<span class="settlement_money">1,300,000원</span>
+										<div class="settlement_rate_con up">
+											<img src="../img/rate_up.png" class="rate_img">
+											<span class="settlement_rate">41,600 (+5.20%)</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_3">
+						<div class="settlement_top_box">
+							<div class="settlement_top">
+								<span class="settlement_total">총 0 건</span>
+								<select class="sequence">
+									<option selected>최근 거래순</option>
+									<option>예시 1</option>
+									<option>예시 2</option>
+								</select>
+							</div>
+							<span class="date">2022.01.01 ~ 2022.12.31</span>
+						</div>
+						<div class="no_history">
+							<img src="../img/013.png" class="tab_img">
+							<span class="ment">불러올 내역이 없어요</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
