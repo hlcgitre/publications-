@@ -321,7 +321,19 @@ a{ text-decoration-line: none; color: #111; }
 .inquiry_header{}
 .inquiry_content{ margin-top: 60px; }
 .inquiry_content .inquiry_inner{ padding: var(--margin); }
-.inquiry_content a.inquiry_btn{ display: block; text-align: center; padding: 20px var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; font-size: 15px; }
+.inquiry_content a.inquiry_btn{ display: block; text-align: center; padding: 20px var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; font-size: 15px; margin-bottom: var(--margin); }
+.inquiry_content .inquiry_history_box{}
+.inquiry_content .inquiry_history_box span.total_num{ display: block; color: #999; font-size: 15px; margin-bottom: var(--margin); }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con{}
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list{ display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eaeaea; padding: 15px 0; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list:first-child{ padding-top: 0; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list .inquiry_history_main{ display: flex; flex-direction: column; gap: 10px; max-width: 65%; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list .inquiry_history_main span.inquiry_history_title{ line-height: 1.25em; font-size: 16px; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list .inquiry_history_main span.inquiry_history_date{ font-size: 14px; color: #999; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list .answer_status{ display: flex; gap: 3px; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list .answer_status img.answer_img{ width: 15px; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list .answer_status span.answer{ font-size: 15px; color: #999; }
+.inquiry_content .inquiry_history_box ul.inquiry_history_con li.inquiry_history_list .answer_status.complete span.answer{ color: #2196f3; }
 
 /* terms */
 .terms_header{}
