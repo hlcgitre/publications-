@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+                    event.preventDefault();
+                    history.back();
+                }
+
+                var backLink = document.querySelector('.inquiry_write_header a.back_btn');
+                if (backLink) {
+                    backLink.addEventListener('touchstart', function(event) {
+                        event.preventDefault();
+                        goBack(event);
+                    });
+                    backLink.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        if (event.detail === 0) return;
+                        goBack(event);
+                    });
+                }
+
+                var uploadFileInput = document.getElementById('upload_file');
+                var inputFileLabel = document.querySelector('.input_file');
+                var imageCapacity = document.querySelector('.image_capacity');
+
+                uploadFileInput.addEventListener('change', function() {
+                    if (this.files.length > 0) {
+                        var fileSize = this.files[0].size;
+                        var fileSizeMB = (fileSize / (1024 * 1024)).toFixed(2); 
+
+                        if (fileSize > 3 * 1024 * 1024) {
+                            alert('파일 크기는 3MB 이하로 업로드 해주세요.');
+                            this.value = '';
+                            inputFileLabel.textContent = '파일 첨부하기';
+                            imageCapacity.textContent = '0MB';
+                            return;
+                        }
+
+                        inputFileLabel.textContent = this.files[0].name;
+                        imageCapacity.textContent = fileSizeMB + 'MB';
+                    } else {
+                        inputFileLabel.textContent = '파일 첨부하기';
+                        imageCapacity.textContent = '0MB';
+                    }
+                });
+
+                var inputTitle = document.getElementById('input_title');
+                var inputText = document.getElementById('input_text');
+                var inquiryWriteBtn = document.querySelector('a.inquiry_write_btn');
+
+                function checkInputFields() {
+                    if (inputTitle.value.trim() !== '' && inputText.value.trim() !== '') {
+                        inquiryWriteBtn.classList.add('check');
+                    } else {
+                        inquiryWriteBtn.classList.remove('check');
+                    }
+                }
+
+                inputTitle.addEventListener('input', checkInputFields);
+                inputText.addEventListener('input', checkInputFields);
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="inquiry_write_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">1:1 문의 쓰기</span>
+					</div>
+				</div>
+				<div class="inquiry_write_content">
+					<div class="inquiry_write_inner">
+						<div class="inquiry_write_top">
+							<select class="type">
+								<option selected disabled hidden>질문 유형</option>
+								<option>펀딩</option>
+								<option>경매/정산</option>
+								<option>예치금</option>
+								<option>계정</option>
+								<option>버그</option>
+								<option>기타</option>
+							</select>
+							<input type="text" placeholder="제목을 입력해 주세요. (20자 이내)" maxlength="20" id="input_title">
+							<textarea rows="5" placeholder="여기에 내용을 입력해 주세요. (1,000자 이내)" id="input_text" maxlength="1000"></textarea>
+							<input type="file" placeholder="파일 첨부하기" id="upload_file">
+							<label for="upload_file" class="input_file">파일 첨부하기</label>
+							<p class="image"><b class="image_capacity">0MB</b> / 3MB 이하까지 최대 1개 이미지 파일 첨부 가능합니다.</p>
+						</div>
+						<div class="inquiry_write_bottom">
+							<div class="inquiry_notice_box">
+								<h4 class="inquiry_notice_title">안내사항</h4>
+								<p class="inquiry_notice">고객센터 운영시간은 영업일 기준 10:00 - 17:00입니다.</p>
+								<p class="inquiry_notice">최대 영업일 3일 이내 답변드리며 문의량이 많을 경우 답변이 늦어질 수 있습니다.</p>
+								<p class="inquiry_notice">산업안전보건법에 따라 고객응대 근로자 보호조치를 하고 있으며 모든 문의는 기록·보관됩니다.</p>
+							</div>
+							<a class="inquiry_write_btn" href="../html/inquiry_2.html">
+								<span class="inquiry_write_button">작성 완료</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
