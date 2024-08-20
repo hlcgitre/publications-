@@ -321,7 +321,7 @@ a{ text-decoration-line: none; color: #111; }
 .inquiry_header{}
 .inquiry_content{ margin-top: 60px; }
 .inquiry_content .inquiry_inner{ padding: var(--margin); }
-.inquiry_content a.inquiry_btn{ display: block; text-align: center; padding: var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; font-size: 15px; }
+.inquiry_content a.inquiry_btn{ display: block; text-align: center; padding: 20px var(--margin); border: 1px solid #dfdfdf; border-radius: 15px; font-size: 15px; }
 
 /* terms */
 .terms_header{}
