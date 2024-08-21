@@ -746,6 +746,7 @@ a{ text-decoration-line: none; color: #111; }
 .resident_registration_content .resident_registration_agree_box .resident_registration_all_agree_con{ padding: 20px; border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin); }
 .resident_registration_content .resident_registration_agree_box .agree_box{}
 .resident_registration_content .resident_registration_agree_box .agree_box .agree_con{ display: flex; align-items: flex-start; margin-bottom: var(--margin-half); }
+.resident_registration_content .resident_registration_agree_box .agree_box .agree_con:last-child{ margin-bottom: var(--margin); }
 .resident_registration_content .resident_registration_agree_box .agree_box .agree_con a.agree_link{}
 .resident_registration_content .resident_registration_agree_box .agree_box .agree_con a.agree_link img.right_arrow{ width: 15px; }
 .resident_registration_content input[type="checkbox"] { display: none; }
