@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+           
+        </style>
+        <script type="text/javascript">
+           document.addEventListener('DOMContentLoaded', function() {
+				var frontInput = document.querySelector('input.front');
+				var backInput = document.querySelector('input.back');
+				var checkButton = document.querySelector('.id_btn');
+
+				frontInput.addEventListener('input', function() {
+					validateInputs();
+				});
+
+				backInput.addEventListener('input', function() {
+					validateInputs();
+				});
+
+				function validateInputs() {
+					var frontValue = frontInput.value.replace(/[^0-9]/g, '');
+					var backValue = backInput.value;
+
+					if (frontValue.length > 6) {
+						frontValue = frontValue.slice(0, 6);
+					}
+					frontInput.value = frontValue;
+
+					if (frontValue.length === 6) {
+						var year = frontValue.substring(0, 2);
+						var month = frontValue.substring(2, 4);
+						var day = frontValue.substring(4, 6);
+
+						if (isValidDate(year, month, day)) {
+							frontInput.classList.remove('error');
+							backInput.removeAttribute('disabled');
+						} else {
+							frontInput.classList.add('error');
+							backInput.setAttribute('disabled', 'disabled');
+						}
+					} else {
+						frontInput.classList.remove('error');
+						backInput.setAttribute('disabled', 'disabled');
+					}
+
+					if (frontValue.length === 6 && backValue.length === 7) {
+						checkButton.classList.add('check');
+					} else {
+						checkButton.classList.remove('check');
+					}
+				}
+
+				function isValidDate(year, month, day) {
+					year = parseInt(year);
+					month = parseInt(month);
+					day = parseInt(day);
+
+					year += 2000;
+
+					if (month < 1 || month > 12) return false;
+
+					var daysInMonth = [31, (isLeapYear(year) ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+					return day > 0 && day <= daysInMonth[month - 1];
+				}
+
+				function isLeapYear(year) {
+					return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+				}
+			});
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <div class="id_content">
+                    <div class="id_inner">
+                        <div class="id">
+							<div class="id_con">
+								<h2 class="id_title">주민등록번호를 입력해 주세요</h2>
+								<span class="id_ttl">주민등록번호</span>
+								<div class="id_input_box">
+									 <input type="text" placeholder="6자리" class="front">    -  <input type="password" maxlength="7" class="back">
+								</div>
+							</div>
+                            <a href="../html/resident_registration_3.html" class="id_btn">확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

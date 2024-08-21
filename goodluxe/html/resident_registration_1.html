@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.resident_registration_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+
+				var allCheckBox = document.getElementById('all_check');
+				allCheckBox.addEventListener('change', function() {
+					var checkboxes = document.querySelectorAll('.agree_box input[type="checkbox"]');
+					for (var checkbox of checkboxes) {
+						checkbox.checked = this.checked;
+					}
+					updateAgreeButtonState();
+				});
+
+				var individualCheckBoxes = document.querySelectorAll('.agree_box input[type="checkbox"]');
+				for (var checkbox of individualCheckBoxes) {
+					checkbox.addEventListener('change', function() {
+						allCheckBox.checked = Array.from(individualCheckBoxes).every(function(checkbox) {
+							return checkbox.checked;
+						});
+						updateAgreeButtonState();
+					});
+				}
+
+				function updateAgreeButtonState() {
+					var essentialCheckBoxes = document.querySelectorAll('.agree_box input.eseential');
+					var allEssentialChecked = Array.from(essentialCheckBoxes).every(function(checkbox) {
+						return checkbox.checked;
+					});
+
+					var agreeButton = document.querySelector('.agree_btn');
+					if (allEssentialChecked) {
+						agreeButton.classList.add('check');
+					} else {
+						agreeButton.classList.remove('check');
+					}
+				}
+
+				updateAgreeButtonState();
+			});
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="resident_registration_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">주민등록번호 수집 안내</span>
+					</div>
+				</div>
+				<div class="resident_registration_content">
+					<div class="resident_registration_inner">
+						<div class="resident_registration_title_con">
+							<h2 class="resident_registration_main">주민등록번호 수집이 필요합니다</h2>
+							<h3 class="resident_registration_sub">투자 체결 후 고객님의 소유임을 증명하기 위한 투자자명부 작성과 공증신고를 위해 주민등록번호 수집이 필요합니다.<br><br>투자자 명부는 투자 체결 후 [투자 신청 결과 > 내 상품 상세페이지]에서 확인할 수 있습니다.</h3>
+						</div>
+						<div class="resident_registration_agree_box">
+							<div class="resident_registration_all_agree_con">
+								 <input type="checkbox" id="all_check">
+							    <label for="all_check">전체 동의하기</label>
+							</div>
+							<div class="agree_box">
+								<div class="agree_con">
+									<input type="checkbox" id="check_1" class="eseential">
+									<label for="check_1">금융당국의 소득세 징수 의무와 현금영수증/전자세금 계산서의 제출 및 발행을 위해 주민등록번호 수집이 필요합니다.</label>
+								</div>
+								<div class="agree_con">
+									<input type="checkbox" id="check_2" class="eseential">
+									<label for="check_2">수집된 주민등록번호는 5년간 암호화 처리되어 안전하게 저장됩니다.</label>
+								</div>
+								<div class="agree_con">
+									<input type="checkbox" id="check_3" class="eseential">
+									<label for="check_3">주민등록번호 수집에 동의하지 않을 시 투자신청 혹은 투자정산금 지급이 불가능합니다.</label>
+								</div>
+							</div>
+							<a class="agree_btn" href="../html/resident_registration_2.html">
+								<span class="agree_button">전체 동의하고 계속하기</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
