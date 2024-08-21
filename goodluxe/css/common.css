@@ -734,3 +734,71 @@ a{ text-decoration-line: none; color: #111; }
 .inquiry_board_content .inquiry_notice_box{ margin-top: var(--margin-x2); }
 .inquiry_board_content .inquiry_notice_box h4.inquiry_notice_title{ font-size: 15px; color: #676767; font-weight: bold; margin-bottom: var(--margin-half); }
 .inquiry_board_content .inquiry_notice_box p.inquiry_notice{ background: none; padding: 0; border-radius: none; font-size: 14px; color: #676767; line-height: 1.5em; margin-bottom: 5px; word-break: keep-all; }
+
+/* resident_registration_1*/
+.resident_registration_header{}
+.resident_registration_content{ margin-top: 60px; }
+.resident_registration_content .resident_registration_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - 112px); }
+.resident_registration_content .resident_registration_title_con{}
+.resident_registration_content .resident_registration_title_con h2.resident_registration_main{ word-break: keep-all; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.5em; }
+.resident_registration_content .resident_registration_title_con h3.resident_registration_sub{ font-size: 14px; color: #797979; line-height: 1.5em; word-break: keep-all; font-weight: bold; }
+.resident_registration_content .resident_registration_agree_box{}
+.resident_registration_content .resident_registration_agree_box .resident_registration_all_agree_con{ padding: 20px; border: 1px solid #dfdfdf; border-radius: 15px; margin-bottom: var(--margin); }
+.resident_registration_content .resident_registration_agree_box .agree_box{}
+.resident_registration_content .resident_registration_agree_box .agree_box .agree_con{ display: flex; align-items: flex-start; margin-bottom: var(--margin); }
+.resident_registration_content .resident_registration_agree_box .agree_box .agree_con a.agree_link{}
+.resident_registration_content .resident_registration_agree_box .agree_box .agree_con a.agree_link img.right_arrow{ width: 15px; }
+.resident_registration_content input[type="checkbox"] { display: none; }
+.resident_registration_content input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 14px; line-height: 1.5em; }
+.resident_registration_content input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0; top: 0; width: 14px;  height: 14px; background: url('../img/none_check.png') no-repeat center center / contain;  }
+.resident_registration_content input[type="checkbox"] + label:after{ content: ''; display: inline-block; width: 14px; height: 14px; margin-right: 10px; }
+.resident_registration_content input[type="checkbox"]:checked + label:before { background: url('../img/check.png') no-repeat center center / contain; }
+#all_check + label{ padding-left: 35px; font-size: 16px; font-weight: bold; }
+#all_check + label:before { background: url('../img/all_none.png') no-repeat center center / contain; width: 20px; height: 20px; }
+#all_check:checked + label:before { background: url('../img/all_check.png') no-repeat center center / contain; }
+.resident_registration_content .resident_registration_agree_box a.agree_btn{ display: block;  background: #f5f5f5; padding: 20px; border-radius: 15px; pointer-events: none; }
+.resident_registration_content .resident_registration_agree_box a.agree_btn span.agree_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #cdcfdb; }
+.resident_registration_content .resident_registration_agree_box a.agree_btn.check{ pointer-events: auto !important; background: #2196f3; }
+.resident_registration_content .resident_registration_agree_box a.agree_btn.check span.agree_button{ color: #fff; }
+
+/*resident_registration_2*/
+.id_content{}
+.id_content .id_inner{ padding: var(--margin); }
+.id_content .id{ display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - var(--margin-x2)); }
+.id_content .id .id_con{}
+.id_content .id .id_con h2.id_title{ font-size: 22px; font-weight: bold; margin-bottom: var(--margin); }
+.id_content .id .id_con span.id_ttl{ display: block; font-size: 16px; color: #565656; margin-bottom: var(--margin-half); }
+.id_content .id .id_con .id_input_box{ display: flex; align-items: center; gap: 5px; }
+.id_content .id .id_con .id_input_box input{ width: 50%; box-sizing: border-box; padding: 10px 15px; border: 1px solid #eaeaea; border-radius: 10px; }
+.id_content .id .id_con .id_input_box input:focus{ outline: none; border: 1px solid #2196f3; }
+.id_content .id .id_con .id_input_box input.front{}
+.id_content .id .id_con .id_input_box input.back{}
+.id_content .id a.id_btn{ width: 100%; box-sizing: border-box; background: #f5f5f5; padding: 20px; border-radius: 15px; color: #cdcfdb; font-size: 16px; pointer-events: none; text-align: center; }
+.id_content .id a.id_btn.check{ pointer-events: auto !important; background: #2196f3; color: #fff; }
+
+.error{ border: 1px solid #f00 !important; }
+
+/*resident_registration_3*/
+.resident_registration_success_content{}
+.resident_registration_success_content .resident_registration_success_inner{ display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - var(--margin-x2)); padding: var(--margin); }
+.resident_registration_success_content .resident_registration_success_box{ padding-top: var(--margin-x4); }
+.resident_registration_success_content .resident_registration_success_box img.resident_registration_success_img{ display: block; width: 50px; margin: 0 auto var(--margin); }
+.resident_registration_success_content .resident_registration_success_box h2.resident_registration_success_title{ text-align: center; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
+.resident_registration_success_content .resident_registration_success_box p.resident_registration_success_sub{ text-align: center; font-size: 14px; color: #999; margin-bottom: var(--margin-half); line-height: 1.5em; }
+.resident_registration_success_content a.resident_registration_success_btn{ display: block; background: #2196f3; padding: 20px; border-radius: 15px; }
+.resident_registration_success_content a.resident_registration_success_btn span.resident_registration_success_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #fff; }
+
+/*resident_registration_4*/
+.my_resident_registration_header{}
+.my_resident_registration_content{ margin-top: 60px; }
+.my_resident_registration_content .my_resident_registration_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - 112px); }
+.my_resident_registration_content .my_resident_registration_top{}
+.my_resident_registration_content .my_resident_registration_top h2.my_resident_registration_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
+.my_resident_registration_content .my_resident_registration_top .my_resident_registration_box{ display: flex; justify-content: space-between; align-items: center; border: 1px solid #eaeaea; border-radius: 10px; padding: 15px; margin-bottom: var(--margin-half); }
+.my_resident_registration_content .my_resident_registration_top .my_resident_registration_box span.my_resident_registration{}
+.my_resident_registration_content .my_resident_registration_top .my_resident_registration_box img.check_img{ width: 15px; }
+.my_resident_registration_content .my_resident_registration_top p.encryption{ color: #2196f3; }
+.my_resident_registration_content .my_resident_registration_bottom{}
+.my_resident_registration_content .my_resident_registration_bottom .my_resident_registration_button{ display: flex; gap: 5px; }
+.my_resident_registration_content .my_resident_registration_bottom .my_resident_registration_button a.my_resident_registration_delete{ background: #ecedf2; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; width: 10%; min-width: 30px; text-align: center; }
+.my_resident_registration_content .my_resident_registration_bottom .my_resident_registration_button a.my_resident_registration_correction{ background: #2196f3; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; width: 90%; text-align: center; color: #fff; }
