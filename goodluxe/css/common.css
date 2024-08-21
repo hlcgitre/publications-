@@ -738,7 +738,7 @@ a{ text-decoration-line: none; color: #111; }
 /* resident_registration_1*/
 .resident_registration_header{}
 .resident_registration_content{ margin-top: 60px; }
-.resident_registration_content .resident_registration_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - 52px); gap: var(--margin-x2); }
+.resident_registration_content .resident_registration_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - 112px); gap: var(--margin-x2); }
 .resident_registration_content .resident_registration_title_con{}
 .resident_registration_content .resident_registration_title_con h2.resident_registration_main{ word-break: keep-all; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.5em; }
 .resident_registration_content .resident_registration_title_con h3.resident_registration_sub{ font-size: 14px; color: #797979; line-height: 1.5em; word-break: keep-all; font-weight: bold; }
