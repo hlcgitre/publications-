@@ -55,6 +55,13 @@
 				document.addEventListener('gesturestart', function(event) {
 					event.preventDefault();
 				});
+				var withdrawButton = document.querySelector('.withdraw_btn');
+				if (withdrawButton) {
+					withdrawButton.addEventListener('click', function(event) {
+						event.preventDefault();
+						window.location.href = '../html/withdraw.html';
+					});
+				}
             });
 		</script>
     </head>
