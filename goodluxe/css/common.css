@@ -803,3 +803,33 @@ a{ text-decoration-line: none; color: #111; }
 .my_resident_registration_content .my_resident_registration_bottom .my_resident_registration_button{ display: flex; gap: 5px; }
 .my_resident_registration_content .my_resident_registration_bottom .my_resident_registration_button a.my_resident_registration_delete{ background: #ecedf2; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; width: 10%; min-width: 30px; text-align: center; }
 .my_resident_registration_content .my_resident_registration_bottom .my_resident_registration_button a.my_resident_registration_correction{ background: #2196f3; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; width: 90%; text-align: center; color: #fff; }
+
+/*cash_receipt*/
+.cash_receipt_header{}
+.cash_receipt_content{ margin-top: 60px; }
+.cash_receipt_content .cash_receipt_inner{ padding: var(--margin); }
+.cash_receipt_content .cash_receipt_top{}
+.cash_receipt_content .cash_receipt_top h2.cash_receipt_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
+.cash_receipt_content .cash_receipt_top span.cash_receipt_sub{ display: block; font-size: 15px; color: #999; margin-bottom: var(--margin); line-height: 1.25em; }
+.cash_receipt_content .cash_receipt_top select.cash_receipt_type{ font-size: 15px; color: #111; appearance: none; -webkit-appearance: none; -moz-appearance: none; background: url('../img/down_arrow.png') no-repeat center right 15px; background-size: 15px; width: 160px; padding: 15px; border: 1px solid #eaeaea; border-radius: 10px; margin-bottom: var(--margin-half); }
+.cash_receipt_content .cash_receipt_top select.cash_receipt_type:focus{ outline: none; }
+.cash_receipt_content .cash_receipt_top select.cash_receipt_type option{}
+.cash_receipt_content span.date{ font-size: 14px; color: #999; }
+.cash_receipt_content .cash_receipt_con{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; }
+.cash_receipt_content .cash_receipt_con img.cash_receipt_img{ width: 100px; }
+.cash_receipt_content .cash_receipt_con span.ment{ font-size: 14px; font-weight: bold; }
+
+/*income_tax*/
+.income_tax_header{}
+.income_tax_content{ margin-top: 60px; }
+.income_tax_content .income_tax_inner{ padding: var(--margin); }
+.income_tax_content .income_tax_top{}
+.income_tax_content .income_tax_top h2.income_tax_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
+.income_tax_content .income_tax_top span.income_tax_sub{ display: block; font-size: 15px; color: #999; margin-bottom: var(--margin); line-height: 1.25em; }
+.income_tax_content .income_tax_top select.income_tax_type{ font-size: 15px; color: #111; appearance: none; -webkit-appearance: none; -moz-appearance: none; background: url('../img/down_arrow.png') no-repeat center right 15px; background-size: 15px; width: 160px; padding: 15px; border: 1px solid #eaeaea; border-radius: 10px; margin-bottom: var(--margin-half); }
+.income_tax_content .income_tax_top select.income_tax_type:focus{ outline: none; }
+.income_tax_content .income_tax_top select.income_tax_type option{}
+.income_tax_content span.date{ font-size: 14px; color: #999; }
+.income_tax_content .income_tax_con{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; }
+.income_tax_content .income_tax_con img.income_tax_img{ width: 100px; }
+.income_tax_content .income_tax_con span.ment{ font-size: 14px; font-weight: bold; }
