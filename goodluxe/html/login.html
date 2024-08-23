@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var closeButton = document.querySelector('.close_btn');
+				if (closeButton) {
+					closeButton.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					closeButton.addEventListener('click', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+				}
+				var passwordItems = document.querySelectorAll('.login_content .login_top .password_box ul.password_con li.password');
+
+				passwordItems.forEach(function(item) {
+					var img = item.querySelector('img.password_img');
+					if (item.classList.contains('input')) {
+						img.src = "../img/circle_2.png";
+					} else {
+						img.src = "../img/circle_1.png";
+					}
+				});
+			});
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="login_content">
+					<div class="login_inner">
+						<div class="login_top">
+							<div class="close_btn"></div>
+							<div class="password_box">
+								<span class="password_text">비밀번호 6자리 입력</span>
+								<ul class="password_con">
+									<li class="password input"><!--비밀번호 입력 시 input 이라는 클래스를 li에 넣으면 img src 변경-->
+										<img src="../img/circle_1.png" class="password_img">
+									</li>
+									<li class="password input">
+										<img src="../img/circle_1.png" class="password_img">
+									</li>
+									<li class="password">
+										<img src="../img/circle_1.png" class="password_img">
+									</li>
+									<li class="password">
+										<img src="../img/circle_1.png" class="password_img">
+									</li>
+									<li class="password">
+										<img src="../img/circle_1.png" class="password_img">
+									</li>
+									<li class="password">
+										<img src="../img/circle_1.png" class="password_img">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="login_middle">
+							<img src="../img/013.png" class="login_img">
+							<input type="checkbox" id="check" class="checkbox">
+							<label for="check">다음부터 지문 인식 사용하기</label>
+							<a class="find_password" href="#">비밀번호를 모르겠어요</a><!--본인 인증 페이지로 연결-->
+						</div>
+						<div class="login_bottom">
+							<div class="login_pinpad">
+								<button class="number">1</button>
+								<button class="number">2</button>
+								<button class="number">3</button>
+								<button class="number">4</button>
+								<button class="number">5</button>
+								<button class="number">6</button>
+								<button class="number">7</button>
+								<button class="number">8</button>
+								<button class="number">9</button>
+								<button class="number touch_none">&nbsp;</button>
+								<button class="number">0</button>
+								<button class="number delete"><img src="../img/backspace.png" class="backspace"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
