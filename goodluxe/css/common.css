@@ -442,7 +442,7 @@ a{ text-decoration-line: none; color: #111; }
 .goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list span.goods_ctg_title{ color: #bdbdbd; font-size: 16px; font-weight: bold; }
 .goods_content .goods_main_header ul.goods_main_ctg_con li.goods_main_ctg_list.active span.goods_ctg_title{ color: #111; }
 
-.goods_content span.header_height{ display: block; height: 60px; margin-top: -60px; visibility: hidden; }
+.goods_content span.header_height{ display: block; height: 104px; margin-top: -104px; visibility: hidden; }
 
 .goods_content .invest_tip_con{ padding-bottom: var(--margin); border-bottom: 1.5px solid #eaeaea; }
 .goods_content .invest_tip_con .invest_tip_box{}
