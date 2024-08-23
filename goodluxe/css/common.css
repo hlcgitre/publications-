@@ -861,3 +861,33 @@ a{ text-decoration-line: none; color: #111; }
 .withdraw_content .withdraw_bottom .withdraw_pinpad button.delete img.backspace{ display: block; margin: 0 auto; width: 20px; filter: invert(57%) sepia(98%) saturate(1%) hue-rotate(314deg) brightness(89%) contrast(87%); }
 .withdraw_content .withdraw_bottom a.withdraw_btn{ display: block; background: #2196f3; padding: 20px; border-radius: 15px; }
 .withdraw_content .withdraw_bottom a.withdraw_btn span.withdraw_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #fff; }
+
+/* login */
+.login_content{}
+.login_content .login_inner{ padding: var(--margin); min-height: calc(100vh - var(--margin-x2)); display: flex; flex-direction: column; justify-content: space-between; gap: var(--margin); }
+.login_content .login_top{}
+.login_content .login_top .close_btn{ position: relative; width: 20px; height: 20px; margin: 0 0 var(--margin) auto; }
+.login_content .login_top .close_btn:before,
+.login_content .login_top .close_btn:after{ position: absolute; content: ''; width: 20px; height: 2px; background: #111; border-radius: 10px; top: 10px; }
+.login_content .login_top .close_btn:before{ transform: rotate(45deg); }
+.login_content .login_top .close_btn:after{ transform: rotate(135deg); }
+.login_content .login_top .password_box{}
+.login_content .login_top .password_box span.password_text{ display: block; text-align: center; margin-bottom: var(--margin); font-size: 18px; }
+.login_content .login_top .password_box ul.password_con{ display: flex; justify-content: center; gap: 25px; }
+.login_content .login_top .password_box ul.password_con li.password{}
+.login_content .login_top .password_box ul.password_con li.password.input{}
+.login_content .login_top .password_box ul.password_con li.password img.password_img{ width: 25px; }
+.login_content .login_middle{ display: flex; flex-direction: column; align-items: center; gap: var(--margin); }
+.login_content .login_middle img.login_img{ width: 150px; }
+.login_content .login_middle input{}
+.login_content .login_middle label{}
+.login_content .login_middle input[type="checkbox"] { display: none; }
+.login_content .login_middle input[type="checkbox"] + label { position: relative; cursor: pointer; padding-left: 25px; font-size: 15px; }
+.login_content .login_middle input[type="checkbox"] + label:before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 18px;  height: 18px; background: url('../img/all_none.png') no-repeat center center / contain;  }
+.login_content .login_middle input[type="checkbox"]:checked + label:before { background: url('../img/all_check.png') no-repeat center center / contain; }
+.login_content .login_middle a.find_password{ padding: 10px; background: #efefef; border-radius: 10px; font-size: 14px; }
+.login_content .login_bottom{}
+.login_content .login_bottom .login_pinpad{ font-size: 0; margin-bottom: var(--margin-half); }
+.login_content .login_bottom .login_pinpad button.number{ width: 33.333333%; border: none; background: #fff; color: #999; font-size: 20px; height: 50px; vertical-align: middle; cursor: pointer; }
+.login_content .login_bottom .login_pinpad button.number.touch_none{ pointer-events: none; }
+.login_content .login_bottom .login_pinpad button.delete img.backspace{ display: block; margin: 0 auto; width: 20px; filter: invert(57%) sepia(98%) saturate(1%) hue-rotate(314deg) brightness(89%) contrast(87%); }
