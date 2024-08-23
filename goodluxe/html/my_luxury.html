@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.my_luxury_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+				$(".my_luxury_content .my_luxury_ctg_box ul.my_luxury_ctg li.my_luxury_ctg_list").click(function(){
+					$(".my_luxury_content .my_luxury_ctg_box ul.my_luxury_ctg li.my_luxury_ctg_list").removeClass("active");
+					$(this).addClass("active");
+					var rel = $(this).attr('rel');
+					$(".tab_content").removeClass("active");
+					$(".tab_content." + rel).addClass("active");
+				});
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="my_luxury_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">내 명품</span>
+					</div>
+				</div>
+				<div class="my_luxury_content">
+					<div class="my_luxury_ctg_box">
+						<div class="my_luxury_inner">
+							<ul class="my_luxury_ctg">
+								<li class="my_luxury_ctg_list active" rel="tab_1">
+									<span class="my_luxury_ctg_title">구입 예정이에요<b class="count">6</b></span>
+								</li>
+								<li class="my_luxury_ctg_list" rel="tab_2">
+									<span class="my_luxury_ctg_title">판매 중이에요<b class="count">4</b></span>
+								</li>
+								<li class="my_luxury_ctg_list" rel="tab_3">
+									<span class="my_luxury_ctg_title">판매했어요<b class="count">0</b></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="tab_content tab_1 active">
+						<div class="my_luxury_top_box">
+							<div class="my_luxury_top">
+								<span class="total_text">총 투자 금액</span>
+								<span class="total_money"><b class="total_num">4,900,000</b>원</span>
+							</div>
+						</div>
+						<div class="luxury_content">
+							<ul class="luxury">
+								<li class="luxury_list">
+									<span class="luxury_brand_name">PRADA</span>
+									<span class="luxury_brand_money">-1,000,000원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">CHANEL</span>
+									<span class="luxury_brand_money">5,000,000원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">CELINE</span>
+									<span class="luxury_brand_money">0원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">DIOR</span>
+									<span class="luxury_brand_money">500,000원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">FENDI</span>
+									<span class="luxury_brand_money">-300,000원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">BURBERRY</span>
+									<span class="luxury_brand_money">700,000원</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_2">
+						<div class="my_luxury_top_box">
+							<div class="my_luxury_top">
+								<span class="total_text">총 투자 금액</span>
+								<span class="total_money"><b class="total_num">7,600,000</b>원</span>
+							</div>
+						</div>
+						<div class="luxury_content">
+							<ul class="luxury">
+								<li class="luxury_list">
+									<span class="luxury_brand_name">LOUIS VUITTON</span>
+									<span class="luxury_brand_money">2,000,000원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">BALENCIAGA</span>
+									<span class="luxury_brand_money">3,500,000원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">GOYARD</span>
+									<span class="luxury_brand_money">500,000원</span>
+								</li>
+								<li class="luxury_list">
+									<span class="luxury_brand_name">GUCCI</span>
+									<span class="luxury_brand_money">1,600,000원</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_3">
+						<div class="my_luxury_top_box">
+							<div class="my_luxury_top">
+								<span class="total_text">총 판매 금액</span>
+								<span class="total_money"><b class="total_num">0</b>원</span>
+							</div>
+						</div>
+						<div class="no_history">
+							<img src="../img/013.png" class="tab_img">
+							<span class="ment">불러올 내역이 없어요</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
