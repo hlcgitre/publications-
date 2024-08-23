@@ -905,7 +905,7 @@ a{ text-decoration-line: none; color: #111; }
 .my_luxury_content .my_luxury_ctg_box ul.my_luxury_ctg li.my_luxury_ctg_list.active span.my_luxury_ctg_title{ color: #111; }
 .my_luxury_content .my_luxury_ctg_box ul.my_luxury_ctg li.my_luxury_ctg_list span.my_luxury_ctg_title b.count{ margin-left: 3px; font-size: 13px; }
 .my_luxury_content .my_luxury_ctg_box ul.my_luxury_ctg li.my_luxury_ctg_list.active span.my_luxury_ctg_title b.count{ color: #2196f3; }
-.my_luxury_content .my_luxury_top_box{}
+.my_luxury_content .my_luxury_top_box{ padding-bottom: var(--margin); border-bottom: 1px solid #eaeaea; }
 .my_luxury_content .my_luxury_top_box .my_luxury_top{}
 .my_luxury_content .my_luxury_top_box .my_luxury_top span.total_text{ display: block; margin-bottom: var(--margin-half); font-size: 16px; font-weight: bold; }
 .my_luxury_content .my_luxury_top_box .my_luxury_top span.total_money{ font-size: 16px; }
