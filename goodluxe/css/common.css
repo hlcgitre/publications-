@@ -946,7 +946,7 @@ a{ text-decoration-line: none; color: #111; }
 .bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list{ padding: var(--margin-half) 0; cursor: pointer; }
 .bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list:last-child{ margin-right: 0; }
 .bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list.active{ border-bottom: 2px solid #111; }
-.bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list span.bank_account_ctg_title{ color: #bdbdbd; font-size: 13px; font-weight: bold; }
+.bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list span.bank_account_ctg_title{ color: #bdbdbd; font-size: 15px; font-weight: bold; }
 .bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list.active span.bank_account_ctg_title{ color: #111; }
 .bank_statement_content .bank_account_top_box{ padding-bottom: var(--margin); border-bottom: 1px solid #eaeaea; }
 .bank_statement_content .bank_account_top_box span.bank_account_total_num{ color: #797979; font-size: 15px; }
