@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			 document.addEventListener('DOMContentLoaded', function() {
+				function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.bank_statement_header a.back_btn');
+				if (backLink) {
+					backLink.style.pointerEvents = 'none';
+					setTimeout(function() {
+						backLink.style.pointerEvents = 'auto';
+						backLink.addEventListener('touchstart', function(event) {
+							event.preventDefault();
+							goBack(event);
+						});
+						backLink.addEventListener('click', function(event) {
+							event.preventDefault();
+							goBack(event);
+						});
+					}, 800);
+				}
+				function copyToClipboard(event) {
+                    event.preventDefault();
+                    var bankAccount = document.querySelector('.bank_account_number').textContent;
+                    var onlyNumbers = bankAccount.replace(/\D/g, '');
+                    navigator.clipboard.writeText(onlyNumbers)
+                        .then(() => {
+                            alert('계좌번호가 복사되었습니다.');
+                        })
+                        .catch(err => {
+                            console.error('복사 실패:', err);
+                        });
+                }
+
+                var clipboardButton = document.querySelector('.clip_board');
+                if (clipboardButton) {
+                    clipboardButton.addEventListener('click', copyToClipboard);
+                }
+				document.addEventListener('gesturestart', function(event) {
+					event.preventDefault();
+				});
+				var withdrawButton = document.querySelector('.withdraw_btn');
+				if (withdrawButton) {
+					withdrawButton.addEventListener('click', function(event) {
+						event.preventDefault();
+						window.location.href = '../html/withdraw.html';
+					});
+				}
+				$(".bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list").click(function(){
+					$(".bank_statement_content .bank_account_ctg_box ul.bank_account_ctg li.bank_account_ctg_list").removeClass("active");
+					$(this).addClass("active");
+					var rel = $(this).attr('rel');
+					$(".tab_content").removeClass("active");
+					$(".tab_content." + rel).addClass("active");
+				});
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+				<div class="bank_statement_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">거래내역</span>
+					</div>
+				</div>
+				<div class="bank_statement_content">
+					<div class="bank_account_content">
+						<div class="bank_account">
+							<div class="bank_account_box">
+								<img class="bank_account_img" src="../img/bank.png">
+								<span class="bank_account_number">790-2314-06496-95</span>
+								<div class="clip_board">복사</div>
+								<img src="../img/more.png" class="more">
+							</div>
+							<div class="bank_account_money_con">
+								<span class="money"><b class="bank_account_money">0</b>원</span>
+							</div>
+							<div class="bank_account_btn_con">
+								<div class="withdraw_btn bank_account_btn">출금하기</div>
+							</div>
+						</div>
+					</div>
+					<div class="bank_account_ctg_box">
+						<div class="bank_account_inner">
+							<ul class="bank_account_ctg">
+								<li class="bank_account_ctg_list active" rel="tab_01">
+									<span class="bank_account_ctg_title">전체</span>
+								</li>
+								<li class="bank_account_ctg_list" rel="tab_02">
+									<span class="bank_account_ctg_title">입금</span>
+								</li>
+								<li class="bank_account_ctg_list" rel="tab_03">
+									<span class="bank_account_ctg_title">출금</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_01 active">
+						<div class="bank_account_top_box">
+							<span class="bank_account_total_num">총 5 건</span>
+						</div>
+						<div class="statement_content">
+							<ul class="statement">
+								<span class="bank_statement_date">7월 26일</span>
+								<li class="statement_list deposit"><!--입금 시 deposit 클래스명 추가해야됨-->
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">18:33 | 예치금입금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">+5,000원</span>
+										<span class="statement_total_money">65,000원</span>
+									</div>
+								</li>
+								<li class="statement_list deposit">
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">09:33 | 예치금입금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">+60,000원</span>
+										<span class="statement_total_money">60,000원</span>
+									</div>
+								</li>
+								<span class="bank_statement_date">7월 23일</span>
+								<li class="statement_list">
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">18:33 | 출금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">-10,000원</span>
+										<span class="statement_total_money">0원</span>
+									</div>
+								</li>
+								<li class="statement_list">
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">14:54 | 출금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">-5,000원</span>
+										<span class="statement_total_money">10,000원</span>
+									</div>
+								</li>
+								<li class="statement_list deposit">
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">12:06 | 예치금입금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">+15,000원</span>
+										<span class="statement_total_money">15,000원</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_02">
+						<div class="bank_account_top_box">
+							<span class="bank_account_total_num">총 3 건</span>
+						</div>
+						<div class="statement_content">
+							<ul class="statement">
+								<span class="bank_statement_date">7월 26일</span>
+								<li class="statement_list deposit">
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">18:33 | 예치금입금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">+5,000원</span>
+										<span class="statement_total_money">65,000원</span>
+									</div>
+								</li>
+								<li class="statement_list deposit">
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">09:33 | 예치금입금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">+60,000원</span>
+										<span class="statement_total_money">60,000원</span>
+									</div>
+								</li>
+								<span class="bank_statement_date">7월 23일</span>
+								<li class="statement_list deposit">
+									<div class="statement_front">
+										<span class="statement_name">심장은</span>
+										<span class="statement_date">12:06 | 예치금입금</span>
+									</div>
+									<div class="statement_back">
+										<span class="statement_money">+15,000원</span>
+										<span class="statement_total_money">15,000원</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab_content tab_03">
+						<div class="bank_account_top_box">
+							<span class="bank_account_total_num">총 0 건</span>
+						</div>
+						<div class="no_history">
+							<img src="../img/013.png" class="tab_img">
+							<span class="ment">불러올 내역이 없어요</span>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </body>
+</html>
