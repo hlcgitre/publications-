@@ -981,4 +981,4 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_modal_con .mypage_modal_content .mypage_modal_inner{ padding: calc(var(--margin) + var(--margin-half)) var(--margin); }
 .mypage_modal_con .mypage_modal_content span.mypage_modal_title{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin); }
 .mypage_modal_con .mypage_modal_content span.mypage_modal_main{ display: block; margin-bottom: var(--margin); font-size: 15px; line-height: 1.5em; }
-.mypage_modal_con .mypage_modal_content .mypage_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 15px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 20px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; }
