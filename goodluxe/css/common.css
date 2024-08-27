@@ -923,7 +923,7 @@ a{ text-decoration-line: none; color: #111; }
 .luxury_content ul.luxury li.luxury_list span.luxury_brand_name{ font-size: 15px; font-weight: bold; }
 .luxury_content ul.luxury li.luxury_list span.luxury_brand_money{ font-size: 15px; font-weight: bold; }
 
-/* mypage */
+/* bank_statement */
 .bank_statement_header{}
 .bank_statement_content{ margin-top: 60px; padding-top: var(--margin-half); }
 .bank_statement_content .bank_statement_inner{ padding: 0 var(--margin-half); }
@@ -967,3 +967,18 @@ a{ text-decoration-line: none; color: #111; }
 .statement_content ul.statement li.statement_list .statement_back span.statement_money{ font-size: 16px; font-weight: bold; }
 .statement_content ul.statement li.statement_list.deposit .statement_back span.statement_money{ color: #2196f3; }
 .statement_content ul.statement li.statement_list .statement_back span.statement_total_money{ font-size: 14px; }
+
+/* mypage_modal */
+.mypage_modal_bg,
+.mypage_modal_con{ opacity: 0; visibility: hidden; z-index: 1; }
+.mypage_modal_bg{ position: fixed; width: 100%; max-width: 500px; height: 100%; left: 50%; transform: translateX(-50%); top: 0; background: rgba(0, 0, 0, .4); pointer-events: none; }
+.mypage_modal_bg.on{ pointer-events: auto; }
+.mypage_modal_con{ position: fixed; width: 100%; max-width: 500px; height: auto; background: #fff; bottom: 0; left: 50%; transform: translateX(-50%); border-top-left-radius: 25px; border-top-right-radius: 25px; max-height: 0; transition: max-height 300ms ease-in-out; }
+.mypage_modal_con.on{ max-height: 1000px; }
+.mypage_modal_bg.on,
+.mypage_modal_con.on{ opacity: 1; visibility: visible; z-index: 999999; }
+.mypage_modal_con .mypage_modal_content{}
+.mypage_modal_con .mypage_modal_content .mypage_modal_inner{ padding: calc(var(--margin) + var(--margin-half)) var(--margin); }
+.mypage_modal_con .mypage_modal_content span.mypage_modal_title{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin); }
+.mypage_modal_con .mypage_modal_content span.mypage_modal_main{ display: block; margin-bottom: var(--margin); font-size: 15px; line-height: 1.5em; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 15px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; }
