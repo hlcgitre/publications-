@@ -62,12 +62,31 @@
 						window.location.href = '../html/withdraw.html';
 					});
 				}
+				$(".mypage_content .account_content a.account_link .account_btn_con .deposit_btn").click(function(){
+					event.preventDefault();
+					$(".mypage_modal_bg").addClass("on");
+					$(".mypage_modal_con").addClass("on");
+				});
+				$(".mypage_modal_bg, .mypage_modal_con .mypage_modal_close_btn").click(function(){
+					$(".mypage_modal_bg").removeClass("on");
+					$(".mypage_modal_con").removeClass("on");
+				});
             });
 		</script>
     </head>
     <body>
         <div class="wrap">
             <div class="container">
+				<div class="mypage_modal_bg"></div>
+				<div class="mypage_modal_con">
+					<div class="mypage_modal_content">
+						<div class="mypage_modal_inner">
+							<span class="mypage_modal_title">입금 안내</span>
+							<span class="mypage_modal_main">굿럭스 펀딩 입금은 주식회사 에루샤의 법인 계좌로 입금이 가능합니다.</span>
+							<div class="mypage_modal_close_btn">확인</div>
+						</div>
+					</div>
+				</div>
 				<div class="mypage_header page_header">
 					<div class="header_inner">
 						<a class="back_btn">
