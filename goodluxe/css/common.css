@@ -150,7 +150,7 @@ a{ text-decoration-line: none; color: #111; }
 .section_4 .goodluxe_goods_box .box_1{ background: #3a4152; margin-bottom: var(--margin-half); }
 .section_4 .goodluxe_goods_box .box_2{ background: #32415d; }
 .section_4 .goodluxe_goods_box .box .box_title{ position: relative; margin-bottom: var(--margin-half); }
-.section_4 .goodluxe_goods_box .box .box_title .box_time_con{ display: inline-block; background: #fff; border-radius: 50px; padding: var(--margin-half); }
+.section_4 .goodluxe_goods_box .box .box_title .box_time_con{ display: inline-block; background: #fff; border-radius: 50px; padding: var(--margin-half); margin-bottom: var(--margin-half); }
 .section_4 .goodluxe_goods_box .box.deadline .box_title .box_time_con{ display: none; }
 .section_4 .goodluxe_goods_box .box .box_title .box_time_con img.clock{ width: 16px; vertical-align: middle; margin-right: 5px; }
 .section_4 .goodluxe_goods_box .box .box_title .box_time_con span.time{ vertical-align: middle; font-size: 15px; }
