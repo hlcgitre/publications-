@@ -979,6 +979,16 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_modal_con.on{ opacity: 1; visibility: visible; z-index: 999999; }
 .mypage_modal_con .mypage_modal_content{}
 .mypage_modal_con .mypage_modal_content .mypage_modal_inner{ padding: calc(var(--margin) + var(--margin-half)) var(--margin); }
-.mypage_modal_con .mypage_modal_content span.mypage_modal_title{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin); }
+.mypage_modal_con .mypage_modal_content span.mypage_modal_title{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin-half); }
 .mypage_modal_con .mypage_modal_content span.mypage_modal_main{ display: block; margin-bottom: var(--margin); font-size: 15px; line-height: 1.5em; }
-.mypage_modal_con .mypage_modal_content .mypage_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 20px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box{ display: flex; align-items: center; gap: 10px; padding: 15px; border: 1px solid #eaeaea; border-radius: 10px; margin-bottom: var(--margin-half); }
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box.no_connect{}
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box.connect{}
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box.connect .mypage_modal_bank{ display: flex; flex-direction: column; gap: 5px; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box img.bank_img{ width: 30px; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box.no_connect span.bank_brand{ font-size: 14px; color: #999; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box.connect span.bank_brand{ font-size: 14px; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_bank_box span.account_number{ font-size: 13px; color: #999; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_connect_btn{ display: block; background: #eaeaea; text-align: center; padding: 20px; border-radius: 15px; color: #111; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); }
+.mypage_modal_con .mypage_modal_content p.mypage_modal_notice{ font-size: 14px; }
+.mypage_modal_con .mypage_modal_content .mypage_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 20px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; margin-top: var(--margin-x2); }
