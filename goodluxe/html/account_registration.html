@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.account_number_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+
+				var listItems = document.querySelectorAll('li.bank_brand_list');
+				var submitButton = document.querySelector('.account_number_button a.account_number_btn');
+
+				listItems.forEach(function(item) {
+					item.addEventListener('click', function() {
+						listItems.forEach(function(i) {
+							i.classList.remove('select');
+						});
+						item.classList.add('select');
+
+						updateButtonState();
+					});
+				});
+
+				function updateButtonState() {
+					var hasSelected = Array.from(listItems).some(function(i) {
+						return i.classList.contains('select');
+					});
+
+					if (hasSelected) {
+						submitButton.classList.add('check');
+					} else {
+						submitButton.classList.remove('check');
+					}
+				}
+			});
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="account_number_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">출금 계좌 등록</span>
+					</div>
+				</div>
+				<div class="account_number_content">
+					<div class="account_number_inner">
+						<div class="account_number_title_con">
+							<h2 class="account_number_title">출금 계좌 등록이 필요합니다</h2>
+							<h4 class="account_number_sub">출금을 진행할 계좌를 선택해 주세요.</h4>
+						</div>
+						<ul class="bank_brand_con">
+							<li class="bank_brand_list">
+								<img src="../img/bank.png" class="bank_brand_img">
+								<span class="bank_brand">NH농협은행</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_2.png" class="bank_brand_img">
+								<span class="bank_brand">카카오뱅크</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_3.png" class="bank_brand_img">
+								<span class="bank_brand">국민은행</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_4.png" class="bank_brand_img">
+								<span class="bank_brand">토스뱅크</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_5.png" class="bank_brand_img">
+								<span class="bank_brand">신한은행</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_6.png" class="bank_brand_img">
+								<span class="bank_brand">KEB 하나은행</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_7.png" class="bank_brand_img">
+								<span class="bank_brand">우리은행</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_8.png" class="bank_brand_img">
+								<span class="bank_brand">기업은행</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_9.png" class="bank_brand_img">
+								<span class="bank_brand">케이뱅크</span>
+							</li>
+							<li class="bank_brand_list">
+								<img src="../img/bank_10.png" class="bank_brand_img">
+								<span class="bank_brand">SC 제일은행</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="account_number_button">
+					<a class="account_number_btn" href="#">등록하기</a>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
