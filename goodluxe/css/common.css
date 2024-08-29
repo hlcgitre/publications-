@@ -992,3 +992,19 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_modal_con .mypage_modal_content a.mypage_modal_connect_btn{ display: block; background: #eaeaea; text-align: center; padding: 20px; border-radius: 15px; color: #111; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); }
 .mypage_modal_con .mypage_modal_content p.mypage_modal_notice{ font-size: 14px; }
 .mypage_modal_con .mypage_modal_content .mypage_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 20px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; margin-top: var(--margin-x2); }
+
+/* account_number */
+.account_number_header{}
+.account_number_content{ margin: 60px 0 82px; }
+.account_number_content .account_number_inner{ padding: var(--margin); }
+.account_number_content .account_number_title_con{}
+.account_number_content .account_number_title_con h2.account_number_title{ font-size: 22px; font-weight: bold; margin-bottom: var(--margin); }
+.account_number_content .account_number_title_con h4.account_number_sub{ font-size: 16px; color: #676767; margin-bottom: var(--margin); }
+.account_number_content ul.bank_brand_con{ display: flex; flex-wrap: wrap; gap: 15px; }
+.account_number_content ul.bank_brand_con li.bank_brand_list{ width: calc(33.33333333% - 10px); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; background: #f5f5f5; padding: 15px 0; border-radius: 10px; }
+.account_number_content ul.bank_brand_con li.bank_brand_list.select{ box-shadow: 0 0 0 2px rgb(33, 150, 243); box-sizing: border-box; }
+.account_number_content ul.bank_brand_con li.bank_brand_list img.bank_brand_img{ width: 30px; height: 30px; object-fit: contain; }
+.account_number_content ul.bank_brand_con li.bank_brand_list span.bank_brand{ font-size: 13px; }
+.account_number_button{ position: fixed; bottom: 0; width: 100%; box-sizing: border-box; padding: var(--margin-half) var(--margin); max-width: 500px; z-index: 9999; background: #fff; }
+.account_number_button a.account_number_btn{ display: block; background: #f5f5f5; color: #cdcfdb; text-align: center; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; pointer-events: none; }
+.account_number_button a.account_number_btn.check{ background: #2196f3; pointer-events: auto !important; color: #fff; }
