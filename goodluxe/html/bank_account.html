@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.bank_account_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+
+				var accountInput = document.querySelector('.account_input_box input');
+				var clearButton = document.querySelector('.clear_button');
+				var submitButton = document.querySelector('.bank_account_button a.bank_account_btn');
+
+				accountInput.addEventListener('input', function() {
+					var value = accountInput.value.replace(/[^0-9]/g, ''); // 숫자만 남기기
+					accountInput.value = value;
+
+					if (value.length > 14) {
+						accountInput.value = value.substring(0, 14); // 14자리 제한
+					}
+
+					if (value.length < 9) {
+						accountInput.classList.add('error_border');
+						submitButton.classList.remove('check');
+					} else {
+						accountInput.classList.remove('error_border');
+						submitButton.classList.add('check');
+					}
+
+					// clearButton 표시 및 숨기기
+					clearButton.style.display = value.length > 0 ? 'block' : 'none';
+				});
+
+				clearButton.addEventListener('click', function() {
+					accountInput.value = '';
+					accountInput.classList.remove('error_border');
+					submitButton.classList.remove('check');
+					clearButton.style.display = 'none';
+				});
+			});
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="bank_account_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">출금 계좌 등록</span>
+					</div>
+				</div>
+				<div class="bank_account_content">
+					<div class="bank_account_inner">
+						<div class="bank_account_title_con">
+							<h2 class="bank_account_title">출금 계좌 등록을 진행할<br>계좌번호를 입력해 주세요</h2>
+						</div>
+						<a class="bank_brand_select" href="../html/account_registration.html">
+							<img src="../img/bank_6.png" class="bank_brand_logo">
+							<span class="bank_brand_name">KEB 하나은행</span>
+							<img src="../img/down_arrow.png" class="down_arrow">
+						</a>
+						<div class="account_input_box">
+							<input type="text" placeholder="'-' 제외하고 계좌번호를 입력해 주세요." pattern="[0-9]*" inputmode="numeric" >
+							<button type="button" class="clear_button"></button>
+						</div>
+					</div>
+				</div>
+				<div class="bank_account_button">
+					<a class="bank_account_btn" href="#">확인</a>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
