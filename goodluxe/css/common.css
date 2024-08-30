@@ -850,7 +850,8 @@ a{ text-decoration-line: none; color: #111; }
 .withdraw_content .withdraw_top .withdraw_bank_box span.withdraw_bank_num{ font-size: 12px; color: #999; }
 .withdraw_content .withdraw_top .withdraw_bank_box img.right_arrow{ width: 13px; margin-left: auto; }
 .withdraw_content .withdraw_middle{}
-.withdraw_content .withdraw_middle span.withdraw_number{ display: block; text-align: center; font-size: 20px; font-weight: bold; color: #999; margin-bottom: var(--margin); }
+.withdraw_content .withdraw_middle span.withdraw_number{ display: block; text-align: center; font-size: 15px; margin-bottom: var(--margin); }
+.withdraw_content .withdraw_middle span.withdraw_number b.money_num{ font-size: 24px; margin-right: 2px; }
 .withdraw_content .withdraw_middle span.withdraw_money{ display: block; text-align: center; font-size: 15px; }
 .withdraw_content .withdraw_bottom{}
 .withdraw_content .withdraw_bottom .withdraw_btn_con{ display: flex; gap: 10px; margin-bottom: var(--margin-half); }
