@@ -1012,19 +1012,19 @@ a{ text-decoration-line: none; color: #111; }
 
 /* bank_account */
 .bank_account_header{}
-.bank_account_content{ margin: 60px 0 82px; }
-.bank_account_content .bank_account_inner{ padding: var(--margin); }
-.bank_account_content .bank_account_title_con{}
-.bank_account_content .bank_account_title_con h2.bank_account_title{ font-size: 22px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.5em; }
-.bank_account_content a.bank_brand_select{ display: inline-block; margin-bottom: var(--margin-half); border: 1px solid #dfdfdf; border-radius: 10px; padding: 10px 20px; }
-.bank_account_content a.bank_brand_select img.bank_brand_logo{ width: 18px; vertical-align: middle; margin-right: 10px; }
-.bank_account_content a.bank_brand_select span.bank_brand_name{ font-size: 15px; vertical-align: middle; margin-right: 10px; }
-.bank_account_content a.bank_brand_select img.down_arrow{ width: 15px; vertical-align: middle; filter: invert(64%) sepia(6%) saturate(20%) hue-rotate(82deg) brightness(94%) contrast(93%); }
-.bank_account_content .account_input_box{ position: relative; display: block; }
-.bank_account_content .account_input_box input{ width: 100%; padding: 10px 15px; border-radius: 10px; box-sizing: border-box; font-size: 15px; border: 1px solid #dfdfdf; }
-.bank_account_content .account_input_box input:focus{ outline: none; border: 1px solid #0054ff; }
-.bank_account_content .account_input_box input.error_border{ border: 1px solid #f00 !important; }
-.bank_account_content .account_input_box button.clear_button{ position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: url('../img/clear.png') no-repeat center center; background-size: contain; border: none; width: 18px; height: 18px; cursor: pointer; display: none; }
+.bank_brand_account_content{ margin: 60px 0 82px; }
+.bank_brand_account_content .bank_account_inner{ padding: var(--margin); }
+.bank_brand_account_content .bank_account_title_con{}
+.bank_brand_account_content .bank_account_title_con h2.bank_account_title{ font-size: 22px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.5em; }
+.bank_brand_account_content a.bank_brand_select{ display: inline-block; margin-bottom: var(--margin-half); border: 1px solid #dfdfdf; border-radius: 10px; padding: 10px 20px; }
+.bank_brand_account_content a.bank_brand_select img.bank_brand_logo{ width: 18px; vertical-align: middle; margin-right: 10px; }
+.bank_brand_account_content a.bank_brand_select span.bank_brand_name{ font-size: 15px; vertical-align: middle; margin-right: 10px; }
+.bank_brand_account_content a.bank_brand_select img.down_arrow{ width: 15px; vertical-align: middle; filter: invert(64%) sepia(6%) saturate(20%) hue-rotate(82deg) brightness(94%) contrast(93%); }
+.bank_brand_account_content .account_input_box{ position: relative; display: block; }
+.bank_brand_account_content .account_input_box input{ width: 100%; padding: 10px 15px; border-radius: 10px; box-sizing: border-box; font-size: 15px; border: 1px solid #dfdfdf; }
+.bank_brand_account_content .account_input_box input:focus{ outline: none; border: 1px solid #0054ff; }
+.bank_brand_account_content .account_input_box input.error_border{ border: 1px solid #f00 !important; }
+.bank_brand_account_content .account_input_box button.clear_button{ position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: url('../img/clear.png') no-repeat center center; background-size: contain; border: none; width: 18px; height: 18px; cursor: pointer; display: none; }
 .bank_account_button{ position: fixed; bottom: 0; width: 100%; box-sizing: border-box; padding: var(--margin-half) var(--margin); max-width: 500px; z-index: 9999; background: #fff; }
 .bank_account_button a.bank_account_btn{ display: block; background: #f5f5f5; color: #cdcfdb; text-align: center; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; pointer-events: none; }
 .bank_account_button a.bank_account_btn.check{ background: #2196f3; pointer-events: auto !important; color: #fff; }
