@@ -668,7 +668,7 @@ a{ text-decoration-line: none; color: #111; }
 .settlement_content ul.settlement{}
 .settlement_content ul.settlement li.settlement_list{ display: flex; align-items: center; gap: 5px; padding: var(--margin-half) 0; }
 .settlement_content ul.settlement li.settlement_list:first-child{ padding-top: var(--margin); }
-.settlement_content ul.settlement li.settlement_list img.settlement_img{ width: 50px; }
+.settlement_content ul.settlement li.settlement_list img.settlement_img{ width: 50px; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover;  }
 .settlement_content ul.settlement li.settlement_list .settlement_middle{ display: flex; flex-direction: column; gap: 5px; }
 .settlement_content ul.settlement li.settlement_list .settlement_middle span.settlement_name{ font-size: 15px; }
 .settlement_content ul.settlement li.settlement_list .settlement_middle span.settlement_date{ font-size: 13px; color: #999; }
