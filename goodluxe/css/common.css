@@ -49,6 +49,7 @@ a{ text-decoration-line: none; color: #111; }
 .btn_con a.btn_link span{}
 
 /* no_history */
+.no_history_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 112px); gap: var(--margin); }
 .no_history{ display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; padding-top: var(--margin-x2); }
 .no_history img.tab_img{ width: 100px; }
 .no_history span.ment{ font-size: 14px; font-weight: bold; }
