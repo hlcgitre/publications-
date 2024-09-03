@@ -577,11 +577,11 @@ a{ text-decoration-line: none; color: #111; }
 .application_history_content .application_history_con span.ment{ font-size: 14px; font-weight: bold; }
 .application_history_content .application_history_con{}
 .application_history_content .application_history_con ul.application_history{}
-.application_history_content .application_history_con ul.application_history li.application_history_list{ display: flex; align-items: center; gap: 5px; padding: var(--margin-half) 0; }
+.application_history_content .application_history_con ul.application_history li.application_history_list{ display: flex; align-items: center; gap: 7px; padding: var(--margin-half) 0; }
 .application_history_content .application_history_con ul.application_history li.application_history_list:first-child{ padding-top: var(--margin); }
-.application_history_content .application_history_con ul.application_history li.application_history_list img.application_history_img{ width: 50px; }
+.application_history_content .application_history_con ul.application_history li.application_history_list img.application_history_img{ width: 50px; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle{ display: flex; flex-direction: column; gap: 5px; }
-.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle span.application_history_name{ font-size: 15px; }
+.application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle span.application_history_name{ font-size: 14px; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_middle span.application_history_date{ font-size: 13px; color: #999; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end{ display: flex; flex-direction: column; gap: 5px; margin-left: auto; text-align: right; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end span.application_history_money{ font-size: 15px; font-weight: bold; }
@@ -730,7 +730,7 @@ a{ text-decoration-line: none; color: #111; }
 .inquiry_board_content .inquiry_board_top span.inquiry_board_date{ font-size: 14px; color: #999; }
 .inquiry_board_content .inquiry_board_inner{ padding: var(--margin); }
 .inquiry_board_content span.inquiry_board_ttl{ display: block; font-size: 24px; font-weight: bold; margin-bottom: var(--margin-half); }
-.inquiry_board_content p{ padding: var(--margin); background: #f5f5f5; border-radius: 15px; margin-bottom: var(--margin); line-height: 1.5em; font-size: 14px; }
+.inquiry_board_content p{ padding: var(--margin); background: #f5f5f5; border-radius: 15px; margin-bottom: var(--margin); line-height: 1.5em; font-size: 14px; overflow-wrap: break-word; }
 .inquiry_board_content .inquiry_notice_box{ margin-top: var(--margin-x2); }
 .inquiry_board_content .inquiry_notice_box h4.inquiry_notice_title{ font-size: 15px; color: #676767; font-weight: bold; margin-bottom: var(--margin-half); }
 .inquiry_board_content .inquiry_notice_box p.inquiry_notice{ background: none; padding: 0; border-radius: none; font-size: 14px; color: #676767; line-height: 1.5em; margin-bottom: 5px; word-break: keep-all; }
@@ -990,8 +990,8 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_modal_con .mypage_modal_content .mypage_modal_bank_box.no_connect span.bank_brand{ font-size: 14px; color: #999; }
 .mypage_modal_con .mypage_modal_content .mypage_modal_bank_box.connect span.bank_brand{ font-size: 14px; }
 .mypage_modal_con .mypage_modal_content .mypage_modal_bank_box span.account_number{ font-size: 13px; color: #999; }
-.mypage_modal_con .mypage_modal_content a.mypage_modal_connect_btn{ display: block; background: #eaeaea; text-align: center; padding: 20px; border-radius: 15px; color: #111; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); }
-.mypage_modal_con .mypage_modal_content p.mypage_modal_notice{ font-size: 14px; }
+.mypage_modal_con .mypage_modal_content a.mypage_modal_connect_btn{ display: block; background: #2196f3; text-align: center; padding: 20px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); }
+.mypage_modal_con .mypage_modal_content p.mypage_modal_notice{ font-size: 14px; line-height: 1.25em; }
 .mypage_modal_con .mypage_modal_content .mypage_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 20px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; margin-top: var(--margin-x2); }
 
 /* account_registration */
