@@ -49,7 +49,7 @@ a{ text-decoration-line: none; color: #111; }
 .btn_con a.btn_link span{}
 
 /* top_button */
-.top_button{ position: fixed; z-index: 99999999; bottom: var(--margin); right: var(--margin); padding: 7px; background: #fff; border: 1px solid #eaeaea; border-radius: 50%; }
+.top_button{ position: fixed; z-index: 99999999; bottom: var(--margin); right: var(--margin); padding: 10px; background: #fff; border: 1px solid #eaeaea; border-radius: 50%; }
 .top_button img.top_img{ display: block; width: 18px; margin: -1px 0 1px; }
 @media (min-width: 500px) {
     .top_button { right: calc(26px + (50vw - 250px)); }
