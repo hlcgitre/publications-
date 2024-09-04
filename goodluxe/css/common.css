@@ -48,6 +48,10 @@ a{ text-decoration-line: none; color: #111; }
 .btn_con a.btn_link{ display: flex; align-items: center; justify-content: center; margin: 0 auto; border-radius: 10px; box-shadow: 0 4px 12px -4px rgba(0, 0, 0, .25); transition: all 100ms linear; }
 .btn_con a.btn_link span{}
 
+/* top_button */
+.top_button{ position: fixed; z-index: 99999999; bottom: var(--margin); right: var(--margin); padding: 7px; background: #fff; border: 1px solid #eaeaea; border-radius: 50%; }
+.top_button img.top_img{ display: block; width: 18px; margin: -1px 0 1px; }
+
 /* no_history */
 .no_history_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 112px); gap: var(--margin); }
 .no_history{ display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; padding-top: var(--margin-x2); }
@@ -217,9 +221,9 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content a.name_box img.right_arrow{ width: 15px; }
 .mypage_content .account_content{ background: #faa; border-radius: 15px; margin-bottom: var(--margin-half); }
 .mypage_content .account_content a.account_link{ display: block; padding: var(--margin); }
-.mypage_content .account_content a.account_link .account_box{ display: flex; align-items: center; gap: 10px; margin-bottom: var(--margin-half); }
+.mypage_content .account_content a.account_link .account_box{ display: flex; align-items: center; gap: 8px; margin-bottom: var(--margin-half); }
 .mypage_content .account_content a.account_link .account_box img.bank_img{ width: 15px; }
-.mypage_content .account_content a.account_link .account_box span.bank_account{ font-size: 14px; color: #fff; }
+.mypage_content .account_content a.account_link .account_box span.bank_account{ font-size: 13px; color: #fff; }
 .mypage_content .account_content a.account_link .account_box .clipboard{ background: #f55; padding: 7px 10px; border-radius: 15px; color: #fff; font-size: 11px; }
 .mypage_content .account_content a.account_link .account_box img.return_img{ width: 15px; }
 .mypage_content .account_content a.account_link .account_box img.right_arrow{ width: 15px; margin-left: auto; }
