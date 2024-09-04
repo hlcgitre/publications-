@@ -71,6 +71,13 @@
 					$(".mypage_modal_bg").removeClass("on");
 					$(".mypage_modal_con").removeClass("on");
 				});
+				var returnImg = document.querySelector('img.return_img');
+				if (returnImg) {
+					returnImg.addEventListener('click', function(event) {
+						event.preventDefault();
+						location.reload();
+					});
+				}
             });
 		</script>
     </head>
@@ -125,6 +132,7 @@
 									<img class="bank_img" src="../img/bank_6.png">
 									<span class="bank_account">790-2314-06496-95</span>
 									<div class="clipboard">복사</div>
+									<img src="../img/return.png" class="return_img">
 									<img src="../img/w_right_arrow.png" class="right_arrow">
 								</div>
 								<div class="account_money_con">
