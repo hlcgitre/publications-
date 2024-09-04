@@ -78,12 +78,26 @@
 						location.reload();
 					});
 				}
+				/* top_button */
+				var topButton = document.querySelector('.top_button');
+				if (topButton) {
+					topButton.addEventListener('click', function(event) {
+						event.preventDefault();
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth'
+						});
+					});
+				}
             });
 		</script>
     </head>
     <body>
         <div class="wrap">
             <div class="container">
+				<div class="top_button">
+					<img src="../img/top.png" class="top_img">
+				</div>
 				<div class="mypage_modal_bg"></div>
 				<div class="mypage_modal_con">
 					<div class="mypage_modal_content">
