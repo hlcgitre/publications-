@@ -221,6 +221,7 @@ a{ text-decoration-line: none; color: #111; }
 .mypage_content .account_content a.account_link .account_box img.bank_img{ width: 15px; }
 .mypage_content .account_content a.account_link .account_box span.bank_account{ font-size: 14px; color: #fff; }
 .mypage_content .account_content a.account_link .account_box .clipboard{ background: #f55; padding: 7px 10px; border-radius: 15px; color: #fff; font-size: 11px; }
+.mypage_content .account_content a.account_link .account_box img.return_img{ width: 15px; }
 .mypage_content .account_content a.account_link .account_box img.right_arrow{ width: 15px; margin-left: auto; }
 .mypage_content .account_content a.account_link .account_money_con{ display: flex; align-items: center; gap: var(--margin-half); margin-bottom: var(--margin-half); }
 .mypage_content .account_content a.account_link .account_money_con img.won_img{ width: 22px; }
@@ -939,6 +940,7 @@ a{ text-decoration-line: none; color: #111; }
 .bank_statement_content .bank_account_content .bank_account .bank_account_box img.bank_account_img{ width: 15px; }
 .bank_statement_content .bank_account_content .bank_account .bank_account_box span.bank_account_number{ font-size: 14px; color: #fff; }
 .bank_statement_content .bank_account_content .bank_account .bank_account_box .clip_board{ background: #f55; padding: 7px 10px; border-radius: 15px; color: #fff; font-size: 11px; }
+.bank_statement_content .bank_account_content .bank_account .bank_account_box img.return_img{ width: 15px; }
 .bank_statement_content .bank_account_content .bank_account .bank_account_box img.more{ width: 20px; margin-left: auto; }
 .bank_statement_content .bank_account_content .bank_account .bank_account_money_con{ display: flex; align-items: center; gap: var(--margin-half); margin-bottom: var(--margin-half); }
 .bank_statement_content .bank_account_content .bank_account .bank_account_money_con span.money{ color: #fff; font-size: 16px; }
