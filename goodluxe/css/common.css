@@ -570,7 +570,7 @@ a{ text-decoration-line: none; color: #111; }
 .success_content .success_box{ padding-top: var(--margin-x4); }
 .success_content .success_box img.success_img{ display: block; width: 50px; margin: 0 auto var(--margin); }
 .success_content .success_box h2.success_title{ text-align: center; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
-.success_content .success_box p.success_sub{ text-align: center; font-size: 14px; color: #999; margin-bottom: var(--margin-half); }
+.success_content .success_box p.success_sub{ text-align: center; font-size: 14px; color: #999; margin-bottom: var(--margin-half); line-height: 1.5em; }
 .success_content .success_box p.success_sub:last-child{ margin-bottom: 0; }
 .success_content a.success_btn{ display: block; background: #2196f3; padding: 20px; border-radius: 15px; }
 .success_content a.success_btn span.success_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #fff; }
@@ -791,16 +791,6 @@ a{ text-decoration-line: none; color: #111; }
 .id_content .id a.id_btn.check{ pointer-events: auto !important; background: #2196f3; color: #fff; }
 
 .error{ border: 1px solid #f00 !important; }
-
-/*resident_registration_3*/
-.resident_registration_success_content{}
-.resident_registration_success_content .resident_registration_success_inner{ display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - var(--margin-x2)); padding: var(--margin); gap: var(--margin); }
-.resident_registration_success_content .resident_registration_success_box{ padding-top: var(--margin-x4); }
-.resident_registration_success_content .resident_registration_success_box img.resident_registration_success_img{ display: block; width: 50px; margin: 0 auto var(--margin); }
-.resident_registration_success_content .resident_registration_success_box h2.resident_registration_success_title{ text-align: center; font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
-.resident_registration_success_content .resident_registration_success_box p.resident_registration_success_sub{ text-align: center; font-size: 14px; color: #999; line-height: 1.5em; }
-.resident_registration_success_content a.resident_registration_success_btn{ display: block; background: #2196f3; padding: 20px; border-radius: 15px; }
-.resident_registration_success_content a.resident_registration_success_btn span.resident_registration_success_button{ display: block; width: 100%; text-align: center; font-size: 16px; font-weight: bold; color: #fff; }
 
 /*resident_registration_4*/
 .my_resident_registration_header{}
@@ -1042,3 +1032,58 @@ a{ text-decoration-line: none; color: #111; }
 .bank_account_button{ position: fixed; bottom: 0; width: 100%; box-sizing: border-box; padding: var(--margin-half) var(--margin); max-width: 500px; z-index: 9999; background: #fff; }
 .bank_account_button a.bank_account_btn{ display: block; background: #f5f5f5; color: #cdcfdb; text-align: center; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; pointer-events: none; }
 .bank_account_button a.bank_account_btn.check{ background: #2196f3; pointer-events: auto !important; color: #fff; }
+
+/* withdraw_2*/
+.withdraw_confirm_header{}
+.withdraw_confirm_content{}
+.withdraw_confirm_content .withdraw_confirm_inner{ padding: var(--margin); min-height: calc(100vh - var(--margin-x2)); display: flex; flex-direction: column; justify-content: space-between; gap: var(--margin-x2); }
+.withdraw_confirm_content .close_btn{}
+.withdraw_confirm_content .close_btn{ position: relative; width: 20px; height: 20px; margin: 0 0 var(--margin) auto; }
+.withdraw_confirm_content .close_btn:before,
+.withdraw_confirm_content .close_btn:after{ position: absolute; content: ''; width: 20px; height: 2px; background: #111; border-radius: 10px; top: 10px; }
+.withdraw_confirm_content .close_btn:before{ transform: rotate(45deg); }
+.withdraw_confirm_content .close_btn:after{ transform: rotate(135deg); }
+.withdraw_confirm_content .withdraw_confirm_top{}
+.withdraw_confirm_content .withdraw_confirm_top p.withdraw_confirm_text{ font-size: 15px; color: #464646; margin-bottom: var(--margin-half); }
+.withdraw_confirm_content .withdraw_confirm_top .withdraw_confirm_account_box{ display: flex; align-items: center; gap: 10px; padding: var(--margin-half); border: 1px solid #eaeaea; border-radius: 10px; }
+.withdraw_confirm_content .withdraw_confirm_top .withdraw_confirm_account_box img.withdraw_confirm_img{ width: 25px; }
+.withdraw_confirm_content .withdraw_confirm_top .withdraw_confirm_account_box .withdraw_confirm_account{ display: flex; flex-direction: column; gap: 5px; }
+.withdraw_confirm_content .withdraw_confirm_top .withdraw_confirm_account_box .withdraw_confirm_account span.bank_name{ font-size: 14px; }
+.withdraw_confirm_content .withdraw_confirm_top .withdraw_confirm_account_box .withdraw_confirm_account span.bank_num{ font-size: 12px; color: #999; }
+.withdraw_confirm_content .withdraw_confirm_middle{ text-align: center; }
+.withdraw_confirm_content .withdraw_confirm_middle span.withdraw_confirm_money{ font-size: 15px; word-wrap: break-word; }
+.withdraw_confirm_content .withdraw_confirm_middle span.withdraw_confirm_money b.money{ font-size: 26px; margin-right: 3px; }
+.withdraw_confirm_content .withdraw_confirm_bottom{}
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box{ margin-bottom: var(--margin); }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box ul.withdraw_confirm_main_con{ }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box ul.withdraw_confirm_main_con li.withdraw_confirm_main_list{ display: flex; justify-content: space-between; margin-bottom: var(--margin-half); }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box ul.withdraw_confirm_main_con li.withdraw_confirm_main_list span.withdraw_confirm_main_ttl{ font-size: 13px; font-weight: bold; color: #a9a9a9; }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box ul.withdraw_confirm_main_con li.withdraw_confirm_main_list span.withdraw_confirm_main{ font-size: 15px; font-weight: bold; }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box ul.withdraw_confirm_main_con li.withdraw_confirm_main_list .withdraw_confirm_main_right{}
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box ul.withdraw_confirm_main_con li.withdraw_confirm_main_list .withdraw_confirm_main_right span.withdraw_confirm_charge{ position: relative; display: inline-block; font-size: 11px; color: #fff; background: #2196f3; padding: 5px 10px; border-radius: 15px; margin-right: 3px; }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_main_box ul.withdraw_confirm_main_con li.withdraw_confirm_main_list .withdraw_confirm_main_right span.withdraw_confirm_charge:after{ position: absolute; content: ""; bottom: 7px; right: -5px; border-left: 9px solid #2196f3; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_btn{ display: flex; gap: 10px; }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_btn a.withdraw_confirm_cancle{ background: #ecedf2; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; width: 10%; min-width: 30px; text-align: center; }
+.withdraw_confirm_content .withdraw_confirm_bottom .withdraw_confirm_btn a.withdraw_confirm_check{ background: #2196f3; padding: 20px; border-radius: 15px; font-size: 16px; font-weight: bold; color: #fff; width: 90%; text-align: center; }
+
+/* tax_modal */
+.tax_modal_bg,
+.tax_modal_con{ opacity: 0; visibility: hidden; z-index: 1; }
+.tax_modal_bg{ position: fixed; width: 100%; max-width: 500px; height: 100%; left: 50%; transform: translateX(-50%); top: 0; background: rgba(0, 0, 0, .3); pointer-events: none; }
+.tax_modal_bg.on{ pointer-events: auto; }
+.tax_modal_con{ position: fixed; width: 100%; max-width: 500px; height: auto; background: #fff; bottom: 0; left: 50%; transform: translateX(-50%); border-top-left-radius: 25px; border-top-right-radius: 25px; max-height: 0; transition: max-height 300ms ease-in-out; }
+.tax_modal_con.on{ max-height: 1000px; }
+.tax_modal_bg.on,
+.tax_modal_con.on{ opacity: 1; visibility: visible; z-index: 999999; }
+.tax_modal_con .tax_modal_content{}
+.tax_modal_con .tax_modal_content .tax_modal_inner{ padding: calc(var(--margin) + var(--margin-half)) var(--margin); }
+.tax_modal_con .tax_modal_content span.tax_modal_title{ display: block; font-size: 16px; font-weight: bold; margin-bottom: var(--margin); }
+.tax_modal_con .tax_modal_content p.tax_modal_notice{ text-indent: -8px; margin-left: 7px; line-height: 1.5em; font-size: 14px; color: #464646; margin-bottom: var(--margin-half); }
+.tax_modal_con .tax_modal_content p.tax_modal_notice:before{ content: '· '; }
+.tax_modal_con .tax_modal_content p.tax_modal_notice:last-child{ margin-bottom: 0; }
+.tax_modal_con .tax_modal_content .tax_modal_close_btn{ display: block; background: #2196f3; text-align: center; padding: 20px; border-radius: 15px; color: #fff; font-size: 16px; font-weight: bold; margin-top: var(--margin-x2); }
+.tax_modal_con .back{ position: absolute; top: 30px; right: 25px; width: 20px; height: 20px; }
+.tax_modal_con .back:before,
+.tax_modal_con .back:after{ position: absolute; content: ''; width: 20px; height: 2px; background: #111; border-radius: 10px; }
+.tax_modal_con .back:before{ transform: rotate(45deg); }
+.tax_modal_con .back:after{ transform: rotate(135deg); }
