@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var closeButton = document.querySelector('.close_btn');
+				if (closeButton) {
+					closeButton.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					closeButton.addEventListener('click', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+				}
+			});
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="withdraw_confirm_content">
+					<div class="withdraw_confirm_inner">
+						<div class="withdraw_confirm_top">
+							<div class="close_btn"></div>
+							<p class="withdraw_confirm_text">받는 계좌</p>
+							<div class="withdraw_confirm_account_box">
+								<img src="../img/bank_6.png" class="withdraw_confirm_img">
+								<div class="withdraw_confirm_account">
+									<span class="bank_name">KEB 하나은행</span>
+									<span class="bank_num">79023140649695</span>
+								</div>
+							</div>
+						</div>
+						<div class="withdraw_confirm_middle">
+							<span class="withdraw_confirm_money"><b class="money">10,000</b>원</span>
+						</div>
+						<div class="withdraw_confirm_bottom">
+							<div class="withdraw_confirm_main_box">
+								<ul class="withdraw_confirm_main_con">
+									<li class="withdraw_confirm_main_list">
+										<span class="withdraw_confirm_main_ttl">출금 계좌</span>
+										<span class="withdraw_confirm_main">심장은 790-2314-06285-64</span>
+									</li>
+									<li class="withdraw_confirm_main_list">
+										<span class="withdraw_confirm_main_ttl">받는 분에게 표기</span>
+										<span class="withdraw_confirm_main">심장은</span>
+									</li>
+									<li class="withdraw_confirm_main_list">
+										<span class="withdraw_confirm_main_ttl">수수료</span>
+										<div class="withdraw_confirm_main_right">
+											<span class="withdraw_confirm_charge">수수료 굿럭스 지원</span>
+											<span class="withdraw_confirm_main">0원</span>
+										</div>
+									</li>
+									<li class="withdraw_confirm_main_list">
+										<span class="withdraw_confirm_main_ttl">거래 후 잔액</span>
+										<span class="withdraw_confirm_main">0원</span>
+									</li>
+								</ul>
+							</div>
+							<div class="withdraw_confirm_btn">
+								<a class="withdraw_confirm_cancle" href="../html/application_1.html">취소</a>
+								<a class="withdraw_confirm_check" href="../html/application_3.html">보내기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
