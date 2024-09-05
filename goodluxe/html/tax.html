@@ -32,12 +32,34 @@
 						goBack(event);
 					});
 				}
+				$(".tax_content .tax_box .tax_title_box .info_title img.info_img").click(function(){
+					event.preventDefault();
+					$(".tax_modal_bg").addClass("on");
+					$(".tax_modal_con").addClass("on");
+				});
+				$(".tax_modal_bg, .tax_modal_con .tax_modal_content .tax_modal_close_btn, .tax_modal_con .back").click(function(){
+					$(".tax_modal_bg").removeClass("on");
+					$(".tax_modal_con").removeClass("on");
+				});
             });
 		</script>
     </head>
     <body>
         <div class="wrap">
 			<div class="container">
+				<div class="tax_modal_bg"></div>
+				<div class="tax_modal_con">
+					<div class="tax_modal_content">
+						<div class="tax_modal_inner">
+							<span class="tax_modal_title">주민등록번호 수집 안내</span>
+							<p class="tax_modal_notice">금융당국의 소득세 징수 의무와 현금영수증 / 전자세금계산서의 제출 및 발행을 위해 주민등록번호 수집이 필요합니다.</p>
+							<p class="tax_modal_notice">주민등록번호는 안전하게 암호화되어 최대 5년간 보관됩니다.</p>
+							<p class="tax_modal_notice">주민등록번호 수집에 동의하지 않을 시 투자 정산금 지급이 불가능합니다.</p>
+							<div class="tax_modal_close_btn">확인</div>
+						</div>
+					</div>
+					<div class="back"></div>
+				</div>
 				<div class="tax_header page_header">
 					<div class="header_inner">
 						<a class="back_btn">
