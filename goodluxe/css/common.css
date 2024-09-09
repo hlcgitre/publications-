@@ -1112,3 +1112,18 @@ a{ text-decoration-line: none; color: #111; }
 .termsofuse_content .termsofuse_top .termsofuse_box select option{}
 .termsofuse_content .termsofuse_con{ padding: var(--margin-half); }
 .termsofuse_content .termsofuse_con p.termsofuse{ white-space: pre-line; font-size: 14px; color: #454545; }
+
+/* 공통 버튼 모달창(button.html)*/
+.btn_modal_bg,
+.btn_modal_con{ opacity: 0; visibility: hidden; z-index: 1; }
+.btn_modal_bg{ position: fixed; width: 100%; max-width: 500px; height: 100%; left: 50%; transform: translateX(-50%); top: 0; background: rgba(0, 0, 0, .3); pointer-events: none; }
+.btn_modal_bg.on{ pointer-events: auto; }
+.btn_modal_con{ position: fixed; width: 85%; max-width: 450px; height: auto; background: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 20px; }
+.btn_modal_bg.on,
+.btn_modal_con.on{ opacity: 1; visibility: visible; z-index: 999999; }
+.btn_modal_con .btn_modal_inner{ padding: var(--margin); }
+.btn_modal_con span.btn_modal_text{ display: block; font-size: 14px; line-height: 1.5em; margin-bottom: var(--margin); }
+.btn_box{ display: flex; gap: 10px; }
+.btn_box a.btn{ width: 50%; text-align: center; padding: 15px; border-radius: 10px; font-size: 15px; font-weight: bold; }
+.btn_box a.no_btn{ background: #ecedf2; color: #111; }
+.btn_box a.yes_btn{ background: #2196f3; color: #fff; }
