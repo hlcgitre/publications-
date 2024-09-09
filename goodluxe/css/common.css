@@ -1094,3 +1094,21 @@ a{ text-decoration-line: none; color: #111; }
 .error_content h2.error_title{ font-size: 26px; font-weight: bold; margin-bottom: var(--margin); }
 .error_content span.error_text{ display: block; font-size: 14px; line-height: 1.5em; margin-bottom: var(--margin-x2); }
 .error_content a.error_btn{ display: inline-block; background: #111; color: #fff; padding: 10px 50px; border-radius: 50px; font-size: 14px; }
+
+/* terms of use */
+.termsofuse_content{}
+.termsofuse_content .termsofuse_top{ position: fixed; top: 0; width: 100%; max-width: 500px; box-sizing: border-box; padding: 15px; border-bottom: 1px solid #eaeaea; background: #fff; }
+.termsofuse_content .termsofuse_top .close_btn{ position: relative; width: 20px; height: 20px; margin: 0 0 15px auto; }
+.termsofuse_content .termsofuse_top .close_btn:before,
+.termsofuse_content .termsofuse_top .close_btn:after{ position: absolute; content: ''; width: 15px; height: 1px; background: #111; border-radius: 10px; top: 10px; }
+.termsofuse_content .termsofuse_top .close_btn:before{ transform: rotate(45deg); }
+.termsofuse_content .termsofuse_top .close_btn:after{ transform: rotate(135deg); }
+.termsofuse_content .termsofuse_top .termsofuse_box{ display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.termsofuse_content .termsofuse_top .termsofuse_box span.termsofuse_title{ font-size: 16px; font-weight: bold; line-height: 1.25em; }
+.termsofuse_content .termsofuse_top .termsofuse_box select{}
+.termsofuse_content .termsofuse_top .termsofuse_box select.sequence{ border: none; background: #fff; font-size: 14px; color: #111; -webkit-appearance: dropdown; -moz-appearance: none; appearance: dropdown; }
+.termsofuse_content .termsofuse_top .termsofuse_box select.sequence:focus{ outline: none; }
+.termsofuse_content .termsofuse_top .termsofuse_box select.sequence option{}
+.termsofuse_content .termsofuse_top .termsofuse_box select option{}
+.termsofuse_content .termsofuse_con{ padding: var(--margin-half); }
+.termsofuse_content .termsofuse_con p.termsofuse{ white-space: pre-line; font-size: 14px; color: #454545; }
