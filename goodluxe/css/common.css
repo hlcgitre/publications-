@@ -1087,3 +1087,10 @@ a{ text-decoration-line: none; color: #111; }
 .tax_modal_con .back:after{ position: absolute; content: ''; width: 20px; height: 2px; background: #111; border-radius: 10px; }
 .tax_modal_con .back:before{ transform: rotate(45deg); }
 .tax_modal_con .back:after{ transform: rotate(135deg); }
+
+/* error */
+.error_content{}
+.error_content .error_inner{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; padding: var(--margin); box-sizing: border-box; }
+.error_content h2.error_title{ font-size: 26px; font-weight: bold; margin-bottom: var(--margin); }
+.error_content span.error_text{ display: block; font-size: 14px; line-height: 1.5em; margin-bottom: var(--margin-x2); }
+.error_content a.error_btn{ display: inline-block; background: #111; color: #fff; padding: 10px 50px; border-radius: 50px; font-size: 14px; }
