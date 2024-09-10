@@ -1127,3 +1127,17 @@ a{ text-decoration-line: none; color: #111; }
 .btn_box a.btn{ width: 50%; text-align: center; padding: 15px; border-radius: 10px; font-size: 15px; font-weight: bold; }
 .btn_box a.no_btn{ background: #ecedf2; color: #111; }
 .btn_box a.yes_btn{ background: #2196f3; color: #fff; }
+
+/* information */
+.information_header{}
+.information_content{ margin-top: 60px; }
+.information_content .information_inner{ padding: var(--margin); display: flex; flex-direction: column; justify-content: space-between; min-height: calc(100vh - 112px); gap: var(--margin); }
+.information_content .information_top{}
+.information_content .information_top .information_box{ display: flex; align-items: center; gap: 10px; margin-bottom: var(--margin); padding: 15px; border-radius: 10px; border: 1px solid #dfdfdf; }
+.information_content .information_top .information_box span.information_profile{ display: flex; justify-content: center; align-items: center; background: #fff0f0; border-radius: 50%; width: 36px; height: 36px; font-size: 14px; color: #e17375; }
+.information_content .information_top .information_box span.information_name{ font-size: 16px; font-weight: bold; }
+.information_content .information_top .phone_box{ display: flex; justify-content: space-between; align-items: center; }
+.information_content .information_top .phone_box span.phone_text{ font-size: 15px; color :#343434; }
+.information_content .information_top .phone_box span.phonenum{ font-size: 15px; font-weight: bold; }
+.information_content .information_bottom{ border-radius: 10px; padding: 20px; border: 1px solid #dfdfdf; text-align: center; }
+.information_content .information_bottom span.information_change{ font-size: 15px; font-weight: bold; }
