@@ -147,7 +147,7 @@ a{ text-decoration-line: none; color: #111; }
 .section_3 .promotion_con ul.promotion_list_box{}
 .section_3 .promotion_con ul.promotion_list_box li.promotion_list{}
 .section_3 .promotion_con ul.promotion_list_box li.promotion_list a.promotion_link{}
-.section_3 .promotion_con ul.promotion_list_box li.promotion_list a.promotion_link img.promotion_bg_img{ width: 100%; border-radius: 15px; aspect-ratio: 2 / 1; object-fit: cover; }
+.section_3 .promotion_con ul.promotion_list_box li.promotion_list a.promotion_link img.promotion_bg_img{ display: block; width: 100%; border-radius: 15px; aspect-ratio: 2 / 1; object-fit: cover; }
 .section_3 .promotion_con .swiper-pagination{ width: auto; left: var(--margin); bottom: var(--margin); }
 .section_3 .promotion_con .swiper-pagination-bullet {background: #acacac;}
 .section_3 .promotion_con .swiper-pagination-bullet-active {background: #fff;}
@@ -1141,3 +1141,34 @@ a{ text-decoration-line: none; color: #111; }
 .information_content .information_top .phone_box span.phonenum{ font-size: 15px; font-weight: bold; }
 .information_content .information_bottom{ border-radius: 10px; padding: 20px; border: 1px solid #dfdfdf; text-align: center; }
 .information_content .information_bottom span.information_change{ font-size: 15px; font-weight: bold; }
+
+/* promotion */
+.promotion_header{ position: fixed; width: 100%; max-width: 500px; padding: var(--margin-half); box-sizing: border-box; }
+.promotion_header .close_button{ display: block; background: rgba(255, 255, 255, .2); border-radius: 50%; padding: 5px; width: 25px; height: 25px; margin-left: auto; }
+.promotion_header .close_button img.down_arrow{ display: block; width: 25px; }
+.promotion_content{ padding-top: 61px; }
+.promotion_content.promotion_1{ background: #143e90; }
+.promotion_content.promotion_2{ background: #3b89f6; }
+.promotion_content.promotion_3{ background: #e7823e; }
+.promotion_content .promotion_inner{ padding: var(--margin); }
+.promotion_content span.promotion_title{ display: block; font-size: 40px; font-weight: bold; line-height: 1.25em; color: #fff; }
+.promotion_content img.promotion_img{ display: block; width: 80%; margin: 0 auto var(--margin-x2); }
+.promotion_content .promotion_main_box{ margin-bottom: var(--margin); }
+.promotion_content .promotion_main_box ul.promotion_main_con{ padding: 0 var(--margin-half); }
+.promotion_content .promotion_main_box ul.promotion_main_con li.promotion_main_list{ display: flex; align-items: flex-start; gap: var(--margin-half); }
+.promotion_content .promotion_main_box ul.promotion_main_con li.promotion_main_list img.promotion_main_icon{ width: 18px; }
+.promotion_content .promotion_main_box ul.promotion_main_con li.promotion_main_list .promotion_main_text_box{ color: #fff; }
+.promotion_content .promotion_main_box ul.promotion_main_con li.promotion_main_list .promotion_main_text_box span.promotion_main{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.25em; }
+.promotion_content .promotion_main_box ul.promotion_main_con li.promotion_main_list .promotion_main_text_box p.promotion_main_text{ font-size: 14px; line-height: 1.25em; margin-bottom: var(--margin); }
+.promotion_content .invest_point_box{ background: #fff; margin-bottom: var(--margin); padding: var(--margin); border-radius: 15px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); }
+.promotion_content .invest_point_box p.invest_point_sub_title{ font-size: 14px; color: #797979; font-weight: bold; margin-bottom: var(--margin-half); }
+.promotion_content .invest_point_box span.invest_point_title{ display: block; font-size :17px; font-weight: bold; margin-bottom: var(--margin); }
+.promotion_content .invest_point_box p.invest_point{ font-size: 14px; text-indent: -8px; margin: 0 0 var(--margin-half) 8px; line-height: 1.5em; color: #343434; }
+.promotion_content .invest_point_box p.invest_point:last-child{ margin-bottom: 0; }
+.promotion_content .invest_point_box p.invest_point:before{ content: '· '; }
+.promotion_content a.promotion_link_btn{ display: block; border-top-left-radius: 20px; border-top-right-radius: 20px; font-size: 15px; color: #fff; }
+.promotion_content a.link_top{ padding: var(--margin) var(--margin) calc(var(--margin) + 68px); }
+.promotion_content a.link_bottom{ position: absolute; bottom: 0; padding: var(--margin); width: 100%; box-sizing: border-box; }
+.promotion_content a.link_1{ background: #143e90; }
+.promotion_content a.link_2{ background: #3b89f6; }
+.promotion_content a.link_3{ background: #e7823e; }
