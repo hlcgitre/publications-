@@ -1161,12 +1161,12 @@ a{ text-decoration-line: none; color: #111; }
 .promotion_content .promotion_main_box ul.promotion_main_con li.promotion_main_list .promotion_main_text_box span.promotion_main{ display: block; font-size: 18px; font-weight: bold; margin-bottom: var(--margin); line-height: 1.25em; }
 .promotion_content .promotion_main_box ul.promotion_main_con li.promotion_main_list .promotion_main_text_box p.promotion_main_text{ font-size: 14px; line-height: 1.25em; margin-bottom: var(--margin); }
 .promotion_content .invest_point_box{ background: #fff; margin-bottom: var(--margin); padding: var(--margin); border-radius: 15px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); }
-.promotion_content .invest_point_box p.invest_point_sub_title{ font-size: 14px; color: #797979; font-weight: bold; margin-bottom: var(--margin-half); }
-.promotion_content .invest_point_box span.invest_point_title{ display: block; font-size :17px; font-weight: bold; margin-bottom: var(--margin); }
+.promotion_content .invest_point_box p.invest_point_sub_title{ font-size: 15px; color: #797979; font-weight: bold; margin-bottom: var(--margin-half); }
+.promotion_content .invest_point_box span.invest_point_title{ display: block; font-size :18px; font-weight: bold; margin-bottom: var(--margin); }
 .promotion_content .invest_point_box p.invest_point{ font-size: 14px; text-indent: -8px; margin: 0 0 var(--margin-half) 8px; line-height: 1.5em; color: #343434; }
 .promotion_content .invest_point_box p.invest_point:last-child{ margin-bottom: 0; }
 .promotion_content .invest_point_box p.invest_point:before{ content: '· '; }
-.promotion_content a.promotion_link_btn{ display: block; border-top-left-radius: 20px; border-top-right-radius: 20px; font-size: 15px; color: #fff; }
+.promotion_content a.promotion_link_btn{ display: block; border-top-left-radius: 20px; border-top-right-radius: 20px; font-size: 16px; color: #fff; font-weight: bold; }
 .promotion_content a.link_top{ padding: var(--margin) var(--margin) calc(var(--margin) + 68px); }
 .promotion_content a.link_bottom{ position: absolute; bottom: 0; padding: var(--margin); width: 100%; box-sizing: border-box; }
 .promotion_content a.link_1{ background: #143e90; }
