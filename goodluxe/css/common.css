@@ -603,6 +603,7 @@ a{ text-decoration-line: none; color: #111; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con span.application_history_rate{ font-size: 13px; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con.up span.application_history_rate{ color: #ed1c24; }
 .application_history_content .application_history_con ul.application_history li.application_history_list .application_history_end .application_history_rate_con.down span.application_history_rate{ color: #3b82f6; }
+.application_history_content .application_history_con .application_cancle_btn{ font-size: 13px; padding: 5px; border: 1px solid #454545; border-radius: 5px; text-align: center; }
 
 /* modal */
 .modal_bg,
