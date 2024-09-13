@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.top10_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="top10_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">수익 난 송아지 Top 10</span>
+					</div>
+				</div>
+				<div class="top10_content">
+					<div class="top10_inner">
+						<div class="top10_top_box">
+							<div class="top10_top">
+								<span class="top10_total">Top 10</span>
+								<span class="top10_select">수익률 높은 순</span>
+							</div>
+						</div>
+						<div class="top10_con">
+							<ul class="top10">
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_1.png">
+									<span class="top10_name">백광농장 2호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+52.73%</span>
+										<span class="top10_category">등심면적 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_2.png">
+									<span class="top10_name">그리스도농장 13호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+44.18%</span>
+										<span class="top10_category">마블링 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_1.png">
+									<span class="top10_name">새빛농장 4호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+43.51%</span>
+										<span class="top10_category">등심면적 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_1.png">
+									<span class="top10_name">오뭇산목장 33호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+36.73%</span>
+										<span class="top10_category">뚱뚱 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_2.png">
+									<span class="top10_name">세현축산 13호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+31.74%</span>
+										<span class="top10_category">마블링 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_1.png">
+									<span class="top10_name">대가목장Blue 299호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+29.32%</span>
+										<span class="top10_category">등심면적 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_2.png">
+									<span class="top10_name">대가목장Blue 187호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+26.8%</span>
+										<span class="top10_category">등심면적 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_1.png">
+									<span class="top10_name">대가목장Blue 97호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+26.77%</span>
+										<span class="top10_category">마블링 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_2.png">
+									<span class="top10_name">그리스도농장 44호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+25.07%</span>
+										<span class="top10_category">마블링 우등생</span>
+									</div>
+								</li>
+								<li class="top10_list">
+									<img class="top10_img" src="../img/profile_2.png">
+									<span class="top10_name">세현축산 18호</span>
+									<div class="top10_end">
+										<span class="top10_rate up">+23.85%</span>
+										<span class="top10_category">등심면적 우등생</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
