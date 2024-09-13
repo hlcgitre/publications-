@@ -56,12 +56,36 @@
                 input.classList.remove('error_border');
                 phoneBtn.classList.remove('check');
             });
+			function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.phone_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
         });
         </script>
     </head>
     <body>
         <div class="wrap">
             <div class="container">
+				<div class="phone_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+					</div>
+				</div>
                 <div class="phone_content">
                     <div class="phone_inner">
                         <div class="phone">
