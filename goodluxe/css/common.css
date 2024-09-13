@@ -1173,3 +1173,23 @@ a{ text-decoration-line: none; color: #111; }
 .promotion_content a.link_1{ background: #143e90; }
 .promotion_content a.link_2{ background: #3b89f6; }
 .promotion_content a.link_3{ background: #e7823e; }
+
+/* top 10 */
+.top10_header{}
+.top10_content{ margin-top: 60px; }
+.top10_content .top10_inner{ padding: var(--margin); }
+.top10_content .top10_top_box{}
+.top10_content .top10_top_box .top10_top{ display: flex; justify-content: space-between; }
+.top10_content .top10_top_box .top10_top span.top10_total{ font-size: 15px; color: #676767; }
+.top10_content .top10_top_box .top10_top span.top10_select{ font-size: 15px; color: #676767; }
+.top10_content .top10_con{}
+.top10_content .top10_con ul.top10{}
+.top10_content .top10_con ul.top10 li.top10_list{ display: flex; align-items: center; gap: 7px; padding: var(--margin-half) 0; }
+.top10_content .top10_con ul.top10 li.top10_list:first-child{ padding-top: var(--margin); }
+.top10_content .top10_con ul.top10 li.top10_list img.top10_img{ width: 50px; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; }
+.top10_content .top10_con ul.top10 li.top10_list span.top10_name{ font-size: 16px; }
+.top10_content .top10_con ul.top10 li.top10_list .top10_end{ display: flex; flex-direction: column; gap: 5px; margin-left: auto; text-align: right; }
+.top10_content .top10_con ul.top10 li.top10_list .top10_end span.top10_rate{ font-size: 15px; font-weight: bold; }
+.top10_content .top10_con ul.top10 li.top10_list .top10_end span.top10_rate.up{ color: #ed1c24; }
+.top10_content .top10_con ul.top10 li.top10_list .top10_end span.top10_rate.down{ color: #3b82f6; }
+.top10_content .top10_con ul.top10 li.top10_list .top10_end span.top10_category{ font-size: 14px; }
