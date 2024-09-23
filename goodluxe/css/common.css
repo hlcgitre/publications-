@@ -361,8 +361,8 @@ a{ text-decoration-line: none; color: #111; }
 .terms_content .menu_box .menu_agree span.id_agree{}
 .terms_content .menu_box .menu_agree span.agree_text{ color: #afafaf; }
 .terms_content .menu_box ul.menu_con{}
-.terms_content .menu_box ul.menu_con li.menu_list{ margin-bottom: var(--margin); }
-.terms_content .menu_box ul.menu_con li.menu_list:last-child{ margin-bottom: 0; }
+.terms_content .menu_box ul.menu_con li.menu_list{ margin-top: var(--margin); }
+.terms_content .menu_box ul.menu_con li.menu_list:first-child{ margin-bottom: 0; }
 .terms_content .menu_box a.menu_link{ display: flex; align-items: center; justify-content: space-between; }
 .terms_content .menu_box a.menu_link span{ font-size: 15px; }
 .terms_content .menu_box a.menu_link span.menu_sub{}
