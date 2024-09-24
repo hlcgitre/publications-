@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.application_history_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+				//.application_history_rate_con의 up, down 클래스명에 따라서 img.rate_img src 변경
+				const historyItems = document.querySelectorAll('li.application_history_list');
+
+				historyItems.forEach(item => {
+					const rateCon = item.querySelector('li.application_history_list .application_history_end .application_history_rate_con');
+					const rateImg = rateCon.querySelector('li.application_history_list .application_history_end .application_history_rate_con img.rate_img');
+					if (rateCon.classList.contains('up')) {
+						rateImg.src = '../img/rate_up.png';
+					} else if (rateCon.classList.contains('down')) {
+						rateImg.src = '../img/rate_down.png';
+					}
+				});
+				$(".application_history_con ul.application_history li.application_history_list").click(function(){
+					$(".modal_bg").addClass("on");
+					$(".modal_con").addClass("on");
+				});
+				$(".modal_bg, .modal_con .back").click(function(){
+					$(".modal_bg").removeClass("on");
+					$(".modal_con").removeClass("on");
+				});
+				$(".tab_box .tab_inner .tab_con .tab_list").click(function(){
+					$(".tab_box .tab_inner .tab_con .tab_list").removeClass("active");
+					$(this).addClass("active");
+					var rel = $(this).attr('rel');
+					$(".tab_content").removeClass("active");
+					$(".tab_content." + rel).addClass("active");
+				});
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="modal_bg"></div>
+				<div class="modal_con">
+					<div class="modal_content">
+						<div class="modal_inner">
+							<div class="modal_top">
+								<img src="../img/profile_1.png" class="modal_img">
+								<div class="modal_profile_con">
+									<span class="modal_profile">새빛농장 1호</span>
+									<span class="modal_money">12,200,000원</span>
+								</div>
+							</div>
+							<div class="modal_middle up">
+								<div class="modal_middle_rate">
+									<span class="modal_rate_title">송아지 수익률</span>
+									<div class="modal_rate_box">
+										<img src="../img/rate_up.png" class="modal_rate_img">
+										<span class="modal_rate_money">5,536,922원</span>
+									</div>
+								</div>
+								<span class="modal_rate"><b class="modal_num">52.73</b>%</span>
+							</div>
+							<div class="modal_bottom">
+								<ul class="modal_bottom_con">
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">육질·육량등급</span>
+										<span class="modal_bottom_main">1++ / B</span>
+									</li>
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">도체중·생체중</span>
+										<span class="modal_bottom_main">546 / -kg</span>
+									</li>
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">A등급 유전능력</span>
+										<span class="modal_bottom_main">근단면적</span>
+									</li>
+									<li class="modal_bottom_list">
+										<span class="modal_bottom_sub">대표 유전능력</span>
+										<span class="modal_bottom_main">등심면적 우등생</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="back"></div>
+				</div>
+				<div class="application_history_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">투자 신청 내역</span>
+					</div>
+				</div>
+				<div class="application_history_content">
+					<div class="tab_box">
+						<div class="tab_inner">
+							<ul class="tab_con">
+								<li class="tab_list active" rel="tab1">
+									<span class="tab_title">탭 1</span>
+								</li>
+								<li class="tab_list" rel="tab2">
+									<span class="tab_title">탭 2</span>
+								</li>
+								<li class="tab_list" rel="tab3">
+									<span class="tab_title">탭 3</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="application_history_inner">
+						<div class="tab_content tab1 active">
+							<div class="application_history_top_box">
+								<div class="application_history_top">
+									<span class="application_history_total">총 5 건</span>
+									<select class="sequence">
+										<option selected>최근 거래순</option>
+										<option>예시 1</option>
+										<option>예시 2</option>
+									</select>
+								</div>
+								<span class="date">2022.01.01 ~ 2022.12.31</span>
+							</div>
+							<div class="application_history_con">
+								<ul class="application_history">
+									<li class="application_history_list">
+										<img class="application_history_img" src="../img/profile_1.png">
+										<div class="application_history_middle">
+											<span class="application_history_name">새빛농장 1호</span>
+											<span class="application_history_date">2023.10.20</span>
+										</div>
+										<div class="application_history_end">
+											<span class="application_history_money">1,200,000원</span>
+											<div class="application_history_rate_con up"><!--수익률이 올랐을 경우 up, 떨어졌을 경우 down 클래스 명 추가하면 이미지와 글씨 색상이 변경됨-->
+												<img src="../img/rate_up.png" class="rate_img">
+												<span class="application_history_rate">120,000 (+10.00%)</span>
+											</div>
+											<div class="application_cancle_btn">투자 신청 취소하기</div>
+										</div>
+									</li>
+									<li class="application_history_list">
+										<img class="application_history_img" src="../img/profile_2.png">
+										<div class="application_history_middle">
+											<span class="application_history_name">오성농장 1호</span>
+											<span class="application_history_date">2023.05.20</span>
+										</div>
+										<div class="application_history_end">
+											<span class="application_history_money">800,000원</span>
+											<div class="application_history_rate_con up">
+												<img src="../img/rate_up.png" class="rate_img">
+												<span class="application_history_rate">41,600 (+5.20%)</span>
+											</div>
+										</div>
+									</li>
+									<li class="application_history_list">
+										<img class="application_history_img" src="../img/profile_1.png">
+										<div class="application_history_middle">
+											<span class="application_history_name">오뭇산목장 1호</span>
+											<span class="application_history_date">2023.03.20</span>
+										</div>
+										<div class="application_history_end">
+											<span class="application_history_money">1,350,000원</span>
+											<div class="application_history_rate_con down">
+												<img src="../img/rate_down.png" class="rate_img">
+												<span class="application_history_rate">311,850 (-23.10%)</span>
+											</div>
+										</div>
+									</li>
+									<li class="application_history_list">
+										<img class="application_history_img" src="../img/profile_1.png">
+										<div class="application_history_middle">
+											<span class="application_history_name">새빛농장 2호</span>
+											<span class="application_history_date">2023.11.06</span>
+										</div>
+										<div class="application_history_end">
+											<span class="application_history_money">1,300,000원</span>
+											<div class="application_history_rate_con up">
+												<img src="../img/rate_up.png" class="rate_img">
+												<span class="application_history_rate">41,600 (+5.20%)</span>
+											</div>
+										</div>
+									</li>
+									<li class="application_history_list">
+										<img class="application_history_img" src="../img/profile_2.png">
+										<div class="application_history_middle">
+											<span class="application_history_name">오뭇산목장 2호</span>
+											<span class="application_history_date">2023.12.22</span>
+										</div>
+										<div class="application_history_end">
+											<span class="application_history_money">900,000원</span>
+											<div class="application_history_rate_con down">
+												<img src="../img/rate_down.png" class="rate_img">
+												<span class="application_history_rate">100,000 (-9.00%)</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab_content tab2">
+							<span>탭 2</span>
+						</div>
+						<div class="tab_content tab3">
+							<span>탭 3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
