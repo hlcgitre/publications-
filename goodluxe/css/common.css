@@ -1112,7 +1112,7 @@ a{ text-decoration-line: none; color: #111; }
 .termsofuse_content .termsofuse_top .termsofuse_box select.sequence option{}
 .termsofuse_content .termsofuse_top .termsofuse_box select option{}
 .termsofuse_content .termsofuse_con{ padding: var(--margin-half); }
-.termsofuse_content .termsofuse_con p.termsofuse{ white-space: pre-line; font-size: 14px; color: #454545; }
+.termsofuse_content .termsofuse_con p.termsofuse{ white-space: pre-line; font-size: 14px; color: #454545; line-height: 1.25em; }
 
 /* 공통 버튼 모달창(button.html)*/
 .btn_modal_bg,
