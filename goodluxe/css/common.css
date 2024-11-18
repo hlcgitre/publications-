@@ -923,10 +923,13 @@ a{ text-decoration-line: none; color: #111; }
 .my_luxury_content .tab_content .no_history span.ment{ font-size: 14px; font-weight: bold; }
 .luxury_content{}
 .luxury_content ul.luxury{}
-.luxury_content ul.luxury li.luxury_list{ display: flex; justify-content: space-between; padding: var(--margin-half) 0; }
+.luxury_content ul.luxury li.luxury_list{ display: flex; align-items: center; gap: 10px; padding: var(--margin-half) 0; }
 .luxury_content ul.luxury li.luxury_list:first-child{ padding-top: var(--margin); }
-.luxury_content ul.luxury li.luxury_list span.luxury_brand_name{ font-size: 15px; font-weight: bold; }
-.luxury_content ul.luxury li.luxury_list span.luxury_brand_money{ font-size: 15px; font-weight: bold; }
+.luxury_content ul.luxury li.luxury_list img.my_luxury_img{ width: 50px; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; }
+.luxury_content ul.luxury li.luxury_list .luxury_text_box{ display: flex; flex-direction: column; gap: 5px; }
+.luxury_content ul.luxury li.luxury_list .luxury_text_box span.luxury_name{ font-size: 14px; }
+.luxury_content ul.luxury li.luxury_list .luxury_text_box span.luxury_date{ font-size: 11px; }
+.luxury_content ul.luxury li.luxury_list .luxury_text_box span.luxury_date:before{ content: '· '; }
 
 /* bank_statement */
 .bank_statement_header{}
