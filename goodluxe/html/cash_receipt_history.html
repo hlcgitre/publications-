@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.cash_receipt_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="cash_receipt_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">현금영수증</span>
+					</div>
+				</div>
+				<div class="cash_receipt_content">
+					<div class="cash_receipt_inner">
+						<div class="cash_receipt_top">
+							<h2 class="cash_receipt_title">현금영수증 발행 내역</h2>
+							<span class="cash_receipt_sub">가입시 등록한 휴대폰 번호로<br>현금영수증이 자동 발행됩니다.</span>
+							<select class="cash_receipt_type">
+								<option selected>2024</option>
+								<option>2023</option>
+								<option>2022</option>
+							</select>
+							<div class="cash_receipt_top_box">
+								<span class="cash_receipt_total">총 2 건</span>
+								<select class="cash_receipt_sequence">
+									<option selected>최근 거래순</option>
+									<option>예시 1</option>
+									<option>예시 2</option>
+								</select>
+							</div>
+							<span class="cash_receipt_date">2024.10.31 ~ 2024.10.31</span>
+						</div>
+						<div class="cash_receipt_history_con">
+							<ul class="cash_receipt_history">
+								<li class="cash_receipt_history_list">
+									<img class="cash_receipt_history_img" src="../img/profile_1.png">
+									<div class="cash_receipt_history_middle">
+										<span class="cash_receipt_history_name">펀딩상품테스트</span>
+										<span class="cash_receipt_history_date">2024.10.30</span>
+									</div>
+									<div class="cash_receipt_history_end">
+										<span class="cash_receipt_history_money">20,000원</span>
+										<span class="cash_receipt_history_text">입금 완료</span>
+									</div>
+								</li>
+								<li class="cash_receipt_history_list">
+									<img class="cash_receipt_history_img" src="../img/profile_2.png">
+									<div class="cash_receipt_history_middle">
+										<span class="cash_receipt_history_name">펀딩상품테스트</span>
+										<span class="cash_receipt_history_date">2024.10.31</span>
+									</div>
+									<div class="cash_receipt_history_end">
+										<span class="cash_receipt_history_money">50,000원</span>
+										<span class="cash_receipt_history_text">입금 완료</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>

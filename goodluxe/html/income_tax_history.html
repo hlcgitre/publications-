@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <style>
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+		<!-- swiper -->
+		<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+        <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+                function goBack(event) {
+					event.preventDefault();
+					history.back();
+				}
+
+				var backLink = document.querySelector('.income_tax_header a.back_btn');
+				if (backLink) {
+					backLink.addEventListener('touchstart', function(event) {
+						event.preventDefault();
+						goBack(event);
+					});
+					backLink.addEventListener('click', function(event) {
+						event.preventDefault();
+						if (event.detail === 0) return;
+						goBack(event);
+					});
+				}
+            });
+		</script>
+    </head>
+    <body>
+        <div class="wrap">
+			<div class="container">
+				<div class="income_tax_header page_header">
+					<div class="header_inner">
+						<a class="back_btn">
+							<img src="../img/back_arrow.png" class="back_img">
+						</a>
+						<span class="page_title">종합소득세</span>
+					</div>
+				</div>
+				<div class="income_tax_content">
+					<div class="income_tax_inner">
+						<div class="income_tax_top">
+							<h2 class="income_tax_title">종합소득세 신고</h2>
+							<span class="income_tax_sub">종합소득세 신고 내역은 연도별 확인 및 다운로드가 가능합니다.</span>
+							<select class="income_tax_type">
+								<option selected>2024</option>
+								<option>2023</option>
+								<option>2022</option>
+							</select>
+							<div class="income_tax_top_box">
+								<span class="income_tax_total">총 3 건</span>
+								<select class="income_tax_sequence">
+									<option selected>최근 거래순</option>
+									<option>예시 1</option>
+									<option>예시 2</option>
+								</select>
+							</div>
+							<span class="income_tax_date">2024.10.30 ~ 2024.10.31</span>
+						</div>
+						<div class="income_tax_history_con">
+							<ul class="income_tax_history">
+								<li class="income_tax_history_list">
+									<img class="income_tax_history_img" src="../img/profile_1.png">
+									<div class="income_tax_history_middle">
+										<span class="income_tax_history_name">펀딩상품테스트</span>
+										<span class="income_tax_history_date">2024.10.30</span>
+									</div>
+									<div class="income_tax_history_end">
+										<span class="income_tax_history_money">20,000원</span>
+										<span class="income_tax_history_text">입금 완료</span>
+									</div>
+								</li>
+								<li class="income_tax_history_list">
+									<img class="income_tax_history_img" src="../img/profile_2.png">
+									<div class="income_tax_history_middle">
+										<span class="income_tax_history_name">펀딩상품테스트</span>
+										<span class="income_tax_history_date">2024.10.31</span>
+									</div>
+									<div class="income_tax_history_end">
+										<span class="income_tax_history_money">50,000원</span>
+										<span class="income_tax_history_text">입금 완료</span>
+									</div>
+								</li>
+								<li class="income_tax_history_list">
+									<img class="income_tax_history_img" src="../img/profile_1.png">
+									<div class="income_tax_history_middle">
+										<span class="income_tax_history_name">펀딩상품테스트</span>
+										<span class="income_tax_history_date">2024.10.31</span>
+									</div>
+									<div class="income_tax_history_end">
+										<span class="income_tax_history_money">30,000원</span>
+										<span class="income_tax_history_text">입금 완료</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
