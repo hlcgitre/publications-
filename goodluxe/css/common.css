@@ -814,14 +814,27 @@ a{ text-decoration-line: none; color: #111; }
 .cash_receipt_content .cash_receipt_inner{ padding: var(--margin); }
 .cash_receipt_content .cash_receipt_top{}
 .cash_receipt_content .cash_receipt_top h2.cash_receipt_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
-.cash_receipt_content .cash_receipt_top span.cash_receipt_sub{ display: block; font-size: 15px; color: #999; margin-bottom: var(--margin); line-height: 1.25em; }
+.cash_receipt_content .cash_receipt_top span.cash_receipt_sub{ display: block; font-size: 15px; color: #999; margin-bottom: var(--margin); line-height: 1.25em; word-break: keep-all; }
 .cash_receipt_content .cash_receipt_top select.cash_receipt_type{ font-size: 15px; color: #111; appearance: none; -webkit-appearance: none; -moz-appearance: none; background: url('../img/down_arrow.png') no-repeat center right 15px; background-size: 15px; width: 160px; padding: 15px; border: 1px solid #eaeaea; border-radius: 10px; margin-bottom: var(--margin-half); }
 .cash_receipt_content .cash_receipt_top select.cash_receipt_type:focus{ outline: none; }
 .cash_receipt_content .cash_receipt_top select.cash_receipt_type option{}
-.cash_receipt_content span.date{ font-size: 14px; color: #999; }
-.cash_receipt_content .cash_receipt_con{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; }
-.cash_receipt_content .cash_receipt_con img.cash_receipt_img{ width: 100px; }
-.cash_receipt_content .cash_receipt_con span.ment{ font-size: 14px; font-weight: bold; }
+.cash_receipt_content .cash_receipt_top .cash_receipt_top_box{ display: flex; justify-content: space-between; margin-bottom: var(--margin-half); }
+.cash_receipt_content .cash_receipt_top .cash_receipt_top_box span.cash_receipt_total{ font-size: 15px; color: #999; }
+.cash_receipt_content .cash_receipt_top .cash_receipt_top_box select.cash_receipt_sequence{ border: none; background: #fff; font-size: 14px; color: #111; -webkit-appearance: dropdown; -moz-appearance: none; appearance: dropdown; }
+.cash_receipt_content .cash_receipt_top .cash_receipt_top_box select.cash_receipt_sequence:focus{ outline: none; }
+.cash_receipt_content .cash_receipt_top .cash_receipt_top_box select.cash_receipt_sequence option{}
+.cash_receipt_content .cash_receipt_top span.cash_receipt_date{ font-size: 14px; color: #999; }
+.cash_receipt_content .cash_receipt_history_con{ margin-top: var(--margin); }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history{}
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list{ display: flex; align-items: center; gap: 7px; padding: var(--margin-half) 0; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list:first-child{ padding-top: var(--margin); border-top: 1px solid #eaeaea; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list img.cash_receipt_history_img{ width: 50px; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list .cash_receipt_history_middle{ display: flex; flex-direction: column; gap: 5px; width: 50%; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list .cash_receipt_history_middle span.cash_receipt_history_name{ font-size: 14px; display: block; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list .cash_receipt_history_middle span.cash_receipt_history_date{ font-size: 13px; color: #999; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list .cash_receipt_history_end{ display: flex; flex-direction: column; gap: 5px; margin-left: auto; text-align: right; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list .cash_receipt_history_end span.cash_receipt_history_money{ font-size: 15px; font-weight: bold; }
+.cash_receipt_content .cash_receipt_history_con ul.cash_receipt_history li.cash_receipt_history_list .cash_receipt_history_end span.cash_receipt_history_text{ color: #3b82f6; font-size: 13px; }
 
 /*income_tax*/
 .income_tax_header{}
@@ -829,14 +842,27 @@ a{ text-decoration-line: none; color: #111; }
 .income_tax_content .income_tax_inner{ padding: var(--margin); }
 .income_tax_content .income_tax_top{}
 .income_tax_content .income_tax_top h2.income_tax_title{ font-size: 20px; font-weight: bold; margin-bottom: var(--margin); }
-.income_tax_content .income_tax_top span.income_tax_sub{ display: block; font-size: 15px; color: #999; margin-bottom: var(--margin); line-height: 1.25em; }
+.income_tax_content .income_tax_top span.income_tax_sub{ display: block; font-size: 15px; color: #999; margin-bottom: var(--margin); line-height: 1.25em; word-break: keep-all; }
 .income_tax_content .income_tax_top select.income_tax_type{ font-size: 15px; color: #111; appearance: none; -webkit-appearance: none; -moz-appearance: none; background: url('../img/down_arrow.png') no-repeat center right 15px; background-size: 15px; width: 160px; padding: 15px; border: 1px solid #eaeaea; border-radius: 10px; margin-bottom: var(--margin-half); }
 .income_tax_content .income_tax_top select.income_tax_type:focus{ outline: none; }
 .income_tax_content .income_tax_top select.income_tax_type option{}
-.income_tax_content span.date{ font-size: 14px; color: #999; }
-.income_tax_content .income_tax_con{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; gap: var(--margin-half); align-items: center; }
-.income_tax_content .income_tax_con img.income_tax_img{ width: 100px; }
-.income_tax_content .income_tax_con span.ment{ font-size: 14px; font-weight: bold; }
+.income_tax_content .income_tax_top .income_tax_top_box{ display: flex; justify-content: space-between; margin-bottom: var(--margin-half); }
+.income_tax_content .income_tax_top .income_tax_top_box span.income_tax_total{ font-size: 15px; color: #999; }
+.income_tax_content .income_tax_top .income_tax_top_box select.income_tax_sequence{ border: none; background: #fff; font-size: 14px; color: #111; -webkit-appearance: dropdown; -moz-appearance: none; appearance: dropdown; }
+.income_tax_content .income_tax_top .income_tax_top_box select.income_tax_sequence:focus{ outline: none; }
+.income_tax_content .income_tax_top .income_tax_top_box select.income_tax_sequence option{}
+.income_tax_content .income_tax_top span.income_tax_date{ font-size: 14px; color: #999; }
+.income_tax_content .income_tax_history_con{ margin-top: var(--margin); }
+.income_tax_content .income_tax_history_con ul.income_tax_history{}
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list{ display: flex; align-items: center; gap: 7px; padding: var(--margin-half) 0; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list:first-child{ padding-top: var(--margin); border-top: 1px solid #eaeaea; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list img.income_tax_history_img{ width: 50px; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list .income_tax_history_middle{ display: flex; flex-direction: column; gap: 5px; width: 50%; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list .income_tax_history_middle span.income_tax_history_name{ font-size: 14px; display: block; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list .income_tax_history_middle span.income_tax_history_date{ font-size: 13px; color: #999; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list .income_tax_history_end{ display: flex; flex-direction: column; gap: 5px; margin-left: auto; text-align: right; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list .income_tax_history_end span.income_tax_history_money{ font-size: 15px; font-weight: bold; }
+.income_tax_content .income_tax_history_con ul.income_tax_history li.income_tax_history_list .income_tax_history_end span.income_tax_history_text{ color: #3b82f6; font-size: 13px; }
 
 /*withdraw*/
 .withdraw_header{}
